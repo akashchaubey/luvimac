@@ -1,0 +1,350 @@
+:root {
+    --m-color: #333333;
+    --s-color: #2948ff;
+    --w-color: #fff;
+    --p-color: #666666;
+    --b-color: #36383d;
+    --black-color: #000;
+    --w-b-color: #fff;
+    --bgw-bgb-color: #fff;
+    --font-stl-one: #333333;
+    --font-stl-two: #fff;
+    --font-stl-three: #141618;
+    --blue-to-white: #2948ff;
+    --brd-color: rgba(229, 229, 229, 1);
+    --abt-bg-color: #fafafa;
+}
+
+[data-light-mode="dark"] {
+    --bgw-bgb-color: #141618;
+    --font-stl-one: #c2c5c7;
+    --font-stl-two: #c2c5c7;
+    --font-stl-three: #c2c5c7;
+    --blue-to-white: #c2c5c7;
+    --brd-color: rgba(60, 60, 60, 1);
+    --abt-bg-color: #141618;
+}
+
+body::-moz-scrollbar {
+    width: 0.5rem;
+    background: var(--w-color);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background: var(--w-color);
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--w-color);
+}
+
+body::-moz-scrollbar-track {
+    border-radius: 10px;
+    background: var(--w-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--s-color);
+}
+
+body::-moz-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--s-color);
+}
+
+
+/* css reset */
+
+html {
+    line-height: 1.15;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: var(--black-color);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--bgw-bgb-color);
+}
+
+a,
+button {
+    font-size: 0.875rem;
+    color: var(--s-color);
+    text-decoration: none;
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+button:hover,
+button:active,
+button:focus,
+a:hover,
+a:active,
+a:focus {
+    color: var(--s-color);
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--font-stl-one);
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.section {
+    padding: 7.5rem 0px 7.5rem;
+    position: relative;
+    z-index: 0;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 28px;
+    color: var(--p-color);
+}
+
+
+/*all button*/
+
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 100px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    span {
+        font-size: 12px;
+        display: block;
+        text-transform: uppercase;
+    }
+    &.stl-one {
+        background: var(--s-color);
+        color: var(--w-color);
+        &:hover {
+            background: var(--b-color);
+            color: var(--w-color);
+        }
+    }
+    &.stl-three {
+        border: 0.01rem solid var(--w-color);
+        background: none;
+        color: var(--w-color);
+        &:hover {
+            background: var(--s-color);
+            color: var(--w-color);
+            border-color: var(--s-color);
+        }
+    }
+}
+
+
+/*all button*/
+
+.bg {
+    background: var(--abt-bg-color);
+}
+
+ul.social {
+    li {
+        display: inline-block;
+        padding: 5px 5px;
+        svg {
+            width: 16px;
+            fill: #fff;
+        }
+    }
+    &.footer {
+        a {
+            width: 34px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            border: 1px solid rgba(240, 240, 240, 0.7) !important;
+            svg {
+                width: 14px;
+                fill: rgba(240, 240, 240, 0.7) !important;
+            }
+            &:hover {
+                background: var(--m-color);
+                border-color: var(--m-color) !important;
+                svg {
+                    fill: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+
+/* css reset */
+
+
+/* header */
+
+@import "_header.scss";
+
+/* header */
+
+
+/* footer */
+
+@import "_footer.scss";
+
+/* footer */
+
+
+/* all title */
+
+.sec-title {
+    padding-bottom: 30px;
+    position: relative;
+    h2 {
+        font-size: 4.12rem;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -0.05em;
+        position: relative;
+        margin-bottom: 20px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            width: 120px;
+            height: 1px;
+            background: var(--m-color);
+            margin: auto;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--font-stl-one);
+        strong {
+            font-weight: 700;
+        }
+    }
+    &.wt {
+        p,
+        h2 {
+            color: #fff;
+            &:after {
+                background: var(--w-b-color);
+            }
+        }
+    }
+}
+
+.sub-title {
+    h2 {
+        font-size: 3.75rem;
+        font-weight: 800;
+    }
+    h4 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* all title */
+
+
+/*services-single-box*/
+
+.srvs-single-box {
+    margin: 40px 0px;
+    .icon-box {
+        svg {
+            width: 64px;
+            height: 64px;
+            fill: var(--s-color);
+        }
+    }
+    .ctn-box {
+        p {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    &.stl-one {
+        text-align: center;
+        .icon-box {
+            margin-bottom: 15px;
+        }
+    }
+    &.stl-two {
+        .icon-box {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+/*services-single-box*/
