@@ -1,5 +1,5 @@
 <template>
-<section class="client-logo section">
+<section class="client-logo section ">
 	<div class="container wd-container">
 		<carousel class="brand-slide" @changed="changed" @updated="updated"  :autoplay="true" :nav="false" :dots="false" :smartSpeed="2500" :autoplayTimeout="3000" :responsive="{0:{items:1},480:{items:2},768:{items:2},992:{items:3}, 1200:{items:6, margin:30,}}">
             <div v-for="client in clientLists" :key="client.id" class="client d-flex align-items-center justify-content-center">
