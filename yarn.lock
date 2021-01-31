@@ -8083,6 +8083,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
+vue-aos@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vue-aos/-/vue-aos-1.1.0.tgz#670a048424f322ea8e54ead53681aa13509ea389"
+  integrity sha512-4zeLOQCexqJd0PRNbrA7x0lnsbLqMDDEDtBM/j9L8Ab35JDPyQVHYrS/p6a5KgTDQZziXNHmHJvLwrgL6YPEig==
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
