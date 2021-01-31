@@ -4,7 +4,7 @@
 		<nav class="navbar navbar-expand-lg" id="main_navbar">
 			<div class="container-fluid">
 				<router-link to="/" class="navbar-brand">
-					<img src="../../public/img/logo/logo.svg" alt="logo">
+					<img svg-inline src="../../public/img/logo/logo.svg" alt="logo">
 				</router-link>
 				<div class="btn-dark-light">
 					<button @click="toggleColor()">
