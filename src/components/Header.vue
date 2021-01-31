@@ -38,11 +38,8 @@
 						<span class="icon"></span>
 					</a>
 				</div>
-				<div class="head-center">
+				<div class="head-center" :class="{show:show}">
 					<div class="menu-container">
-						<a href="javascript:void(0)" @click="toggleMenu()" class="toggle toggleClose d-flex align-items-center" :class="{active:show}">
-							<span class="icon"></span>
-						</a>
 						<ul class="menu">
 							<li>
 								<router-link to="/">Home</router-link>
