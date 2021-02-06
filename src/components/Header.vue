@@ -51,13 +51,19 @@
 								<router-link to="/blog">Blog</router-link>
 							</li>
 							<li>
-								<router-link to="/blog">Services</router-link>
-								<ul class="sub-menu">
+								<router-link to="/services">Services</router-link>
+								<div class="menu-arrow" @click="showMenu('services')" :class="{ open: activeTab === 'services' }">
+									<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
+								</div>
+								<ul class="sub-menu" :class="{ showMega: activeTab === 'services' }">
 									<li><a href="/web-development">Web Development</a></li>
 									<li><a href="/digital-marketing">Digital Marketing</a></li>
 									<li>
 										<a href="/digital-marketing">E commerce</a>
-										<ul class="sub-menu">
+										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
+											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
+										</div>
+										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'commerce' }">
 											<li><a href="/magento">Magento</a></li>
 											<li><a href="/wordpress">Wordpress</a></li>
 											<li><a href="/custom-php">Custom php</a></li>
@@ -85,7 +91,9 @@
 
 			return {
 				show: false,
-				scrollPosition: null
+				scrollPosition: null,
+				activeTab: '',
+				activeSubTab:''
 			}
 		},
 		mounted() {
@@ -107,6 +115,24 @@
 			},
 			toggleMenu() {
 				this.show = !this.show
+			},
+			showMenu(value) {
+				console.log('called', value)
+				if (value == this.activeTab) {
+					this.activeTab = ''
+				}else {
+					this.activeTab = value
+				}
+				
+			},
+			showSubMenu(value) {
+				console.log('called', value)
+				if (value == this.activeSubTab) {
+					this.activeSubTab = ''
+				}else {
+					this.activeSubTab = value
+				}
+				
 			}
 		}
 	}

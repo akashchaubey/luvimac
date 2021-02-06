@@ -68,7 +68,7 @@ export default {
 
     methods:{
         changed(){
-            console.log(changed)
+            // console.log('changed')
                 
         },
         updated(){

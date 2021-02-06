@@ -368,6 +368,9 @@ ul.menu .sub-menu > li > a {
 }
 
 @media (min-width: 1025px) {
+  .menu-arrow {
+    display: none;
+  }
   .toggle {
     display: none !important;
   }
@@ -479,14 +482,50 @@ ul.menu .sub-menu > li > a {
 }
 
 @media (max-width: 1024px) {
+  .menu-arrow {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin-left: auto;
+  }
+  .menu-arrow svg {
+    fill: #fff;
+    width: 20px;
+  }
+  .menu-arrow.open {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   ul.menu > li > a {
     color: #fff;
+  }
+  ul.menu ul.sub-menu {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 0;
   }
   ul.menu ul.sub-menu > li {
     padding-left: 10px;
   }
   ul.menu ul.sub-menu > li a {
     color: #fff;
+  }
+  ul.menu ul.sub-menu.showMega {
+    height: auto;
+  }
+  ul.menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  ul.menu ul.sub-menu {
+    width: 100%;
   }
   .header .head-right {
     margin-left: auto;
