@@ -236,13 +236,13 @@ ul.menu {
         & > li > a{ color: #fff; }
         ul.sub-menu{
             transition: all 0.3s ease-in-out;
-            height: 0;
+            display: none;
             & > li { 
                 padding-left: 10px;
                 a{ color: #fff; }
             }
             &.showMega{
-                height: auto;
+                display: block;
             }
         }
         

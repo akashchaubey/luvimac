@@ -71,16 +71,16 @@
         </div>
       </div>
     </section>
-    <Test :services="whyChooseUsServices" :pageClass="'demoClass'" ></Test>
+    <Services :services="whyChooseUsServices" :pageClass="'demoClass'" ></Services>
     </div>
 </template>
 <script>
 import Pagetitle from '../components/Pagetitle';
-import Test from '../components/Test';
+import Services from '../components/Services';
 export default {
   components:{
     Pagetitle,
-    Test
+    Services
   },
   data(){
         return{

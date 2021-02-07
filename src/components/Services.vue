@@ -24,7 +24,7 @@
     </section>
 </template>
 <script>
-    export default { 
-        props: ['services', 'pageClass']
+    export default {
+      props: ['services', 'pageClass']
      }
 </script>

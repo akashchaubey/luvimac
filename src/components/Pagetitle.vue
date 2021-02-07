@@ -41,6 +41,12 @@ export default {
             this.bgImg = "../../img/page-bg/services-bg.jpg" 
 
         }
+        else if(this.$route.path == '/e-commerce'){
+            this.mainTtitle = 'E Commerce';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/services-bg.jpg" 
+
+        }
         else if(this.$route.path == '/web-development'){
             this.mainTtitle = 'Web Development';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';

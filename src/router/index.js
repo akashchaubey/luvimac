@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import Blog from '../views/Blog.vue'
 import Services from '../views/Services.vue'
 import WebDevelopment from '../views/Web-development.vue'
+import ECommerce from '../views/E-Commerce.vue'
 import DigitalMarketing from '../views/Digital-marketing.vue'
 import Magento from '../views/Magento.vue'
 import Wordpress from '../views/Wordpress.vue'
@@ -39,6 +40,12 @@ Vue.use(VueRouter)
     name: 'Services',
     component: Services,
     meta: {title: 'Services'}
+  },
+  {
+    path: '/e-commerce',
+    name: 'E Commerce',
+    component: ECommerce,
+    meta: {title: 'E Commerce'}
   },
   {
     path: '/web-development',

@@ -503,7 +503,7 @@ ul.menu .sub-menu > li > a {
   ul.menu ul.sub-menu {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    height: 0;
+    display: none;
   }
   ul.menu ul.sub-menu > li {
     padding-left: 10px;
@@ -512,7 +512,7 @@ ul.menu .sub-menu > li > a {
     color: #fff;
   }
   ul.menu ul.sub-menu.showMega {
-    height: auto;
+    display: block;
   }
   ul.menu li {
     display: -webkit-box;

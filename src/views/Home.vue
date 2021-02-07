@@ -4,8 +4,8 @@
         <section class="lm-services section">
       <div class="container wd-container">
         <div class="sec-title text-center">
-        <h2>About Brooklyn.</h2>
-        <p>We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.</p>
+        <h2>About Luvimac</h2>
+        <p>We are Luvimac- A Digital agency for technology and creativity; building an online brand experience that converts.<br> We’ll collaborate with you to build a plan that works for your business.</p>
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-12" v-for="service of HomeServices" :key="service.id">
@@ -33,7 +33,7 @@
       <div class="container wd-container">
         <div class="sec-title text-center">
         <h2>Our Services.</h2>
-        <p>We realize that your competition is always just a click away and <strong>creating a professional</strong>,<br> informative and easy-to-use website, on your budget, is our main goal.</p>
+        <p>Do you want to create your own website, blogs, custom webshop and mobile apps for restaurants, fashion stores, real estates and consulting services? Luvimac builds unique websites & native mobile apps and ensures that your website stands out.</p>
       </div>
       <div class="row">
         <div class="col-12">
@@ -79,44 +79,44 @@ import ClientSlide from '../components/ClientSlide'
             HomeServices:[
               {
                 "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "title": "Branding & Design",
+                "description": "We help you with every possible design and branding needs, from a new logo to a complete company branding. Your corporate identities are in safe hands with our designers.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-branding-design.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "title": "Web Design & Development",
+                "description": "We help you to sell your products via online. We ensure you that I developed a number of e-commerce and custom websites based on our customer requirements.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-web-design-development.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 3,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "title": "APP Design & Development",
+                "description": "Mobile App Development for all small and big size growing companies. Expert in user-friendly apps design development.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-app-design.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "title": "Online Marketing",
+                "description": "Here is all in one place for your online marketing. We work remotely to promote and advertise your products or services online in the world.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-online-marketing.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 5,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "title": "Maintenance & Support",
+                "description": "We provide support and maintenance services for our clients.  Also, we can manage all those projects which we have not developed. We can help you maintain your website by performing checks and updates on your website.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-maintenance-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 6,
                 "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "description": "Our Strategy and Consulting Team acts as your team member for your business, We make sure that you are equipped to tackle your digital challenges. We have several years of experience creating affordable websites for customers.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-planning-strategy.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ],
@@ -125,22 +125,22 @@ import ClientSlide from '../components/ClientSlide'
               {
                 "id": 1,
                 "title": "Web Development",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "description": "Looking for web development? We are here to help you, specialized in creating stunning websites for start-ups, large and small size of businesses. We develop; as you want.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-web-design-development.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "E-Commerce",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "description": "We offer countless opportunities to stimulate sales, increase brand awareness and discover new opportunities. We specialize in developing E-commerce webshops that meet your requirements because a good online web store attract more customers and deliver good results.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-e-commerce.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 3,
                 "title": "Digital Marketing",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "description": "We are experienced agency partners for digital marketing that believes in the power of data-driven marketing and brand communication. Luvimac specializes in creating optimal content for your products and services, we know how to use that content in the perfect way.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-digital-marketing.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
             ]

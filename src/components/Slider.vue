@@ -8,7 +8,7 @@
                 <h1>{{slider.title}}</h1>
                 <p class="mr-auto ml-auto">{{ slider.description }}</p>
                 <div class="flex-box d-flex align-items-center justify-content-center">
-                    <a :href="slider.linkOne" class="btn stl-three"><span>About Us</span></a>
+                    <a :href="slider.linkOne" class="btn stl-three"><span>Go to</span></a>
                     <span class="or">or</span>
                     <a :href="slider.linkTwo" class="btn stl-three"><span>Contact Us</span></a>
                 </div>
@@ -38,9 +38,9 @@ export default {
                 {
                     "id": 1,
                     "title": "web development",
-                    "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
+                    "description": "We're a digitally inspired web development team and committed to creating cutting-edge web experiences.",
                     "bgImg": "../../img/slider/banner-1.jpg",
-                    "linkOne": "/about",
+                    "linkOne": "/web-development",
                     "linkTwo": "/contact-us",
                     },
                 {
@@ -48,15 +48,15 @@ export default {
                 "title": "E Commerce Development ",
                 "description": "We create websites, identities & ecommerce stores to enhance your business online",
                 "bgImg": "../../img/slider/banner-2.jpg",
-                "linkOne": "/about",
+                "linkOne": "/e-commerce",
                 "linkTwo": "/contact-us",
                 },
                 {
                 "id": 3,
                 "title": "Digital Marketing",
-                "description": "Transform and grow your product or service based business with digital marketing ",
+                "description": "Transform and grow your product or service based business with digital marketing",
                 "bgImg": "../../img/slider/banner-3.jpg",
-                "linkOne": "/about",
+                "linkOne": "/digital-marketing",
                 "linkTwo": "/contact-us",
                 },
             ]
