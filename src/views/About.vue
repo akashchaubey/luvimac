@@ -12,7 +12,10 @@
               <div class="sec-title">
                 <h2>Our Mission.</h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+              <div class="sub-title">
+                <h3>Full-service IT support</h3>
+              </div>
+              <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
               <a href="#" class="btn stl-one">Learn More</a>
             </div>
           </div>
@@ -22,11 +25,10 @@
     <section class="lm-services bg section">
       <div class="container wd-container">
         <div class="sec-title text-center">
-          <h2>About Brooklyn.</h2>
-          <p>We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.</p>
+          <h2>What We Do.</h2>
+          <p>We’re best placed to help build your online business: taking the time to learn about your company,<br> industry and commercial challenges</p>
         </div>
       <div class="row">
-        
         <div class="col-lg-4 col-md-6 col-12" v-for="service of services" :key="service.services">
           <div class="srvs-single-box stl-one">
             <div class="icon-box" v-html="service.icon">
@@ -48,8 +50,8 @@
         <div class="box-container">
              <div class="sec-title wt text-center">
               <h2>Get Started</h2>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-              <a href="#" class="btn stl-one">Let’s Get Started</a>
+              <p>Lets Increase your business & knowledge. We deliver a high quality version of custom software and webshop that meets the basic needs. This is the place where you can get your own development teams in the short term.</p>
+              <a href="/contact-us" class="btn stl-one">Let’s Get Started</a>
             </div>
         </div>
       </div>
@@ -67,44 +69,44 @@ export default {
             services:[
               {
                 "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "title": "Web Design & Development",
+                "description": "Online businesses are developing rapidly. We develop creative custom websites that fulfill your needs and increase ROI Customers. The basis for sustainable online success.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-web-design-development.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "id": 2,
+                "title": "Digital Marketing",
+                "description": "We are one of the most leading strategic marketing & digital solutions provider companies that boosts online sales conversion and website traffic.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-digital-marketing.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "id": 3,
+                "title": "ECommerce Website",
+                "description": "We deliver design and development of dynamic e-commerce websites user friendly. Magento, woocommerce platform that’s fully proven.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-e-commerce.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "id": 4,
+                "title": "Mobile app development",
+                "description": "We can help you develop native apps, hybrid apps and progressive web apps with using mobile push notifications or augmented reality.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-app-design.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "id": 5,
+                "title": "Custom Software (PHP)",
+                "description": "Develop your custom software system with us. Your webshop and CRM system must be seamlessly integrated into your existing systems. We have experienced software developers.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-software.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "id": 6,
+                "title": "Maintenance & Support",
+                "description": "We help you in maintenance, support and improve your existing software or new website especially on how practical the developed software is.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-maintenance-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]

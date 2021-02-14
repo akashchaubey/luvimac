@@ -1,29 +1,7 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-    <section class="lm-services section">
-      <div class="container wd-container">
-        <div class="sec-title text-center">
-        <h2>We Are A Well-Known Magento Development Service</h2>
-        <p>We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-12" v-for="service of services" :key="service.id">
-         <div class="srvs-single-box stl-one">
-            <div class="icon-box" v-html="service.icon">
-            </div>
-            <div class="ctn-box">
-              <h3>{{ service.title }}</h3>
-              <p>{{ service.description }}</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <a href="#" class="btn stl-one">Start a Project</a>
-        </div>
-      </div>
-      </div>
-    </section>
+    <Services :commonServices="services" :servicesSectionClass="'web'"></Services>
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
       <div class="container-fluid">
         <div class="row">
@@ -71,7 +49,7 @@
         </div>
       </div>
     </section>
-    <Services :services="whyChooseUsServices" :pageClass="'demoClass'" ></Services>
+    
     </div>
 </template>
 <script>
@@ -80,11 +58,14 @@ import Services from '../components/Services';
 export default {
   components:{
     Pagetitle,
-    Services
+    Services,
   },
   data(){
         return{
-            services:[
+            services:{
+              sectionTitle:"We Are A Well-Known Magento Development Service",
+              sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
+              data:[
               {
                 "id": 1,
                 "title": "Planning & Strategy",
@@ -93,41 +74,42 @@ export default {
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
+                "id": 2,
                 "title": "Planning & Strategy",
                 "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
+                "id": 3,
                 "title": "Planning & Strategy",
                 "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
+                "id": 4,
                 "title": "Planning & Strategy",
                 "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
+                "id": 5,
                 "title": "Planning & Strategy",
                 "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
-                "id": 1,
+                "id": 6,
                 "title": "Planning & Strategy",
                 "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
-            ],
+            ]
+            },
             whyChooseUsServices:[
               {
                 "id": 1,

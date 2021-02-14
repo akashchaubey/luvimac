@@ -1,30 +1,30 @@
 <template>
-<section class="section why-choose-us" :class="pageClass">
-      <div class="container-fluid">
+    <section class="lm-services section" :class="pageClass">
+        <div class="container wd-container">
+            <div class="sec-title text-center">
+            <h2>{{ commonServices.sectionTitle }}</h2>
+            <p v-html="commonServices.sectionDec">{{ commonServices.sectionDec }}</p>
+        </div>
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="ctn-box p18">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12" v-for="whyChooseUs of services" :key="whyChooseUs.whyChooseUs">
-                    <div class="srvs-single-box stl-two">
-                      <div class="icon-box" v-html="whyChooseUs.icon">
-                      </div>
-                      <div class="ctn-box">
-                        <h3>{{ whyChooseUs.title }}</h3>
-                        <p>{{ whyChooseUs.description }}</p>
-                        <a :href="whyChooseUs.linkOne">Learn More</a>
-                      </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-12" v-for="service of commonServices.data" :key="service.service">
+            <div class="srvs-single-box stl-one">
+                <div class="icon-box" v-html="service.icon">
                 </div>
+                <div class="ctn-box">
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
                 </div>
             </div>
-          </div>
+            </div>
+            <div class="col-12 text-center">
+            <a href="/contact-us" class="btn stl-one">Start a Project</a>
+            </div>
         </div>
-      </div>
-    </section>
+        </div>
+        </section>
 </template>
 <script>
     export default {
-      props: ['services', 'pageClass']
+      props: ['commonServices', 'pageClass']
      }
 </script>
