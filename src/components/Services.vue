@@ -7,12 +7,15 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12" v-for="service of commonServices.data" :key="service.service">
-            <div class="srvs-single-box stl-one">
+            <div class="srvs-single-box stl-one" :class="{ showMore: loadMore === service.title }">
                 <div class="icon-box" v-html="service.icon">
                 </div>
                 <div class="ctn-box">
                 <h3>{{ service.title }}</h3>
-                <p>{{ service.description }}</p>
+                <p class="sortContent" >{{ service.description }}</p>
+                    <a href="javascript:void(0)" @click="readMore(service.title)" class="readmore">
+                        <span></span>
+                    </a>
                 </div>
             </div>
             </div>
@@ -25,6 +28,25 @@
 </template>
 <script>
     export default {
-      props: ['commonServices', 'pageClass']
-     }
+        props: ['commonServices', 'pageClass'],
+        data(){
+            return {
+                loadMore:''
+            }
+
+        },
+        methods: {
+            readMore(value){
+                console.log("called", value)
+                if (this.loadMore == value) {
+                    this.loadMore = ''
+                }else{
+                    this.loadMore = value
+                }
+                
+            }
+        },
+    
+    }
+
 </script>

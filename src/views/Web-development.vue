@@ -8,57 +8,31 @@
           <div class="col-lg-6 col-md-6 col-12">
             <div class="ctn-box p18">
               <div class="sub-title">
-                <h4>HOW IT WORKS</h4>
-                <h2>MAGENTO 2.0</h2>
+                <!-- <h4>How do We Works</h4> -->
+                <h2>How do We Works</h2>
               </div>
-                <p><strong>We are capable of catering</strong> the diverse Drupal development services such as social networking, corporate, real estate, CMS, blogs and e-commerce websites and solutions.</p>
-                <p><strong>We are capable of catering</strong> the diverse Drupal development services such as social networking, corporate, real estate, CMS, blogs and e-commerce websites and solutions.</p>
-                <p><strong>We are capable of catering</strong> the diverse Drupal development services such as social networking, corporate, real estate, CMS, blogs and e-commerce websites and solutions.</p>
+                <p>We are capable of working with all programming languages like PHP, JavaScript, Python, ASP.NET etc. Our expert team have ability to create stunning web application. They are expert in utilize Angular.Js, Vue.Js, React.Js, Node.Js, ElectronJs and bootstrap framework.</p>
+                <p>There is solid backend development support behind every successful software & web application. So it is most important to discuss and know about programming languages which make your website application and ecommerce store run smoothly and lightly to upload data information fastly.</p>
+                <p>We always offer our customers a tailor-made solution to guarantee the best result.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section why-choose-us">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <img src="../../public/img/why-choose-us.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="ctn-box p18">
-              <div class="sub-title">
-                <h4>WHAT IS AEGIS</h4>
-                <h2>Why Choose Us?</h2>
-              </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12" v-for="whyChooseUs of whyChooseUsServices" :key="whyChooseUs.whyChooseUs">
-                    <div class="srvs-single-box stl-two">
-                      <div class="icon-box" v-html="whyChooseUs.icon">
-                      </div>
-                      <div class="ctn-box">
-                        <h3>{{ whyChooseUs.title }}</h3>
-                        <p>{{ whyChooseUs.description }}</p>
-                        <a :href="whyChooseUs.linkOne">Learn More</a>
-                      </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
+
     
     </div>
 </template>
 <script>
 import Pagetitle from '../components/Pagetitle';
 import Services from '../components/Services';
+import Whychooseus from '../components/Whychooseus';
 export default {
   components:{
     Pagetitle,
     Services,
+    Whychooseus
   },
   data(){
         return{
@@ -68,64 +42,68 @@ export default {
               data:[
               {
                 "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
+                "title": "Websites",
+                "description": "Company benefits from a high-quality website. We apply the latest methods and techniques to make your website complete. We ensure that your website is optimally focused on speed, design, user-friendliness and mobile.",
+                "icon": '<img svg-inline src="../../public/img/icons/lm-website.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 2,
+                "title": "Webshops",
+                "description": "We build the user experience of your webshop to convert website visitors into customers as effectively as possible. We develop webshops that are aimed at creating new sales opportunities. By effectively offering your products or services online, we jointly build commercial success.",
+                "icon": '<img svg-inline src="../../public/img/icons/lm-webshop.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 3,
+                "title": "Custom applications",
+                "description": "Our custom application is tailor made for your business and eliminates the need to change your business procedures to fit a pre-developed software. From our premises you can full access to the in-house development team so any issues that arise can be resolved quickly and efficiently.",
+                "icon": '<img svg-inline src="../../public/img/icons/lm-custom-applications.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 4,
+                "title": "Framework Technologies",
+                "description": "We authorize our clients with adaptive web applications built using PHP, Python, MongoDB, React, Node.js and latest technology to simplify complex business workflows. We use popular frameworks like Vue.Js, Angular.js, JQuery, Laravel etc.",
+                "icon": '<img svg-inline src="../../public/img/icons/lm-framework-technologies.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 5,
+                "title": "Laravel",
+                "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the Laravel framework and developing new libraries.",
+                "icon": '<img svg-inline src="../../public/img/icons/lm-laravel.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 6,
+                "title": "Design",
+                "description": "Our designer makes a stunning UX/UI design which creates interest to stuck off website visitors. Together with you we create the desired image and online identity. We then implement this in all online services so that it becomes a powerful brand.",
+                "icon": '<img svg-inline src="../../public/img/icons/lm-design.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                }
+            ]
+            },
+            whyChooseUsServices:{
+              sectionTitle:"Why Choose Us",
+              leftImg:'../../public/img/why-choose-us.png',
+              data:[
+              {
+                "id": 1,
+                "title": "Testing and Quality Assurance",
+                "description": "Our QA guys will prepare detailed test cases to cover all the functionality of the website application. We’ll complete and provide reporting on the functional test execution and any defects detected. Our team can provide automated testing which enhances the services quality and efficiency.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 3,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 4,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 5,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 6,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
+                "title": "Time And On Budget",
+                "description": "A clear working methods and personal contact. We will meet you and discuss your requirements. What do you need? What is the essence of your asignment? We make a concrete step by step plan and clear quotation. We determine the scope of the web development project, create a budget and timeline. Just to make sure, we do weekly status checks on progress and deadlines to keep everyone – you included – on track.",
                 "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]
             },
-            whyChooseUsServices:[
-              {
-                "id": 1,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 2,
-                "title": "Planning & Strategy",
-                "description": "We’re digitally inspired web development team and committed to creating cutting-edge web experiences.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                }
-            ],
             howItWork:{"bgImg":"../../img/m-how-it-work-bg.png"},            
         }
     }

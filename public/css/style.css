@@ -747,6 +747,36 @@ footer .fo-bottom ul.f-link li a {
 .srvs-single-box .ctn-box p {
   font-size: 14px;
   line-height: 28px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.srvs-single-box .ctn-box .readmore {
+  display: inline-block;
+}
+
+.srvs-single-box .ctn-box .readmore span {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  display: inline-block;
+  background: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.srvs-single-box .ctn-box .readmore span:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #000;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .srvs-single-box.stl-one {
@@ -759,6 +789,18 @@ footer .fo-bottom ul.f-link li a {
 
 .srvs-single-box.stl-two .icon-box {
   margin-bottom: 15px;
+}
+
+.srvs-single-box.showMore .ctn-box .readmore span:after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.srvs-single-box:not(.showMore) p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*services-single-box*/

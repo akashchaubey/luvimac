@@ -331,6 +331,29 @@ ul.social {
         p {
             font-size: 14px;
             line-height: 28px;
+            transition: all 0.3s ease-in-out;
+        }
+        .readmore{
+            display: inline-block;
+            span{
+                position: relative;
+                width: 18px;
+                height: 2px;
+                display: inline-block;
+                background:#000;
+                transition: all 0.3s ease-in-out;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    background: #000;
+                    transform: rotate(90deg);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
         }
     }
     &.stl-one {
@@ -342,6 +365,22 @@ ul.social {
     &.stl-two {
         .icon-box {
             margin-bottom: 15px;
+        }
+    }
+    &.showMore{
+        .ctn-box {
+            .readmore{
+                span:after{ transform: rotate(0deg); }
+            }
+        }
+    }
+    &:not(.showMore){
+        p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        
         }
     }
 }
