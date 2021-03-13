@@ -1,4 +1,5 @@
 :root {
+  --main-clr:#000;
   --m-color: #000;
   --s-color: #2948ff;
   --w-color: #fff;
@@ -16,13 +17,15 @@
 }
 
 [data-light-mode="dark"] {
+  --main-clr:#abaebc;
   --bgw-bgb-color: #141618;
-  --font-stl-one: #c2c5c7;
-  --font-stl-two: #c2c5c7;
-  --font-stl-three: #c2c5c7;
-  --blue-to-white: #c2c5c7;
+  --font-stl-one: #abaebc;
+  --font-stl-two: #abaebc;
+  --font-stl-three: #abaebc;
+  --blue-to-white: #abaebc;
   --brd-color: rgba(60, 60, 60, 1);
   --abt-bg-color: #141618;
+  --p-color: #abaebc;
 }
 
 body::-moz-scrollbar {
@@ -197,6 +200,18 @@ p {
 }
 
 .btn.stl-three:hover {
+  background: var(--s-color);
+  color: var(--w-color);
+  border-color: var(--s-color);
+}
+
+.btn.stl-four {
+  border: 0.01rem solid var(--main-clr);
+  background: var(--main-clr);
+  color: var(--w-color);
+}
+
+.btn.stl-four:hover {
   background: var(--s-color);
   color: var(--w-color);
   border-color: var(--s-color);
@@ -758,7 +773,7 @@ footer .fo-bottom ul.f-link li a {
   width: 18px;
   height: 2px;
   display: inline-block;
-  background: #000;
+  background: var(--font-stl-one);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -770,7 +785,7 @@ footer .fo-bottom ul.f-link li a {
   width: 100%;
   left: 0;
   right: 0;
-  background: #000;
+  background: var(--font-stl-one);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: all 0.3s ease-in-out;

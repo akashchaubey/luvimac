@@ -20,7 +20,7 @@
             </div>
             </div>
             <div class="col-12 text-center">
-            <a href="/contact-us" class="btn stl-one">Start a Project</a>
+            <a href="/contact-us" class="btn stl-four">Start a Project</a>
             </div>
         </div>
         </div>
