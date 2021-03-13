@@ -61,7 +61,7 @@ export default {
         } 
         else if(this.$route.path == '/magento'){
             this.mainTtitle = 'Magento';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.subTitle = 'We are happy to help you develop and optimize your Magento webshop.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg" 
 
         }
@@ -128,9 +128,9 @@ export default {
             padding: 0px 15px;
             h1{
                 position: relative;
-                font-size:7.8rem;
-                font-weight: 800;
-                letter-spacing: -0.5rem;
+                font-size:6rem;
+                font-weight: 700;
+                letter-spacing: -0.2rem;
                 color:var(--w-color);
                 text-transform: uppercase;
                 margin-bottom: 15px;
@@ -142,14 +142,14 @@ export default {
                     right: 0;
                     bottom: -10px;
                     height: 2px;
-                    background: var(--s-color);
+                    background: var(--font-stl-two);
                     margin: 0 auto;
                 }
                 }
                 p{
                     font-size: 1.12rem;
-                    font-weight: 500;
-                    color: var(--w-color);
+                    font-weight: 400;
+                    color:var(--w-color);
                     text-align: center;
                 }
         }

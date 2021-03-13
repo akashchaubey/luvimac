@@ -3,12 +3,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
-                    <img src="../../public/img/why-choose-us.png" class="img-fluid" alt="">
+                    <div class="img-box" v-html="commonWhyChoose.leftImg">
+                        {{commonWhyChoose.leftImg}}
+                    </div>
+                    
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="ctn-box p18">
                         <div class="sub-title">
                             <h2>{{ commonWhyChoose.sectionTitle }}</h2>
+                            <p>{{ commonWhyChoose.shortPara }}</p>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12" v-for="service of commonWhyChoose.data"

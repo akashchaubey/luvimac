@@ -20,11 +20,10 @@
       </div>
     </section>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
-
-    
     </div>
 </template>
 <script>
+
 import Pagetitle from '../components/Pagetitle';
 import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
@@ -37,69 +36,69 @@ export default {
   data(){
         return{
             services:{
-              sectionTitle:"We Are A Well-Known Magento Development Service",
+              sectionTitle:"Magento eCommerce development company",
               sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
               data:[
               {
                 "id": 1,
                 "title": "Websites",
                 "description": "Company benefits from a high-quality website. We apply the latest methods and techniques to make your website complete. We ensure that your website is optimally focused on speed, design, user-friendliness and mobile.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-website.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-website.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "Webshops",
                 "description": "We build the user experience of your webshop to convert website visitors into customers as effectively as possible. We develop webshops that are aimed at creating new sales opportunities. By effectively offering your products or services online, we jointly build commercial success.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-webshop.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-webshop.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 3,
                 "title": "Custom applications",
                 "description": "Our custom application is tailor made for your business and eliminates the need to change your business procedures to fit a pre-developed software. From our premises you can full access to the in-house development team so any issues that arise can be resolved quickly and efficiently.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-custom-applications.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
                 "title": "Framework Technologies",
                 "description": "We authorize our clients with adaptive web applications built using PHP, Python, MongoDB, React, Node.js and latest technology to simplify complex business workflows. We use popular frameworks like Vue.Js, Angular.js, JQuery, Laravel etc.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-framework-technologies.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-framework-technologies.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 5,
                 "title": "Laravel",
                 "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the Laravel framework and developing new libraries.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-laravel.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-laravel.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 6,
                 "title": "Design",
                 "description": "Our designer makes a stunning UX/UI design which creates interest to stuck off website visitors. Together with you we create the desired image and online identity. We then implement this in all online services so that it becomes a powerful brand.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-design.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-design.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg:'../../public/img/why-choose-us.png',
+              leftImg: '<img svg-inline src="../../img/why-choose-us.png" class="img-fluid" />',
               data:[
               {
                 "id": 1,
                 "title": "Testing and Quality Assurance",
                 "description": "Our QA guys will prepare detailed test cases to cover all the functionality of the website application. We’ll complete and provide reporting on the functional test execution and any defects detected. Our team can provide automated testing which enhances the services quality and efficiency.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-testing-quality-assurance.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "Time And On Budget",
                 "description": "A clear working methods and personal contact. We will meet you and discuss your requirements. What do you need? What is the essence of your asignment? We make a concrete step by step plan and clear quotation. We determine the scope of the web development project, create a budget and timeline. Just to make sure, we do weekly status checks on progress and deadlines to keep everyone – you included – on track.",
-                "icon": '<img svg-inline src="../../public/img/icons/lm-sample-icon.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/time-and-on-budget.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]
