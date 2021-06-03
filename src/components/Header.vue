@@ -70,7 +70,7 @@
 										<router-link to="/digital-marketing">Digital Marketing</router-link>
 									</li>
 									<li>
-										<router-link href="/e-commerce">E commerce</router-link>
+										<router-link to="/e-commerce">E commerce</router-link>
 										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
