@@ -4,8 +4,10 @@
         <section class="lm-services section">
       <div class="container wd-container">
         <div class="sec-title text-center">
-        <h2>About Luvimac</h2>
-        <p>We are Luvimac- A Digital agency for technology and creativity; building an online brand experience that converts.<br> We’ll collaborate with you to build a plan that works for your business.</p>
+        <h2 data-aos="fade-up" data-aos-delay="50">About Luvimac</h2>
+        <div class="sub-text" data-aos="fade-up" data-aos-delay="200">
+          <p>We are Luvimac- A Digital agency for technology and creativity; building an online brand experience that converts.<br> We’ll collaborate with you to build a plan that works for your business.</p>
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-12" v-for="service of HomeServices" :key="service.id">

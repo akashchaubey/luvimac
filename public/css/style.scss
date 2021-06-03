@@ -14,6 +14,7 @@
     --blue-to-white: #2948ff;
     --brd-color: rgba(229, 229, 229, 1);
     --abt-bg-color: #fafafa;
+    --bg-color:#141618;
 }
 
 [data-light-mode="dark"] {
@@ -25,6 +26,7 @@
     --blue-to-white: #abaebc;
     --brd-color: rgba(60, 60, 60, 1);
     --abt-bg-color: #141618;
+    --w-b-color:#fff;
     --p-color: #abaebc;
 }
 
@@ -399,3 +401,22 @@ ul.social {
 
 
 /*services-single-box*/
+
+/*bullet*/
+ul.bullet{
+    li{
+        position: relative;
+        padding-left: 15px;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 100px;
+            background: var(--main-clr);
+        }
+    }
+}
+/*bullet*/

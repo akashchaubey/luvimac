@@ -1,12 +1,13 @@
 <template>
 	<header class="header" :class="{fixed: scrollPosition > 100}">
-		<div class="container-fluid">
-			<div class="d-flex flex-wrap align-items-center">
+		<div class="side-menu-overlay" @click="toggleMenu()" :class="{sideOverlay:show}"></div>
+		<div class="container">
+			<div class="header-wrap d-flex flex-wrap align-items-center">
 				<div class="head-left">
 					<div class="logo">
-						<a href="#">
+						<router-link to="/">
 							<img svg-inline src="../../public/img/logo/logo.svg" alt="logo">
-						</a>
+						</router-link>
 					</div>
 				</div>
 				<div class="head-right d-flex flex-wrap align-items-center">
@@ -33,33 +34,43 @@
 							<img svg-inline src="../../public/img/icons/dark-light.svg" alt="dark light">
 						</a>
 					</div>
-					
-					<a href="javascript:void(0)" @click="toggleMenu()" class="toggle toggleOpen d-flex align-items-center" :class="{active:show}">
+
+					<a href="javascript:void(0)" @click="toggleMenu()"
+						class="toggle toggleOpen d-flex align-items-center">
 						<span class="icon"></span>
 					</a>
 				</div>
 				<div class="head-center" :class="{show:show}">
 					<div class="menu-container">
+						<a href="javascript:void(0)" @click="toggleMenu()"
+							class="toggle toggleClose d-flex align-items-center">
+							<span class="icon"></span>
+						</a>
 						<ul class="menu">
-							<li>
+							<li @click="toggleMenu()">
 								<router-link to="/">Home</router-link>
 							</li>
-							<li>
+							<li @click="toggleMenu()">
 								<router-link to="/about">About</router-link>
 							</li>
-							<li>
+							<li @click="toggleMenu()">
 								<router-link to="/blog">Blog</router-link>
 							</li>
 							<li>
-								<router-link to="/services">Services</router-link>
-								<div class="menu-arrow" @click="showMenu('services')" :class="{ open: activeTab === 'services' }">
+								<router-link to="/services"><span @click="toggleMenu()">Services</span></router-link>
+								<div class="menu-arrow" @click="showMenu('services')"
+									:class="{ open: activeTab === 'services' }">
 									<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 								</div>
 								<ul class="sub-menu" :class="{ showMega: activeTab === 'services' }">
-									<li><a href="/web-development">Web Development</a></li>
-									<li><a href="/digital-marketing">Digital Marketing</a></li>
+									<li @click="toggleMenu()">
+										<router-link to="/web-development">Web Development</router-link>
+									</li>
+									<li @click="toggleMenu()">
+										<router-link to="/digital-marketing">Digital Marketing</router-link>
+									</li>
 									<li>
-										<a href="/e-commerce">E commerce</a>
+										<router-link href="/e-commerce">E commerce</router-link>
 										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
@@ -71,7 +82,7 @@
 									</li>
 								</ul>
 							</li>
-							<li>
+							<li @click="toggleMenu()">
 								<router-link to="/our-work">Our Work</router-link>
 							</li>
 							<li>
@@ -82,6 +93,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</header>
 </template>
 <script>
@@ -93,7 +105,7 @@
 				show: false,
 				scrollPosition: null,
 				activeTab: '',
-				activeSubTab:''
+				activeSubTab: ''
 			}
 		},
 		mounted() {
@@ -115,24 +127,25 @@
 			},
 			toggleMenu() {
 				this.show = !this.show
+
 			},
 			showMenu(value) {
 				console.log('called', value)
 				if (value == this.activeTab) {
 					this.activeTab = ''
-				}else {
+				} else {
 					this.activeTab = value
 				}
-				
+
 			},
 			showSubMenu(value) {
 				console.log('called', value)
 				if (value == this.activeSubTab) {
 					this.activeSubTab = ''
-				}else {
+				} else {
 					this.activeSubTab = value
 				}
-				
+
 			}
 		}
 	}
@@ -140,6 +153,6 @@
 
 
 <style lang="scss" scoped>
-	
-	
+
+
 </style>

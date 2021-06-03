@@ -64,7 +64,7 @@ export default {
                 "id": 4,
                 "title": "Magento Extension",
                 "description": "We fully integrate the extension into your Magento platform so that the plugin works smoothly. Our flawless extension customization services make your Magento based website the user-friendly portal that you want it to be. Your ideas and our designs would together make a fluent and robust combination for the extensions for your eCommerce store.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-framework-technologies.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-extension.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }            ]
             },
@@ -77,14 +77,14 @@ export default {
                 "id": 1,
                 "title": "On Time Delivery",
                 "description": "We develop and implement smart and high-quality e-commerce solutions that add value for our customers, and for their customers. Together we believe in on time delivery of projects.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-testing-quality-assurance.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-on-time-delivery.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "Quality Service",
                 "description": "By hiring our developer, you are assured of a website built with enhanced security measures. Your customer data is safe from hackers and your website ranks higher in search engine results.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-sample-icon.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-quality.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]

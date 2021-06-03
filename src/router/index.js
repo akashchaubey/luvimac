@@ -9,7 +9,7 @@ import ECommerce from '../views/E-Commerce.vue'
 import DigitalMarketing from '../views/Digital-marketing.vue'
 import Magento from '../views/Magento.vue'
 import Wordpress from '../views/Wordpress.vue'
-import Customphp from '../views/Contact-us.vue'
+import Customphp from '../views/Custom-php.vue'
 import Ourwork from '../views/Our-work.vue'
 import ContactUs from '../views/Contact-us.vue'
 
