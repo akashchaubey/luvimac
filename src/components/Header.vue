@@ -53,8 +53,11 @@
 							<li @click="toggleMenu()">
 								<router-link to="/about">About</router-link>
 							</li>
-							<li @click="toggleMenu()">
+							<!-- <li @click="toggleMenu()">
 								<router-link to="/blog">Blog</router-link>
+							</li> -->
+							<li @click="toggleMenu()">
+								<router-link to="/technology">Technology</router-link>
 							</li>
 							<li>
 								<router-link to="/services"><span @click="toggleMenu()">Services</span></router-link>

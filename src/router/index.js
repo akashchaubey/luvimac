@@ -12,6 +12,7 @@ import Wordpress from '../views/Wordpress.vue'
 import Customphp from '../views/Custom-php.vue'
 import Ourwork from '../views/Our-work.vue'
 import ContactUs from '../views/Contact-us.vue'
+import Technology from '../views/technology/Index.vue'
 
 
 Vue.use(VueRouter)
@@ -34,6 +35,12 @@ Vue.use(VueRouter)
     name: 'Blog',
     component: Blog,
     meta: {title: 'Blog'}
+  },
+  {
+    path: '/technology',
+    name: 'Technology',
+    component: Technology,
+    meta: {title: 'technology'}
   },
   {
     path: '/services',

@@ -43,6 +43,10 @@ export default {
             this.mainTtitle = 'Blog';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+        } else if(this.$route.path == '/technology'){
+            this.mainTtitle = 'Technology';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/blog-bg.jpg" 
 
         } else if(this.$route.path == '/services'){
             this.mainTtitle = 'Services';
