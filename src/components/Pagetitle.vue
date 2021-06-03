@@ -4,8 +4,10 @@
             <div class="bg" :style="{'background-image': 'url('+ bgImg + ')'}"></div>
         </div>
         <div class="info d-flex flex-column align-items-center justify-content-center">
-            <h1>{{ mainTtitle }}</h1>
-            <p> {{ subTitle }}</p>
+            <h1 data-aos="fade-up" data-aos-delay="50">{{ mainTtitle }}</h1>
+            <div class="sub-text" data-aos="fade-up" data-aos-delay="300">
+                <p> {{ subTitle }}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -55,7 +57,7 @@ export default {
         }
         else if(this.$route.path == '/digital-marketing'){
             this.mainTtitle = 'Digital Marketing';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.subTitle = 'Connect with your audience with the target market easily, seamlessly and successfully.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg" 
 
         } 
@@ -74,10 +76,8 @@ export default {
         else if(this.$route.path == '/custom-php'){
             this.mainTtitle = 'Custom php';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg" 
-
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
-        
          else if(this.$route.path == '/our-work'){
             this.mainTtitle = 'Our Work';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
@@ -87,8 +87,7 @@ export default {
          else if(this.$route.path == '/contact-us'){
             this.mainTtitle = 'contact us';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg" 
-
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         
     }
@@ -165,7 +164,12 @@ export default {
      @media(max-width: 991px){
         .page-info{
             .info{
-                h1{font-size: 3rem; letter-spacing: 0px;}
+                h1{
+                    font-size: 3rem; letter-spacing: 0px;
+                    &:after{
+                        width: 90px;
+                    }
+                }
             }
         }
     }

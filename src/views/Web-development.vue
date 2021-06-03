@@ -103,7 +103,7 @@ export default {
                 }
             ]
             },
-            howItWork:{"bgImg":"../../img/m-how-it-work-bg.png"},            
+            howItWork:{"bgImg":"../../img/web-development/how-do-we-works.png"},            
         }
     }
 }
@@ -114,6 +114,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
+     >.container-fluid{ max-width: 1590px;}
     p{font-size: 18px;}
   }
 

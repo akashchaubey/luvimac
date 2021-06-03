@@ -7,7 +7,7 @@
             <div class="info text-center">
                 <h1>{{slider.title}}</h1>
                 <p class="mr-auto ml-auto">{{ slider.description }}</p>
-                <div class="flex-box d-flex align-items-center justify-content-center">
+                <div class="cta-btn-wrap flex-box d-flex align-items-center justify-content-center">
                     <a :href="slider.linkOne" class="btn stl-three"><span>Go to</span></a>
                     <span class="or">or</span>
                     <a :href="slider.linkTwo" class="btn stl-three"><span>Contact Us</span></a>
@@ -68,6 +68,17 @@ export default {
 
 
 <style lang="scss" scoped>
+    .slide{
+        h1, p, .cta-btn-wrap{
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease-in-out;
+            transform: translateY(30px);
+        }
+        h1{ transition-delay: 0.3s; }
+        p{ transition-delay: 0.6s; }
+        .cta-btn-wrap{ transition-delay: 0.9s; }
+    }
     .main-banner{
     .slide{
         height: 100vh;
@@ -135,6 +146,14 @@ export default {
             }
         }
 
+    }
+}
+
+.active .slide{
+    h1, p, .cta-btn-wrap{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
     }
 }
 

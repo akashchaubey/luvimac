@@ -8,7 +8,7 @@
               <div class="col-md-4">
                 <div class="left-wrap">
                   <div class="sub-title">
-                    <h3>Send Messege</h3>
+                    <h3>Contact Us</h3>
                   </div>
                   <ul class="contact-info">
                     <li class="d-flex">
@@ -80,6 +80,9 @@
                         <textarea class="form-control" placeholder="messege" rows="3"></textarea>
                       </div>
                     </div>
+                    <div class="col-md-12">
+                      <button type="submit" class="btn stl-four">Send</button>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -118,7 +121,7 @@ export default {
       padding: 12px 12px;
       height: auto;
       min-height: auto;
-      background: var(--abt-bg-color);
+      background: none;
       &:focus{
         outline: none;
         box-shadow:none;
@@ -137,7 +140,7 @@ export default {
       border-radius:4px;
     }
     .left-wrap{
-      background: #5bba53;
+      background: var(--bg-color);
       padding: 40px;
       border-radius: 0px 6px 6px 0px;
       height: 100%;

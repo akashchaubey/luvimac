@@ -1,20 +1,22 @@
 .toggle{
-    width: 28px;
-    height: 24px;
+    width: 26px;
+    height: 20px;
     position: relative;
     span{
         display: block;
         width: 100%;
-        height: 1px;
+        height: 2px;
         background: var(--font-stl-two);
+        border-radius: 2px;
         &:after,
         &:before{
             content: "";
             position: absolute;
             left: 0;
             right: 0;
-            height: 1px;
+            height: 2px;
             background: var(--font-stl-two);
+            border-radius: 2px;
         }
         &:after{ top: 0px;}
         &:before{ bottom: 0px;}
@@ -24,6 +26,7 @@
     }
     
     &.toggleClose{
+        margin: 12px 12px 12px auto;
         span{
             background: none;
             &:after{
@@ -87,6 +90,15 @@ ul.menu {
             &:before{
                 background: var(--font-stl-three);
             }
+        }
+        &.toggleClose{
+            span{
+                background: none;
+                &:after,&:before{
+                background: var(--w-b-color);
+                }
+            }
+            
         }
     }
     .logo{
@@ -217,6 +229,8 @@ ul.menu {
         }
     }
 
+    .side-menu-overlay{display: none;}
+
 }
 
 @media(max-width:1024px) {
@@ -259,13 +273,15 @@ ul.menu {
         }
         .head-center{
             position: fixed;
-            left: 0;
+            right: 0;
             top: 0;
             bottom: 0;
             width: 250px;
-            background: rgba(0, 0, 0, 0.99%);
-            transform: translateX(-100%);
+            background: red;
+            background: var(--bgw-bgb-color);
+            transform: translateX(100%);
             transition: all 0.3s;
+            z-index: 2;
             &.show{
                 transform: translateX(0%);
             }
@@ -273,8 +289,23 @@ ul.menu {
                 height: 100vh;
                 overflow: auto;
             }
+            
         }
     }
+
+    
+    .side-menu-overlay{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        transition: 0.3s ease-in-out;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    .side-menu-overlay:not(.sideOverlay){ visibility: hidden;opacity: 0; }
 
 }
 
@@ -287,4 +318,9 @@ ul.menu {
     .toggle{
         &.toggleOpen{ margin-right: 0; }
     }
+    // .header{
+    //     .head-center{
+    //         width: 320px;
+    //     }
+    // }
 }
