@@ -4,16 +4,16 @@
  
     <section class="lm-services bg section">
       <div class="container wd-container">
-        <div class="sec-title text-center">
+        <div class="sec-title text-center" data-aos="fade-down" data-aos-delay="50">
           <h2>What We Do.</h2>
           <p>We’re best placed to help build your online business: taking the time to learn about your company,<br> industry and commercial challenges</p>
         </div>
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="/img/technology/tools.png" class="img-fluid">
+                <img src="/img/technology/tools.png" data-aos="zoom-in" data-aos-delay="70" class="img-fluid">
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
-              <div class="ctn-box">
+              <div class="ctn-box" data-aos="fade-right" data-aos-delay="80">
                 <div class="sec-title">
                   <h2>Tools and Technologies</h2>
                 </div>
@@ -32,36 +32,36 @@
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="ctn-box">
-                    <div class="sec-title">
+                    <div class="sec-title" data-aos="fade-down" data-aos-delay="50">
                       <h2>Frontend Development.</h2>
                     </div>
                     <!-- <div class="sub-title">
                       <h3>Full-service IT support</h3>
                     </div> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste expedita molestiae non consequatur dolorum?.</p>
+                    <p data-aos="fade-right" data-aos-delay="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste expedita molestiae non consequatur dolorum?.</p>
 
                     <div class="technology-tools d-flex flex-wrap">
-                        <div class="technology-item">
+                        <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
                             <img src="/img/technology/frontend/html.png" alt="html">
                             <div class="technology-name">Html</div>
                         </div>
-                        <div class="technology-item">
+                        <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
                             <img src="/img/technology/frontend/css3.png" alt="html">
                             <div class="technology-name">css</div>
                         </div>
-                        <div class="technology-item">
+                        <div class="technology-item" data-aos="fade-left" data-aos-delay="50">
                             <img src="/img/technology/frontend/jquery.png" alt="html">
                             <div class="technology-name">jquery</div>
                         </div>
-                        <div class="technology-item">
+                        <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
                             <img src="/img/technology/frontend/angular.png" alt="html">
                             <div class="technology-name">angular</div>
                         </div>
-                        <div class="technology-item">
+                        <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
                             <img src="/img/technology/frontend/react.png" alt="html">
                             <div class="technology-name">react</div>
                         </div>
-                        <div class="technology-item">
+                        <div class="technology-item" data-aos="fade-left" data-aos-delay="50">
                             <img src="/img/technology/frontend/vue.png" alt="html">
                             <div class="technology-name">vue</div>
                         </div>
@@ -71,35 +71,35 @@
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
               <div class="ctn-box">
-                <div class="sec-title">
+                <div class="sec-title" data-aos="fade-down" data-aos-delay="50">
                   <h2>Backend Development.</h2>
                 </div>
                 <!-- <div class="sub-title">
                   <h3>Full-service IT support</h3>
                 </div> -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste expedita molestiae non consequatur dolorum?.</p>
+                <p data-aos="fade-right" data-aos-delay="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste expedita molestiae non consequatur dolorum?.</p>
                 <div class="technology-tools d-flex flex-wrap">
-                    <div class="technology-item">
+                    <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
                         <img src="/img/technology/frontend/html.png" alt="html">
                         <div class="technology-name">Html</div>
                     </div>
-                    <div class="technology-item">
+                    <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
                         <img src="/img/technology/frontend/css3.png" alt="html">
                         <div class="technology-name">css</div>
                     </div>
-                    <div class="technology-item">
+                    <div class="technology-item" data-aos="fade-left" data-aos-delay="50">
                         <img src="/img/technology/frontend/jquery.png" alt="html">
                         <div class="technology-name">jquery</div>
                     </div>
-                    <div class="technology-item">
+                    <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
                         <img src="/img/technology/frontend/angular.png" alt="html">
                         <div class="technology-name">angular</div>
                     </div>
-                    <div class="technology-item">
+                    <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
                         <img src="/img/technology/frontend/react.png" alt="html">
                         <div class="technology-name">react</div>
                     </div>
-                    <div class="technology-item">
+                    <div class="technology-item" data-aos="fade-left" data-aos-delay="50">
                         <img src="/img/technology/frontend/vue.png" alt="html">
                         <div class="technology-name">vue</div>
                     </div>
@@ -114,15 +114,15 @@
     <section class="lm-services bg section">
       <div class="container wd-container">
         <div class="sec-title text-center">
-          <h2>What We Do.</h2>
-          <p>We’re best placed to help build your online business: taking the time to learn about your company,<br> industry and commercial challenges</p>
+          <h2 data-aos="fade-up" data-aos-delay="50">What We Do.</h2>
+          <p data-aos="fade-down" data-aos-delay="50">We’re best placed to help build your online business: taking the time to learn about your company,<br> industry and commercial challenges</p>
         </div>
         <div class="row">
             
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
-              <div class="ctn-box">
+              <div class="ctn-box" data-aos="fade-right" data-aos-delay="50">
                 <div class="sec-title pb-1">
-                  <h3>Best in class for flexibility & ease of use</h3>
+                  <h3 class="technology-title">Best in class for flexibility & ease of use</h3>
                 </div>
                 <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
                
@@ -130,7 +130,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="d-flex justify-content-center">
-                    <div class="technology-tools d-flex flex-column">
+                    <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
                         <div class="technology-item">
                             <img src="/img/technology/frontend/html.png" alt="html">
                             <div class="technology-name">Html</div>
@@ -140,7 +140,7 @@
                             <div class="technology-name">Html</div>
                         </div>
                     </div>
-                    <div class="technology-tools d-flex flex-column mt-4">
+                    <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
                         <div class="technology-item">
                             <img src="/img/technology/frontend/html.png" alt="html">
                             <div class="technology-name">Html</div>
@@ -150,7 +150,7 @@
                             <div class="technology-name">Html</div>
                         </div>
                     </div>
-                    <div class="technology-tools d-flex flex-column">
+                    <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
                         <div class="technology-item">
                             <img src="/img/technology/frontend/html.png" alt="html">
                             <div class="technology-name">Html</div>
@@ -169,7 +169,7 @@
 
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="d-flex justify-content-center mt-4">
-                    <div class="technology-tools d-flex flex-column mt-4">
+                    <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
                         <div class="technology-item">
                             <img src="/img/technology/frontend/html.png" alt="html">
                             <div class="technology-name">Html</div>
@@ -179,7 +179,7 @@
                             <div class="technology-name">Html</div>
                         </div>
                     </div>
-                    <div class="technology-tools d-flex flex-column">
+                    <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
                         <div class="technology-item">
                             <img src="/img/technology/frontend/html.png" alt="html">
                             <div class="technology-name">Html</div>
@@ -193,9 +193,9 @@
             </div>
             
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
-              <div class="ctn-box mt-4">
+              <div class="ctn-box mt-4" data-aos="fade-left" data-aos-delay="50">
                 <div class="sec-title pb-1">
-                  <h3>Best in class for flexibility & ease of use</h3>
+                  <h3 class="technology-title">Best in class for flexibility & ease of use</h3>
                 </div>
                 <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
                
@@ -211,7 +211,7 @@
   
 
 
-
+<!-- 
     <section class="get-started section">
       <div class="container d-flex align-items-center justify-content-center">
         <div class="box-container">
@@ -222,7 +222,7 @@
             </div>
         </div>
       </div>
-    </section>
+    </section> -->
     </div>
 </template>
 <script>
@@ -291,5 +291,8 @@ export default {
             font-weight: 600;
         }
     }
+  }
+  .technology-title {
+      font-size: 35px;
   }
 </style>
