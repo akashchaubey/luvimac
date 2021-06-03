@@ -59,14 +59,14 @@
 									<li><a href="/web-development">Web Development</a></li>
 									<li><a href="/digital-marketing">Digital Marketing</a></li>
 									<li>
-										<a href="/digital-marketing">E commerce</a>
+										<a href="/e-commerce">E commerce</a>
 										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'commerce' }">
 											<li><a href="/magento">Magento</a></li>
 											<li><a href="/wordpress">Wordpress</a></li>
-											<li><a href="/custom-php">Custom php</a></li>
+											<!-- <li><a href="/custom-php">Custom php</a></li> -->
 										</ul>
 									</li>
 								</ul>
@@ -75,7 +75,7 @@
 								<router-link to="/our-work">Our Work</router-link>
 							</li>
 							<li>
-								<router-link to="/contact-us">Conctact Us</router-link>
+								<router-link to="/contact-us">Contact Us</router-link>
 							</li>
 						</ul>
 					</div>

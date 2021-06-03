@@ -22,10 +22,17 @@ export default {
     },
 
     mounted () {
-        if(this.$route.path === ''){
-            this.mainTtitle = 'Home';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-        } else if(this.$route.path == '/about'){
+
+        // console.log('this.$route.path',this.$route.path)
+
+  
+
+
+
+
+
+
+        if(this.$route.path == '/about'){
             this.mainTtitle = 'About Us';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/about-bg.jpg" 
@@ -90,8 +97,46 @@ export default {
             this.bgImg = "../../img/page-bg/contact-bg.jpg" 
 
         }
+        else {
+            this.mainTtitle = 'Home';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+        }
         
-    }
+    },
+
+    // watch: {
+    // '$route' (to, from) {
+
+    //     console.log('this.$route.path', this.$route.path);
+    //     // console.log('to', to);
+    //     // console.log('from', from);
+
+    //     let CurrentPath = this.$route.path
+        
+    //     const sky = this.$route.path;
+
+    //     switch (sky) {
+    //         case "/about":
+    //             this.mainTtitle = 'About Us';
+    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+    //             this.bgImg = "../../img/page-bg/about-bg.jpg" 
+    //         break;
+    //         case "/blog":
+    //             this.mainTtitle = 'Blog';
+    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+    //             this.bgImg = "../../img/page-bg/blog-bg.jpg"
+    //         break;
+    //         case "/services":
+    //             this.mainTtitle = 'Services';
+    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+    //             this.bgImg = "../../img/page-bg/services-bg.jpg" 
+    //         break;
+    //         default:
+    //             this.mainTtitle = 'Home';
+    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+    //         }
+    //     }
+    // }
 }
 </script>
 
