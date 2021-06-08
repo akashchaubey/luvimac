@@ -1,6 +1,8 @@
 <template>
     <div class="inner">
     <Pagetitle/>
+    <Texttitle />
+    <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
     <Services :commonServices="services" :servicesSectionClass="'web'"></Services>
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
       <div class="container-fluid">
@@ -20,18 +22,20 @@
       </div>
     </section>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
-    <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+    
     </div>
 </template>
 <script>
 
 import Pagetitle from '../components/Pagetitle';
+import Texttitle from '../components/TextTitle';
 import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
 export default {
   components:{
     Pagetitle,
+    Texttitle,
     Services,
     Whychooseus,
     Doweworks
