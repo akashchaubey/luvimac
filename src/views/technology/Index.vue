@@ -1,5 +1,5 @@
 <template>
-    <div class="inner">
+    <div class="inner technology">
       <Pagetitle/>
  
     <section class="lm-services bg section">
@@ -274,6 +274,9 @@ export default {
       border-radius: 15px;
       }
   }
+  .technology {
+    overflow: hidden;
+  }
 .mobile-app-developement{
   .technology-tools {
     width: 50%;
@@ -288,9 +291,12 @@ export default {
       .technology-name {
           font-size: 20px;
           line-height: 28px;
-          color: #222;
+          color: var(--font-stl-one);;
           font-weight: 600;
           margin-bottom: 18px;
+      }
+      .text {
+        color:var(--font-stl-one);
       }
     }
   }
@@ -356,6 +362,7 @@ export default {
             font-size: 18px;
             font-weight: 600;
             margin-top: 10px;
+            color: var(--font-stl-one);;
         }
     }
   }

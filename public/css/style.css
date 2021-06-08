@@ -524,7 +524,7 @@ ul.menu .sub-menu > li > a {
     margin-left: auto;
   }
   .menu-arrow svg {
-    fill: #fff;
+    fill: var(--font-stl-one);
     width: 20px;
   }
   .menu-arrow.open {
@@ -532,7 +532,7 @@ ul.menu .sub-menu > li > a {
             transform: rotate(180deg);
   }
   ul.menu > li > a {
-    color: #fff;
+    color: var(--font-stl-one);
   }
   ul.menu ul.sub-menu {
     -webkit-transition: all 0.3s ease-in-out;
@@ -543,7 +543,7 @@ ul.menu .sub-menu > li > a {
     padding-left: 10px;
   }
   ul.menu ul.sub-menu > li a {
-    color: #fff;
+    color: var(--font-stl-one);
   }
   ul.menu ul.sub-menu.showMega {
     display: block;

@@ -240,20 +240,20 @@ ul.menu {
         cursor: pointer;
         padding: 8px 10px;
         margin-left: auto;
-        svg{fill: #fff; width: 20px;}
+        svg{fill: var(--font-stl-one);; width: 20px;}
         &.open{
             transform: rotate(180deg);
         }
     }
     
     ul.menu{
-        & > li > a{ color: #fff; }
+        & > li > a{ color: var(--font-stl-one); }
         ul.sub-menu{
             transition: all 0.3s ease-in-out;
             display: none;
             & > li { 
                 padding-left: 10px;
-                a{ color: #fff; }
+                a{ color: var(--font-stl-one); }
             }
             &.showMega{
                 display: block;

@@ -20,6 +20,7 @@
       </div>
     </section>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
+    <Doweworks></Doweworks>
     </div>
 </template>
 <script>
@@ -27,11 +28,13 @@
 import Pagetitle from '../components/Pagetitle';
 import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
+import Doweworks from '@/components/DoWeWorks';
 export default {
   components:{
     Pagetitle,
     Services,
-    Whychooseus
+    Whychooseus,
+    Doweworks
   },
   data(){
         return{
