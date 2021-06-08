@@ -11,18 +11,19 @@
             <div class="col-md-6">
                 <div class="first-item">
                     <div class="first-item-title mb-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, necessitatibus.
+                        {{ commonServices.sectionTitle }}
                     </div>
-                    <div class="first-item-dec mb-3">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque adipisci dolore, maiores ex harum labore! Accusamus dignissimos quae quo et nemo magnam nobis consectetur ab ea id architecto illum dolore, corporis quam facere atque possimus.
+                    <div class="first-item-dec mb-3" v-html="commonServices.sectionDec">
+                       {{ commonServices.sectionDec }}
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="second-item">
-                    <div class="second-item-content mb-3" v-for="n in 10">
-                        <div class="second-item-title mb-2 mb-md-3">Flexibility</div>
-                        <div class="second-item-dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque adipisci dolore, maiores ex harum labore! Accusamus dignissimos quae quo et nemo magnam nobis consectetur ab ea id architecto illum dolore, corporis quam facere atque possimus.</div>
+                    <div class="second-item-content mb-3"  v-for="service of commonServices.data" :key="service.id">
+                        <div class="icon-box" v-html="service.icon"></div>
+                        <div class="second-item-title mb-2 mb-md-3">{{ service.title }}</div>
+                        <div class="second-item-dec">{{ service.description }}</div>
                     </div>
                     
                 </div>
@@ -30,6 +31,11 @@
         </div>
     </section>
 </template>
+<script>
+export default {
+    props: ['commonServices', 'pageClass'],
+}
+</script>
 
 <style lang="scss">
 .subtitle-text-work {
@@ -40,13 +46,13 @@
 .works {
         font-size: 14vw;
         line-height: 14vw;
-        -webkit-text-stroke: 1.4px #000;
-        color: #fff;
+        -webkit-text-stroke: 1.4px var(--font-stl-one);
+        color: var(--strok-text);
         letter-spacing: -.9vw;
         font-weight: 800;
     }
 .we-works {
-    
+    color: var(--font-stl-one);
     .first-item {
         position: sticky;
         top: 70px;
@@ -54,7 +60,7 @@
         .first-item-title {
             font-size: 22px;
             line-height: 26px;
-            font-weight: 600;
+            font-weight: 800;
         }
         // .first-item-dec {
         //     font-size: 22px;
@@ -63,6 +69,15 @@
     }
     .second-item {
         .second-item-content {
+            .icon-box {
+                margin-bottom: 15px;
+                padding-top: 15px;
+                svg {
+                    width: 64px;
+                    height: 64px;
+                    fill: var(--font-stl-one);
+                }
+            }
             .second-item-title {
                 font-size: 32px;
                 line-height: 45px;
@@ -91,6 +106,11 @@
     .works {
         font-size: 11vw;
         line-height: 11vw;
+    } 
+    .we-works .first-item .first-item-title {
+        font-size: 25px;
+        line-height: 26px;
     }
+    
 }
 </style>

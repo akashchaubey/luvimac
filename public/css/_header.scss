@@ -32,10 +32,12 @@
             &:after{
                 top: auto;
                 transform: rotate(45deg);
+                background: var(--font-stl-one);
             }
             &:before{
                 bottom: auto;
                 transform: rotate(-45deg);
+                background: var(--font-stl-one);
             }
         }
     }

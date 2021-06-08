@@ -291,7 +291,7 @@ export default {
       .technology-name {
           font-size: 20px;
           line-height: 28px;
-          color: var(--font-stl-one);;
+          color: var(--font-stl-one);
           font-weight: 600;
           margin-bottom: 18px;
       }

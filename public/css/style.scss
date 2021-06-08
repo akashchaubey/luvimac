@@ -15,6 +15,7 @@
     --brd-color: rgba(229, 229, 229, 1);
     --abt-bg-color: #fafafa;
     --bg-color:#141618;
+    --strok-text:#fff;
 }
 
 [data-light-mode="dark"] {
@@ -28,6 +29,7 @@
     --abt-bg-color: #141618;
     --w-b-color:#fff;
     --p-color: #abaebc;
+    --strok-text:#141618;
 }
 
 body::-moz-scrollbar {
