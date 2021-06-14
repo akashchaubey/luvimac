@@ -5,14 +5,26 @@ import About from '../views/About.vue'
 import Blog from '../views/Blog.vue'
 import Services from '../views/Services.vue'
 import WebDevelopment from '../views/Web-development.vue'
+import AppDevelopment from '../views/App-development.vue'
 import ECommerce from '../views/E-Commerce.vue'
 import DigitalMarketing from '../views/Digital-marketing.vue'
 import Magento from '../views/Magento.vue'
 import Wordpress from '../views/Wordpress.vue'
 import Customphp from '../views/Custom-php.vue'
+import Node from '../views/Node.vue'
+import Laravel from '../views/Laravel.vue'
+import Python from '../views/Python.vue'
 import Ourwork from '../views/Our-work.vue'
 import ContactUs from '../views/Contact-us.vue'
 import Technology from '../views/technology/Index.vue'
+import Angular from '../views/Angular.vue'
+import Pwa from '../views/Pwa.vue'
+import React from '../views/React.vue'
+import VueJs from '../views/VueJs.vue'
+import Android from '../views/Android.vue'
+import Ionic from '../views/Ionic.vue'
+import Ios from '../views/Ios.vue'
+import Flutter from '../views/Flutter.vue'
 
 
 Vue.use(VueRouter)
@@ -43,6 +55,30 @@ Vue.use(VueRouter)
     meta: {title: 'technology'}
   },
   {
+    path: '/angular',
+    name: 'Angular',
+    component: Angular,
+    meta: {title: 'angular'}
+  },
+  {
+    path: '/pwa',
+    name: 'Pwa',
+    component: Pwa,
+    meta: {title: 'pwa'}
+  },
+  {
+    path: '/react',
+    name: 'React',
+    component: React,
+    meta: {title: 'react'}
+  },
+  {
+    path: '/vue',
+    name: 'VueJs',
+    component: VueJs,
+    meta: {title: 'vue'}
+  },
+  {
     path: '/services',
     name: 'Services',
     component: Services,
@@ -59,6 +95,12 @@ Vue.use(VueRouter)
     name: 'Web Development',
     component: WebDevelopment,
     meta: {title: 'Web Development'}
+  },
+  {
+    path: '/app-development',
+    name: 'App Development',
+    component: AppDevelopment,
+    meta: {title: 'App Development'}
   },
   {
     path: '/digital-marketing',
@@ -83,6 +125,48 @@ Vue.use(VueRouter)
     name: 'Custom php',
     component: Customphp,
     meta: {title: 'Custom php'}
+  },
+  {
+    path: '/node',
+    name: 'Node',
+    component: Node,
+    meta: {title: 'node'}
+  },
+  {
+    path: '/laravel',
+    name: 'Laravel',
+    component: Laravel,
+    meta: {title: 'laravel'}
+  },
+  {
+    path: '/python',
+    name: 'Python',
+    component: Python,
+    meta: {title: 'python'}
+  },
+  {
+    path: '/android',
+    name: 'Android',
+    component: Android,
+    meta: {title: 'Android'}
+  },
+  {
+    path: '/ionic',
+    name: 'Ionic',
+    component: Ionic,
+    meta: {title: 'Ionic'}
+  },
+  {
+    path: '/iOS',
+    name: 'iOS',
+    component: Ios,
+    meta: {title: 'iOS'}
+  },
+  {
+    path: '/flutter',
+    name: 'Flutter',
+    component: Flutter,
+    meta: {title: 'Flutter'}
   },
   {
     path: '/our-work',

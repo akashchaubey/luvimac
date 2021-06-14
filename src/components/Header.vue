@@ -70,6 +70,9 @@
 										<router-link to="/web-development">Web Development</router-link>
 									</li>
 									<li @click="toggleMenu()">
+										<router-link to="/app-development">App Development</router-link>
+									</li>
+									<li @click="toggleMenu()">
 										<router-link to="/digital-marketing">Digital Marketing</router-link>
 									</li>
 									<li>

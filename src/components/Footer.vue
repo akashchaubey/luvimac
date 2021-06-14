@@ -234,10 +234,11 @@
                         </div>
                         <ul class="foo nav">
                             <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
                             <li><a href="#">Magento</a></li>
                             <li><a href="#">Custom PHP</a></li>
 							<li><a href="#">Digital marketing</a></li>
-							<li><a href="#">Angular React Vue</a></li>
+							<!-- <li><a href="#">Angular React Vue</a></li> -->
                         </ul>
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pl-lg-5 pl-xl-5">
@@ -258,7 +259,7 @@
 						<div class="social-container">
 							<ul class="social footer">
 								<li v-for="social of socialLinks" :key="social.id">
-									<a :href="social.link" target="blank" v-html="social.icon">
+									<a href="#" v-html="social.icon">
 									</a>
 								</li>
 							</ul>

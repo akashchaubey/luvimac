@@ -49,22 +49,32 @@
                             <img src="/img/technology/frontend/css3.png" alt="html">
                             <div class="technology-name">css</div>
                         </div> -->
-                        <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="/img/technology/frontend/pwa.png" alt="html">
-                            <div class="technology-name">PWA</div>
-                        </div>
-                        <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="/img/technology/frontend/angular.png" alt="html">
-                            <div class="technology-name">Angular</div>
-                        </div>
-                        <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="/img/technology/frontend/reactjs.png" alt="html">
-                            <div class="technology-name">React</div>
-                        </div>
-                        <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="/img/technology/frontend/vue.png" alt="html">
-                            <div class="technology-name">Vue</div>
-                        </div>
+                        
+                          <router-link to="/pwa" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                           
+                                <img src="/img/technology/frontend/pwa.png" alt="html">
+                                <div class="technology-name">PWA</div>
+                              
+                          </router-link>
+                        
+                        
+                          <router-link to="/angular" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="/img/technology/frontend/angular.png" alt="html">
+                              <div class="technology-name">Angular</div>
+                          </router-link>
+                        
+                        
+                          <router-link to="/react" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="/img/technology/frontend/reactjs.png" alt="html">
+                              <div class="technology-name">React</div>
+                          </router-link>
+                        
+                        
+                          <router-link to="/vue" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="/img/technology/frontend/vue.png" alt="html">
+                              <div class="technology-name">Vue</div>
+                          </router-link>
+                        
                     </div>
                     
                 </div>
@@ -87,22 +97,22 @@
                         <img src="/img/technology/frontend/css3.png" alt="html">
                         <div class="technology-name">css</div>
                     </div> -->
-                    <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    <router-link to="/custom-php" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/php.png" alt="html">
                         <div class="technology-name">PHP</div>
-                    </div>
-                    <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    </router-link>
+                    <router-link to="/node" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/node.webp" alt="html">
                         <div class="technology-name">Node</div>
-                    </div>
-                    <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    </router-link>
+                    <router-link to="/laravel" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/laravel.png" alt="html">
                         <div class="technology-name">Laravel</div>
-                    </div>
-                    <div class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    </router-link>
+                    <router-link to="/python" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/python.png" alt="html">
                         <div class="technology-name">Python</div>
-                    </div>
+                    </router-link>
                 </div>
               </div>
             </div>
@@ -140,28 +150,28 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="image-section d-flex justify-content-center">
                     <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
-                        <div class="technology-item">
+                        <router-link to="/android" class="technology-item">
                             <img src="/img/technology/mobile/android.png" alt="html">
                             <div class="technology-name">Android</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
-                        </div>
-                        <div class="technology-item">
+                        </router-link>
+                        <router-link to="/iOS" class="technology-item">
                             <img src="/img/technology/mobile/apple.png" alt="html">
                             <div class="technology-name">iOS</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
-                        </div>
+                        </router-link>
                     </div>
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
-                        <div class="technology-item">
+                        <router-link to="/ionic" class="technology-item">
                             <img src="/img/technology/mobile/ionic.png" alt="html">
                             <div class="technology-name">Ionic</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
-                        </div>
-                        <div class="technology-item">
+                        </router-link>
+                        <router-link to="/flutter" class="technology-item">
                             <img src="/img/technology/mobile/flutter.png" alt="html">
                             <div class="technology-name">Flutter</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
-                        </div>
+                        </router-link>
                     </div>
                     
                 </div>
@@ -347,6 +357,7 @@ export default {
         margin: 5px;
         box-shadow: 0px 0px 2px;
         min-width: 150px;
+        color: var(--font-stl-one);
          &:hover {
             img {
               transform: scale(1.1);

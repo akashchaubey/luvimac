@@ -1,7 +1,9 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-    <Services :commonServices="services" :servicesSectionClass="'web'"></Services>
+    <Texttitle />
+    <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+    <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
       <div class="container-fluid">
         <div class="row">
@@ -25,19 +27,23 @@
 <script>
 
 import Pagetitle from '../components/Pagetitle';
-import Services from '../components/Services';
+// import Services from '../components/Services';
+import Texttitle from '../components/TextTitle';
+import Doweworks from '@/components/DoWeWorks';
 import Whychooseus from '../components/Whychooseus';
 export default {
   components:{
     Pagetitle,
-    Services,
+    Texttitle,
+    Doweworks,
+    // Services,
     Whychooseus
   },
   data(){
         return{
             services:{
               sectionTitle:"Magento eCommerce development company",
-              sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
+              sectionDec:"To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.",
               data:[
               {
                 "id": 1,

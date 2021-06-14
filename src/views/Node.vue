@@ -27,10 +27,10 @@
 </template>
 <script>
 
-import Pagetitle from '../components/Pagetitle';
-import Texttitle from '../components/TextTitle';
-// import Services from '../components/Services';
-import Whychooseus from '../components/Whychooseus';
+import Pagetitle from '@/components/Pagetitle';
+import Texttitle from '@/components/TextTitle';
+// import Services from '@/components/Services';
+import Whychooseus from '@/components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
 export default {
   components:{
@@ -44,7 +44,7 @@ export default {
         return{
             services:{
               sectionTitle:"Create A Professional Webshop",
-              sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
+              sectionDec:"To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.",
               data:[
               {
                 "id": 1,
@@ -92,7 +92,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/why-choose-us.png" class="img-fluid" />',
+              leftImg: '<img svg-inline src="../../public/img/why-choose-us.png" class="img-fluid" />',
               data:[
               {
                 "id": 1,
@@ -110,7 +110,7 @@ export default {
                 }
             ]
             },
-            howItWork:{"bgImg":"../../img/web-development/how-do-we-works.png"},            
+            howItWork:{"bgImg":"/img/web-development/how-do-we-works.png"},            
         }
     }
 }

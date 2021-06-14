@@ -43,8 +43,29 @@ export default {
             this.mainTtitle = 'Blog';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+
         } else if(this.$route.path == '/technology'){
             this.mainTtitle = 'Technology';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+
+        } else if(this.$route.path == '/angular'){
+            this.mainTtitle = 'Angular js';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+
+        } else if(this.$route.path == '/pwa'){
+            this.mainTtitle = 'Pwa';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+
+        } else if(this.$route.path == '/react'){
+            this.mainTtitle = 'React js';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+
+        } else if(this.$route.path == '/vue'){
+            this.mainTtitle = 'Vue js';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/blog-bg.jpg" 
 
@@ -62,6 +83,12 @@ export default {
         }
         else if(this.$route.path == '/web-development'){
             this.mainTtitle = 'Web Development';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/services-bg.jpg" 
+
+        }
+        else if(this.$route.path == '/app-development'){
+            this.mainTtitle = 'App Development';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/services-bg.jpg" 
 
@@ -86,6 +113,41 @@ export default {
         }
         else if(this.$route.path == '/custom-php'){
             this.mainTtitle = 'Custom php';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/node'){
+            this.mainTtitle = 'Node Js';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/laravel'){
+            this.mainTtitle = 'Laravel';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/android'){
+            this.mainTtitle = 'Android';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/ionic'){
+            this.mainTtitle = 'Ionic';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/iOS'){
+            this.mainTtitle = 'iOS';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/flutter'){
+            this.mainTtitle = 'Flutter';
+            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+        }
+        else if(this.$route.path == '/python'){
+            this.mainTtitle = 'Python';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }

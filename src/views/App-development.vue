@@ -43,7 +43,7 @@ export default {
   data(){
         return{
             services:{
-              sectionTitle:"Create A Professional Webshop",
+              sectionTitle:"Create A Professional Application",
               sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
               data:[
               {

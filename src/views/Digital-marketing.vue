@@ -1,7 +1,9 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-    <Services :commonServices="services" :servicesSectionClass="'web'"></Services>
+    <Texttitle />
+    <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+    <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
       <div class="container-fluid">
         <div class="row">
@@ -32,13 +34,16 @@
     </div>
 </template>
 <script>
-
+import Texttitle from '../components/TextTitle';
 import Pagetitle from '../components/Pagetitle';
+import Doweworks from '@/components/DoWeWorks';
 import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 export default {
   components:{
     Pagetitle,
+    Texttitle,
+    Doweworks,
     Services,
     Whychooseus
   },
