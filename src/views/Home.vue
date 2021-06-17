@@ -62,6 +62,7 @@
         <router-link to="/contact-us">Let’s Talk About Your Project</router-link>
       </div>
     </section>
+    <Industries />
     <ClientSlide />
   </div>
 </template>
@@ -70,11 +71,13 @@
 <script>
 import Slider from '../components/Slider'
 import ClientSlide from '../components/ClientSlide'
+import Industries from '../components/Industries'
   export default {
     name: 'Home',
     components: {
     Slider,
-    ClientSlide
+    ClientSlide,
+    Industries
   },
   data(){
         return{
