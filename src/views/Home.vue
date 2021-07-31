@@ -11,7 +11,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-12" v-for="service of HomeServices" :key="service.id">
-          <div class="srvs-single-box left">
+          <div class="srvs-single-box left" data-aos="fade-up" data-aos-delay="50">
             <div class="icon-box" v-html="service.icon">
             </div>
             <div class="ctn-box">
