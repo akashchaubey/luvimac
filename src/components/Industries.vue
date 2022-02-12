@@ -8,7 +8,7 @@
                     <div class="industries_name mr-md-5">
                         <div class="industries_title" @mouseover="showIndustries('food_drink')">Food & Drink</div>
                         <div class="industries_title" @mouseover="showIndustries('education')">Education</div>
-                        <div class="industries_title" @mouseover="showIndustries('banking_finance')">Banking & Finance</div>
+                        <div class="industries_title" @mouseover="showIndustries('real_state')">Real State</div>
                         <div class="industries_title" @mouseover="showIndustries('e_commerce')">E-commerce</div>
                         <div class="industries_title" @mouseover="showIndustries('health_fitness')">Health & Fitness</div>
                         <div class="industries_title" @mouseover="showIndustries('entertainment')">Entertainment</div>
@@ -34,8 +34,8 @@ export default {
                 {
                     id:1,
                     type:'food_drink',
-                    img1:'/img/industries/1.jpg',
-                    img2:'/img/industries/phone-1.png',
+                    img1:'/img/industries/food-drinks.png',
+                    img2:'/img/industries/mobile-view.png',
                 },
                 {
                     id:2,
@@ -45,7 +45,7 @@ export default {
                 },
                 {
                     id:3,
-                    type:'banking_finance',
+                    type:'real_state',
                     img1:'/img/industries/3.jpg',
                     img2:'/img/industries/phone-3.png',
                 },
