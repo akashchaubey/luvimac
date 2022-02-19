@@ -7,13 +7,13 @@
                 <div class="industries mt-md-5">
                     <div class="industries_name mr-md-5">
                         <div class="industries_title" @mouseover="showIndustries('food_drink')">Food & Drink</div>
-                        <div class="industries_title" @mouseover="showIndustries('education')">Education</div>
+                        <!-- <div class="industries_title" @mouseover="showIndustries('education')">Education</div> -->
                         <div class="industries_title" @mouseover="showIndustries('real_state')">Real State</div>
                         <div class="industries_title" @mouseover="showIndustries('e_commerce')">E-commerce</div>
-                        <div class="industries_title" @mouseover="showIndustries('health_fitness')">Health & Fitness</div>
+                        <div class="industries_title" @mouseover="showIndustries('health_fitness')">Sports & Fitness</div>
                         <div class="industries_title" @mouseover="showIndustries('entertainment')">Entertainment</div>
                         <div class="industries_title" @mouseover="showIndustries('travel_tourism')">Travel & Tourism</div>
-                        <div class="industries_title" @mouseover="showIndustries('sports')">Sports</div>
+                        <!-- <div class="industries_title" @mouseover="showIndustries('sports')">Sports</div> -->
                     </div>
                     <div class="industries_img d-none d-md-block">
                         <div class="image_slide" v-for="d in data" :key="d.id">
