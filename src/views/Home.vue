@@ -1,6 +1,7 @@
 <template>
+
   <div class="home">
-    <Slider />
+      <Slider />
         <section class="lm-services section">
       <div class="container wd-container">
         <div class="sec-title text-center">
@@ -56,7 +57,6 @@
         </div>
       </div>
     </section>
-    
     <section class="lm-hm-talk">
       <div class="container wd-container text-center">
         <router-link to="/contact-us">Let’s Talk About Your Project</router-link>

@@ -6,11 +6,11 @@
                 </div>
                 <div class="industries align-items-center d-flex mt-md-5">
                     <div class="industries_name mr-md-5">
-                        <div class="industries_title" @click="showIndustries('e_commerce')">E-commerce</div>
-                        <div class="industries_title" @click="showIndustries('food_drink')">Food & Drink</div>
-                        <div class="industries_title" @click="showIndustries('real_state')">Real State</div>
-                        <div class="industries_title" @click="showIndustries('health_fitness')">Sports & Fitness</div>
-                        <div class="industries_title" @click="showIndustries('travel_tourism')">Travel & Tourism</div>
+                        <div class="industries_title" @click="showIndustries('e_commerce')" :class="{active : type == 'e_commerce'}">E-commerce</div>
+                        <div class="industries_title" @click="showIndustries('food_drink')" :class="{active : type == 'food_drink'}">Food & Drink</div>
+                        <div class="industries_title" @click="showIndustries('real_state')" :class="{active : type == 'real_state'}">Real State</div>
+                        <div class="industries_title" @click="showIndustries('health_fitness')" :class="{active : type == 'health_fitness'}">Sports & Fitness</div>
+                        <div class="industries_title" @click="showIndustries('travel_tourism')" :class="{active : type == 'travel_tourism'}">Travel & Tourism</div>
                     </div>
                     <div class="industries_img d-none d-md-block">
                         <div class="image_slide" v-for="d in data" :key="d.id" :class="d.className">

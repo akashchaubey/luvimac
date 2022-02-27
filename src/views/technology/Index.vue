@@ -151,24 +151,24 @@
                 <div class="image-section d-flex justify-content-center">
                     <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
                         <router-link to="/android" class="technology-item">
-                            <img src="/img/technology/mobile/android.png" alt="html">
+                            <img src="/img/technology/mobile/android-icon.svg" alt="html">
                             <div class="technology-name">Android</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
                         </router-link>
                         <router-link to="/iOS" class="technology-item">
-                            <img src="/img/technology/mobile/apple.png" alt="html">
+                            <img src="/img/technology/mobile/apple-icon.svg" alt="html">
                             <div class="technology-name">iOS</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
                         </router-link>
                     </div>
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
                         <router-link to="/ionic" class="technology-item">
-                            <img src="/img/technology/mobile/ionic.png" alt="html">
+                            <img src="/img/technology/mobile/ionic-icon.svg" alt="html">
                             <div class="technology-name">Ionic</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
                         </router-link>
                         <router-link to="/flutter" class="technology-item">
-                            <img src="/img/technology/mobile/flutter.png" alt="html">
+                            <img src="/img/technology/mobile/flutter-icon.svg" alt="html">
                             <div class="technology-name">Flutter</div>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
                         </router-link>
@@ -197,17 +197,17 @@
                 <div class="d-flex justify-content-center mt-4">
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
                         <div class="technology-item">
-                            <img src="/img/technology/tools/google.png" alt="html">
+                            <img src="/img/technology/tools/google-icon.svg" alt="html">
                             <div class="technology-name">Google</div>
                         </div>
                         <div class="technology-item">
-                            <img src="/img/technology/tools/slack.png" alt="html">
+                            <img src="/img/technology/tools/slack-icon.svg" alt="html">
                             <div class="technology-name">Slack</div>
                         </div>
                     </div>
                     <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
                         <div class="technology-item">
-                            <img src="/img/technology/tools/trello.png" alt="html">
+                            <img src="/img/technology/tools/trello-icon.svg" alt="html">
                             <div class="technology-name">Trello</div>
                         </div>
                         <div class="technology-item">
