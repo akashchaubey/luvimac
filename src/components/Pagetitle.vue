@@ -47,7 +47,7 @@ export default {
         } else if(this.$route.path == '/technology'){
             this.mainTtitle = 'Technology';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-            this.bgImg = "../../img/page-bg/blog-bg.jpg" 
+            this.bgImg = "../../img/page-bg/technology-bg.jpg" 
 
         } else if(this.$route.path == '/angular'){
             this.mainTtitle = 'Angular js';

@@ -10,18 +10,14 @@
         </div>
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="/img/technology/tools.png" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
+                <img src="/img/technology/tools.svg" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
               <div class="ctn-box" data-aos="fade-right" data-aos-delay="80">
                 <div class="sec-title">
                   <h2>Tools and Technologies</h2>
                 </div>
-                <!-- <div class="sub-title">
-                  <h3>Full-service IT support</h3>
-                </div> -->
                 <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
-                <!-- <a href="#" class="btn stl-one">Learn More</a> -->
               </div>
             </div>
           </div>
@@ -136,12 +132,12 @@
                 </div>
                 <p data-aos="fade-up" data-aos-delay="50">At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
                 <div class="mobiles-animation">
-                  <img data-aos="fade-right" data-aos-delay="500" src="/img/technology/mobile/image-shap-1.png" alt="">
+                  <img data-aos="fade-right" data-aos-delay="500" src="/img/technology/mobile/mobile-app-bg.png" alt="">
                   <figure class="mobile-img two">
-                      <img data-aos="fade-down" data-aos-delay="750" src="/img/technology/mobile/phone-2.png" alt="mobile">
+                      <img data-aos="fade-down" data-aos-delay="750" src="/img/technology/mobile/mobile-app-1.png" alt="mobile">
                     </figure>
                       <figure class="mobile-img one" >
-                        <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/phone-1.png" alt="mobile">
+                        <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/mobile-app-2.png" alt="mobile">
                       </figure>
                       
                 </div>
@@ -317,31 +313,23 @@ export default {
     }
     figure.mobile-img {
         position: absolute;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
         &.one {
-          //  max-width: 200px;
-            // position: relative;
-            left: 50%;
+            left: 33%;
             top: 50%;
             transform: translate(-50%, -50%);
           img {
-           width: 85%;
+           width: 100%;
           }
         }
         &.two {
-          //  max-width: 300px;
-            left: 65%;
-            top: 52%;
-            // position: relative;
-            transform: translate(-50%, -50%);
+          width: 50%;
+          left: 73%;
+          top: 52%;
+          transform: translate(-50%, -50%);
           img {
-           width: 172%;
+           width: 100%;
           }
-        }
-        
+        }        
     }
   }
 }
