@@ -117,6 +117,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
   .how-it-work{
     background-repeat: no-repeat;
     background-position: center right;

@@ -9,7 +9,7 @@
         </div>
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="/img/web-development/web-development.png" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
+                <img src="/img/web-development/web-development.jpg" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
               <div class="ctn-box" data-aos="fade-right" data-aos-delay="80">

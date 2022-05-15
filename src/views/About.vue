@@ -5,7 +5,7 @@
       <div class="container-fluid wd-container">
         <div class="row flex-md-row-reverse">
           <div class="col-lg-6 col-md-6 col-12">
-              <img src="../../public/img/about/our-mision-1.jpg" class="img-fluid">
+              <img src="../../public/img/about/our-mision-2.jpg" class="img-fluid">
           </div>
           <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
             <div class="ctn-box">
