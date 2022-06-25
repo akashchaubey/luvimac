@@ -1,11 +1,12 @@
 <template>
     <div class="inner">
       <Pagetitle/>
-    <section class="our-mission section">
+    <section class="our-mission section" style="overflow:hidden;">
       <div class="container-fluid wd-container">
         <div class="row flex-md-row-reverse">
           <div class="col-lg-6 col-md-6 col-12">
               <img src="../../public/img/about/our-mision-2.jpg" class="img-fluid">
+              <div class="bgImg" :style="{transform: 'translate3d(0px, '+(-80+windowTop/5)+'px , 0px)'}"></div>
           </div>
           <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
             <div class="ctn-box">
@@ -109,14 +110,40 @@ export default {
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-maintenance-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
-            ]
+            ],
+            windowTop: 0
         }
+    },
+    mounted() {
+      window.addEventListener("scroll", this.onScroll)
+    },
+    beforeDestroy() {
+      window.removeEventListener("scroll", this.onScroll)
+    },
+    methods: {
+      onScroll(e) {
+        this.windowTop = window.top.scrollY /* or: e.target.documentElement.scrollTop */
+        console.log({ top: this.windowTop });
+      }
     }
-  
 };
 </script>
 
 <style lang="scss" scoped>
+.bgImg{
+    // max-width: 480px;
+    // max-height: 581px;
+    width: calc(100% - 15px);
+    height: calc(100% - 8px);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    background-image: linear-gradient(-45deg,#ff3b3b,#ffa219 85%);
+    opacity: .7;
+    z-index: -1;
+
+}
   .get-started{
     position: relative;
     background:url(../../public/img/about/get-started.jpg);
