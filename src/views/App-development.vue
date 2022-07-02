@@ -1,7 +1,7 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-    <Texttitle />
+    <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
     <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
@@ -22,7 +22,6 @@
       </div>
     </section>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
-    
     </div>
 </template>
 <script>
@@ -42,6 +41,13 @@ export default {
   },
   data(){
         return{
+            texttitle:{
+              sectionTitle:"What We Do.",
+              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
+              subTitle:'Tools And Technologies',
+              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              img:'../../img/app-development/app-development.jpg',
+            },
             services:{
               sectionTitle:"Create A Professional Application",
               sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",

@@ -1,7 +1,7 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-     <Texttitle />
+    <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
     <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
@@ -10,7 +10,6 @@
           <div class="col-lg-6 col-md-6 col-12">
             <div class="ctn-box p18">
               <div class="sub-title">
-                <!-- <h4>How do We Works</h4> -->
                 <h2>How Do We Works</h2>
               </div>
                 <p>We provide mockup to verify their website requirements, until our end user is satisfied. We make an appointment to discuss with our client why certain choices have been made and how / whether we can technically realize them.</p>
@@ -26,9 +25,7 @@
     </div>
 </template>
 <script>
-
 import Pagetitle from '../components/Pagetitle';
-// import Services from '../components/Services';
 import Texttitle from '../components/TextTitle';
 import Doweworks from '@/components/DoWeWorks';
 import Whychooseus from '../components/Whychooseus';
@@ -42,6 +39,13 @@ export default {
   },
   data(){
         return{
+            texttitle:{
+              sectionTitle:"What We Do.",
+              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
+              subTitle:'Tools And Technologies',
+              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              img:'../../img/app-development/app-development.jpg',
+            },
             services:{
               sectionTitle:"WordPress Development, Support, Maintenance",
               sectionDec:"Web design & development, strong in customization, proven concepts that meet your needs.",

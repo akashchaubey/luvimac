@@ -1,7 +1,7 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-    <Texttitle />
+    <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
     <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
     <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
@@ -41,6 +41,13 @@ export default {
   },
   data(){
         return{
+            texttitle:{
+              sectionTitle:"What We Do.",
+              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
+              subTitle:'Tools And Technologies',
+              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              img:'../../img/magento/web-development.jpg',
+            },
             services:{
               sectionTitle:"Magento eCommerce development company",
               sectionDec:"To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.",
