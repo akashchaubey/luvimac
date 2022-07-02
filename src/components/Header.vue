@@ -88,9 +88,9 @@
 									</li>
 								</ul>
 							</li>
-							<li @click="toggleMenu()">
+							<!-- <li @click="toggleMenu()">
 								<router-link to="/our-work">Our Work</router-link>
-							</li>
+							</li> -->
 							<li>
 								<router-link to="/contact-us">Contact Us</router-link>
 							</li>
