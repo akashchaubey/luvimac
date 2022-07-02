@@ -1,13 +1,13 @@
 <template>
     <section class="section we-works">
-        <div class="row m-0">
-            <div class="col-md-10 mx-auto main-title">
+        <div class="row container mx-auto">
+            <div class="col-md-12 p-0 mx-auto main-title">
                 <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000">How Do We</div>
                 <div class="works" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Works</div>
                 <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">for Web Development</div>
             </div>
         </div>
-        <div class="row col-md-10 mx-auto px-0 my-4 py-4">
+        <div class="row container px-0 mx-auto my-4 py-4">
             <div class="col-md-6">
                 <div class="first-item">
                     <div class="first-item-title mb-3" data-aos="fade-up" data-aos-duration="1000">
@@ -130,5 +130,11 @@ export default {
         line-height: 26px;
     }
     
+}
+@media screen and(max-width:576px) {
+    .we-works .second-item .second-item-content .second-item-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 </style>

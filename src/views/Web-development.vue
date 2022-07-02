@@ -28,13 +28,12 @@
     </section>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
     <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
-    <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
+    <!-- <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-12">
             <div class="ctn-box p18">
               <div class="sub-title">
-                <!-- <h4>How do We Works</h4> -->
                 <h2>How do We Works</h2>
               </div>
                 <p>We are capable of working with all programming languages like PHP, JavaScript, Python, ASP.NET etc. Our expert team have ability to create stunning web application. They are expert in utilize Angular.Js, Vue.Js, React.Js, Node.Js, ElectronJs and bootstrap framework.</p>
@@ -44,8 +43,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+     <ThatsWhy />
+    <OurApproach />
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
+   
     
     </div>
 </template>
@@ -53,6 +55,8 @@
 
 import Pagetitle from '../components/Pagetitle';
 import Texttitle from '../components/TextTitle';
+import OurApproach from '../components/OurApproach';
+import ThatsWhy from '../components/ThatsWhy';
 // import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
@@ -60,6 +64,8 @@ export default {
   components:{
     Pagetitle,
     Texttitle,
+    OurApproach,
+    ThatsWhy,
     // Services,
     Whychooseus,
     Doweworks
