@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="fo-top pb-xl-5 pb-lg-5 pb-md-4 pb-sm-3 pb-3">
-            <div class="container-fluid wd-container pl-xl-5 pr-xl-5">
+            <div class="container wd-container">
                 <div class="row">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pr-lg-5 pr-xl-5">
                    <div class="widget about">
@@ -269,7 +269,7 @@
 </div>
 </div>
         <div class="fo-bottom">
-			<div class="container-fluid wd-container pl-xl-5 pr-xl-5">
+			<div class="container wd-container">
 				<div class="row d-flex flex-md-row-reverse">
 					<div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
 						<ul class="f-link d-flex justify-content-center">
@@ -327,3 +327,134 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+	footer {
+	padding: 80px 0px 0px;
+	background-color: var(--footer-bg);
+	.foo-logo {
+		margin-bottom: 15px;
+
+		svg {
+			width: 175px;
+			fill: var(--font-stl-two);
+		}
+	}
+
+	.widget {
+		.widget-title {
+			font-size: 16px;
+			font-weight: 600;
+			color: var(--font-stl-two);
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		&.about {
+			p {
+				color: rgba(240, 240, 240, 0.7) !important;
+			}
+		}
+	}
+
+	ul.foo {
+		&.nav {
+			margin-bottom: 20px;
+		}
+
+		li {
+			padding-left: 0px;
+			display: block;
+			width: 100%;
+			a {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.2;
+				color: rgba(240, 240, 240, 0.7) !important;
+				padding-left: 15px;
+				padding: 8px 0px 8px 15px;
+				position: relative;
+				&:before {
+					content: "\eaca";
+					position: absolute;
+					left: -3px;
+					top: 9px;
+					font-size: 12px;
+					font-family: IcoFont;
+					font-weight: 400;
+					color: rgba(240, 240, 240, 0.7) !important;
+					transition: all 0.3s;
+				}
+
+				&:hover {
+					background: none;
+					color: var(--w-color) !important;
+					&:before {
+						color: var(--w-color) !important;
+						left: 0px;
+					}
+				}
+			}
+		}
+	}
+
+	.news-letter {
+		.form-group {
+			position: relative;
+			input[type="email"] {
+				padding: 10px 103px 10px 16px;
+				height: auto;
+				background: var(--font-stl-two);
+				outline: none;
+				box-shadow: none;
+				&:focus{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+			.btn {
+				font-display: 14px;
+				line-height: 1.3;
+				font-weight: 700;
+				position: absolute;
+				right: 0;
+				height: 100%;
+				padding: 10px 18px;
+				outline: none;
+				box-shadow: none;
+				&:focus{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+
+	.fo-bottom {
+		padding: 20px 0px;
+		border-top: 1px solid;
+
+		p {
+			margin-bottom: 0px;
+			font-size: 14px;
+			color: rgba(240, 240, 240, 0.7) !important;
+
+			a {
+				font-size: 14px;
+				color: rgba(240, 240, 240, 0.7) !important;
+			}
+		}
+
+		ul.f-link {
+			li {
+				padding: 0px 10px;
+
+				a {
+					color: rgba(240, 240, 240, 0.7) !important;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+</style>

@@ -1,36 +1,7 @@
-:root {
-    --main-clr:#000;
-    --m-color: #000;
-    --s-color: #2948ff;
-    --w-color: #fff;
-    --p-color: #666666;
-    --b-color: #36383d;
-    --black-color: #000;
-    --w-b-color: #fff;
-    --bgw-bgb-color: #fff;
-    --font-stl-one: #000;
-    --font-stl-two: #fff;
-    --font-stl-three: #141618;
-    --blue-to-white: #2948ff;
-    --brd-color: rgba(229, 229, 229, 1);
-    --abt-bg-color: #fafafa;
-    --bg-color:#141618;
-    --strok-text:#fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-[data-light-mode="dark"] {
-    --main-clr:#abaebc;
-    --bgw-bgb-color: #141618;
-    --font-stl-one: #abaebc;
-    --font-stl-two: #abaebc;
-    --font-stl-three: #abaebc;
-    --blue-to-white: #abaebc;
-    --brd-color: rgba(60, 60, 60, 1);
-    --abt-bg-color: #141618;
-    --w-b-color:#fff;
-    --p-color: #abaebc;
-    --strok-text:#141618;
-}
+@import "variable";
 
 body::-moz-scrollbar {
     width: 0.5rem;
@@ -113,21 +84,15 @@ ul {
     padding: 0;
 }
 
-ul,
-ol,
-li {
+ul, ol, li {
     list-style: none;
     list-style-type: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--font-stl-one);
-    margin-top: 0;
+    font-family: var(--font-secondary);
+    // margin-top: 0;
     text-transform: capitalize;
 }
 
@@ -136,31 +101,36 @@ h6 {
     position: relative;
     z-index: 0;
 }
+.wd-container {
+    width: 100%;
+    max-width: 1560px;
+  }
 
-h2 {
+h2, .h2 {
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-h3 {
+
+h3, .h3 {
     font-size: 1.125rem;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-h4 {
+h4, .h4 {
     font-size: 1.25rem;
 }
 
-h5 {
+h5, .h5 {
     font-size: 1.25rem;
 }
 
-h6 {
+h6, .h6 {
     font-size: 1.125rem;
 }
 
-p {
+p{
     font-size: 1rem;
     line-height: 28px;
     color: var(--p-color);
@@ -262,14 +232,14 @@ ul.social {
 
 /* header */
 
-@import "_header.scss";
+// @import "_header.scss";
 
 /* header */
 
 
 /* footer */
 
-@import "_footer.scss";
+// @import "_footer.scss";
 
 /* footer */
 
@@ -279,10 +249,9 @@ ul.social {
 .sec-title {
     padding-bottom: 30px;
     position: relative;
-    h2 {
+    h2, .h2{
         font-size: 4.12rem;
         font-weight: 800;
-        font-family: 'Montserrat', sans-serif;
         letter-spacing: -0.05em;
         position: relative;
         margin-bottom: 20px;
@@ -294,7 +263,7 @@ ul.social {
             bottom: -10px;
             width: 120px;
             height: 1px;
-            background: var(--m-color);
+            background: var(--title-line-clr);
             margin: auto;
         }
     }
@@ -315,10 +284,17 @@ ul.social {
             }
         }
     }
+    &.line-left{
+        h2, .h2{
+            &:after {
+                margin: initial;
+            }
+        }   
+    }
 }
 
 .sub-title {
-    h2 {
+    h2, .h2 {
         font-size: 3.75rem;
         font-weight: 800;
     }
@@ -329,6 +305,9 @@ ul.social {
     }
 }
 
+.max-700{
+    max-width: 700px;
+}
 
 /* all title */
 
@@ -397,7 +376,6 @@ ul.social {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        
         }
     }
 }
@@ -419,6 +397,44 @@ ul.bullet{
             height: 6px;
             border-radius: 100px;
             background: var(--main-clr);
+        }
+    }
+}
+.check-list{
+    ul {
+        margin: 0 0 2rem;
+        padding: 0;
+        list-style: none;
+        line-height: 1.5;
+        li {
+            padding-left: 2.5rem;
+            position: relative;
+            margin: 0.8rem 0;
+            color: var(--font-stl-one);
+            &:first-child {
+                margin-top: 0;
+            }
+            &::before {
+                background-image: url('../../public/img/icons/check.svg');
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: 1.25rem 1.25rem;
+                content: "​";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 2.5rem;
+            }
+        }
+    }
+}
+body[data-light-mode="dark"] .check-list{
+    ul {
+        li {
+            &::before {
+                background-image: url('../../public/img/icons/check-dark.svg');
+            }
         }
     }
 }

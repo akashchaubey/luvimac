@@ -1,6 +1,6 @@
 <template>
-    <section class="section">
-        <div class="ourapproach container-fluid">
+    <section class="section ourapproach">
+        <div class="container wd-container">
                 <h2 data-aos="fade-up" data-aos-duration="1000">Our Approach</h2>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
@@ -48,15 +48,18 @@
             margin-top: 1.5rem;
             padding-bottom: 1.5rem;
             border-bottom: 2px solid;
+            color: var(--font-stl-one);
         }
         .approach-title {
             font-size: 1.7rem;
             font-weight: 600;
             padding: 1.5rem 0 1rem;
             line-height: 1.1;
+            color: var(--font-stl-one);
         }
         .approach-des {
             margin-bottom: 1.5rem;
+            color: var(--font-stl-one);
         }
     }
 }

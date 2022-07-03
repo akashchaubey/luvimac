@@ -1,34 +1,36 @@
 <template>
     <section class="section we-works">
-        <div class="row container mx-auto">
+        <div class="container wd-container">
+        <div class="row">
             <div class="col-md-12 p-0 mx-auto main-title">
                 <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000">How Do We</div>
                 <div class="works" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Works</div>
                 <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">for Web Development</div>
             </div>
         </div>
-        <div class="row container px-0 mx-auto my-4 py-4">
-            <div class="col-md-6">
-                <div class="first-item">
-                    <div class="first-item-title mb-3" data-aos="fade-up" data-aos-duration="1000">
-                        {{ commonServices.sectionTitle }}
-                    </div>
-                    <div class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec">
-                       {{ commonServices.sectionDec }}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="first-item">
+                        <div class="first-item-title mb-3" data-aos="fade-up" data-aos-duration="1000">
+                            {{ commonServices.sectionTitle }}
+                        </div>
+                        <div class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec">
+                        {{ commonServices.sectionDec }}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="second-item">
-                    <div class="second-item-content mb-3" data-aos="fade-up" data-aos-duration="1000" v-for="service of commonServices.data" :key="service.id">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box" v-html="service.icon"></div>
-                            <div class="second-item-title mb-md-3">{{ service.title }}</div>
+                <div class="col-md-6">
+                    <div class="second-item">
+                        <div class="second-item-content mb-3" data-aos="fade-up" data-aos-duration="1000" v-for="service of commonServices.data" :key="service.id">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box" v-html="service.icon"></div>
+                                <div class="second-item-title mb-md-3">{{ service.title }}</div>
+                            </div>
+                            
+                            <div class="second-item-dec">{{ service.description }}</div>
                         </div>
                         
-                        <div class="second-item-dec">{{ service.description }}</div>
                     </div>
-                    
                 </div>
             </div>
         </div>

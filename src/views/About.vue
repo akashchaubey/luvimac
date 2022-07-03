@@ -10,7 +10,7 @@
           </div>
           <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
             <div class="ctn-box">
-              <div class="sec-title">
+              <div class="sec-title line-left">
                 <h2>Our Mission.</h2>
               </div>
               <div class="sub-title">
