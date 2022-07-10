@@ -1,13 +1,11 @@
 <template>
     <section class="section we-works">
         <div class="container wd-container">
-        <div class="row">
-            <div class="col-md-12 p-0 mx-auto main-title">
+        <div class="main-title">
                 <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000">How Do We</div>
                 <div class="works" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Works</div>
                 <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">for Web Development</div>
             </div>
-        </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="first-item">

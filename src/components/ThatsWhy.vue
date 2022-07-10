@@ -4,9 +4,9 @@
 			<div class="row align-items-start justify-content-between">
                 <div class="col-lg-6 order-lg-2 align-self-center">
                     <div class="thatswhy-content pr-5">
-                        <h2 data-aos="fade-up" data-aos-duration="1000">That's why Luvimac.</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="1000">{{thatWhy.title}} </h2>
                         <div class="sub-text" data-aos="fade-up" data-aos-duration="1000">
-                            <p>Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.</p>
+                            <p>{{thatWhy.description}}</p>
                         </div>
                         <div class="check-list">
                             <ul>
@@ -21,13 +21,18 @@
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 order-lg-3">
                     <div class="thatswhyImg" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="../../public/img/passion-bg.jpg" style="width:100%;" alt="" class="sb-media ">
+                        <img :src="thatWhy.img" style="width:100%;" alt="" class="sb-media ">
                     </div>
                 </div>
 			</div>
 		</div>
 	</section>
-</template>
+</template> 
+<script>
+    export default {
+    props: ['thatWhy'],
+  }
+</script>
 <style lang="scss">
 .thatswhy-content {
     &:last-child {

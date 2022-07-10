@@ -3,24 +3,6 @@
     <Pagetitle/>
     <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
-    <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
-    <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="ctn-box p18">
-              <div class="sub-title">
-                <!-- <h4>How do We Works</h4> -->
-                <h2>How it works</h2>
-              </div>
-                <p>Increase your online income</p>
-                <p>Magento is the marketplace leader in the field of webshop ecommerce platform. Magento e-commerce is an open-source multishop platform.</p>
-                <p>Magento helps you grow your online income. It offers tools to attract more traffic, increase conversion, create and maintain customer loyalty. It is a scalable platform that can grow step by step.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
 </template>

@@ -3,33 +3,6 @@
     <Pagetitle/>
     <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
-    <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
-    <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="ctn-box p18">
-              <div class="sub-title">
-                <!-- <h4>How do We Works</h4> -->
-                <h2>Our wide range of digital marketing services</h2>
-              </div>
-                <p>With our digital marketing consultants and online strategists, we make your solution a little bit better every day. With our digital marketing services, you get the following advantages:</p>
-                <ul class="bullet">
-                  <li><p>You get the ability to focus on high-profit channels and use marketing ROI.</p></li>
-                  <li><p>Performance snf Data Driven approach</p></li>
-                  <li><p>Website audits</p></li>
-                  <li><p>Organizing structured data</p></li>
-                  <li><p>Analysis of all pages (including URL structure, findable by Google)</p></li>
-                  <li><p>Keywords research</p></li>
-                  <li><p>Increase the level of awareness of your business</p></li>
-                  <li><p>Turn visitors into customers</p></li>
-                  <li><p>To generate attention for products and services.</p></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
 </template>

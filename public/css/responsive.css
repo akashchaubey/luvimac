@@ -16,12 +16,18 @@
 }
 
 @media (min-width: 1440px) {
+  .wd-container {
+    max-width: 1200px;
+  }
   .section {
     padding: 6.25rem 0px 6.25rem;
   }
 }
 
 @media (min-width: 1600px) {
+  .wd-container {
+    max-width: 1560px;
+  }
   .section {
     padding: 7.5rem 0px 7.5rem;
   }
