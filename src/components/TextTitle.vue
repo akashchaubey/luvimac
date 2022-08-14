@@ -12,8 +12,8 @@
               <div class="img-box-wrap">
                 <img :src="textTitleServices.img" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
                 <div class="mobile-layer-stl" v-if="this.$route.path == '/app-development'">
-                <img src="img/app-development/app-mobile.png" :alt="`app ${index}`" v-for="(n, index) of 4" :key="index">
-              </div>
+                  <img src="img/app-development/app-mobile.png" :alt="`app ${index}`" v-for="(n, index) of 4" :key="index">
+                </div>
             </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
@@ -46,36 +46,17 @@
   }
 </script>
 
-
 <style lang="scss" scoped>
   .img-box-wrap{
     position: relative;
   }
   .mobile-layer-stl{
-    // position: absolute;
-    // bottom: 35px;
-    // right: 0;
-    // width: 320px;
-		// height: 100%;
-    // transform: rotate(0deg) skew(0) scale(1);
-    // transition: 0.5s;
-		// border-radius: 40px;
     img{
       position: absolute;
       max-width: 30%;
       transition: 0.5s;
       bottom: 0;
       right: 10%;
-      // $var : 4;
-      // $op: 1;
-      // @for $i from 2 through 4 {
-      //   &:nth-child(#{$i}) {
-      //     transform: translate(#{$var}px, -#{$var}px);
-      //     $var: $var + 30;
-      //     opacity: #{$op};
-      //     $op: $op - .2;
-      //   }
-      // }
     }
     &:hover{
         img{
@@ -98,6 +79,4 @@
         }
       }
   }
-
-
 </style>

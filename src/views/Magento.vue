@@ -3,26 +3,48 @@
     <Pagetitle/>
     <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+    <ThatsWhy :thatWhy="texttitleContent"></ThatsWhy>
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
 </template>
 <script>
 
 import Pagetitle from '../components/Pagetitle';
-// import Services from '../components/Services';
 import Texttitle from '../components/TextTitle';
 import Doweworks from '@/components/DoWeWorks';
+import ThatsWhy from '../components/ThatsWhy';
+import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
 export default {
   components:{
     Pagetitle,
     Texttitle,
     Doweworks,
-    // Services,
+    ThatsWhy,
+    OurApproach,
     Whychooseus
   },
   data(){
         return{
+          texttitleContent:{
+              title:"That's why Luvimac.",
+              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              img:'../../img/wordpress/wordpress-development-1.jpg',
+              data:[
+                {
+                  'id':1,
+                  'li': 'We work pragmatically and according to plan',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                }
+              ]
+            },
             texttitle:{
               sectionTitle:"What We Do.",
               sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',

@@ -14,7 +14,6 @@ import Pagetitle from '../components/Pagetitle';
 import Texttitle from '../components/TextTitle';
 import OurApproach from '../components/OurApproach';
 import ThatsWhy from '../components/ThatsWhy';
-// import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
 export default {
@@ -23,7 +22,6 @@ export default {
     Texttitle,
     OurApproach,
     ThatsWhy,
-    // Services,
     Whychooseus,
     Doweworks
   },

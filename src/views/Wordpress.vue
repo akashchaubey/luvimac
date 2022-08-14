@@ -3,24 +3,8 @@
     <Pagetitle/>
     <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
-    <!-- <Services :commonServices="services" :servicesSectionClass="'web'"></Services> -->
-    <section class="how-it-work section" :style="{'background-image': `url('${howItWork.bgImg} ')`}">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="ctn-box p18">
-              <div class="sub-title">
-                <h2>How Do We Works</h2>
-              </div>
-                <p>We provide mockup to verify their website requirements, until our end user is satisfied. We make an appointment to discuss with our client why certain choices have been made and how / whether we can technically realize them.</p>
-                <p>We believe in building a work culture of personal responsibility and trust, where people want to stay for a long time.</p>
-                <p><strong>Advantages of engagement model</strong></p>
-                <p>We always pay attention to the convenience for the customer to update the website himself later. Once the site is finished, we may support migration of the content and launch the website.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ThatsWhy :thatWhy="texttitleContent"></ThatsWhy>
+     <OurApproach />
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
 </template>
@@ -28,23 +12,45 @@
 import Pagetitle from '../components/Pagetitle';
 import Texttitle from '../components/TextTitle';
 import Doweworks from '@/components/DoWeWorks';
+import ThatsWhy from '../components/ThatsWhy';
+import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
 export default {
   components:{
     Pagetitle,
     Texttitle,
     Doweworks,
-    // Services,
+    ThatsWhy,
+    OurApproach,
     Whychooseus
   },
   data(){
         return{
+            texttitleContent:{
+              title:"That's why Luvimac.",
+              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              img:'../../img/wordpress/wordpress-development-1.jpg',
+              data:[
+                {
+                  'id':1,
+                  'li': 'We work pragmatically and according to plan',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                }
+              ]
+            },
             texttitle:{
               sectionTitle:"What We Do.",
               sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
               subTitle:'Tools And Technologies',
               subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
-              img:'../../img/app-development/app-development.jpg',
+               img:'../../img/wordpress/wordpress-development.jpg',
             },
             services:{
               sectionTitle:"WordPress Development, Support, Maintenance",
@@ -97,7 +103,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
               shortPara:"Have you built a site in WordPress yourself or wanto create from a sketch. If things go wrong we are always here to help you and give 100% unique solutions. You can be sure that everything in the website design & development can actually be technically realized in WordPress.",
-              leftImg: '<img svg-inline src="../../img/why-choose-us.png" class="img-fluid" />',
+              leftImg: '<img svg-inline src="../../img/wordpress/why-choose-us.png" class="img-fluid" />',
               data:[
               {
                 "id": 1,
