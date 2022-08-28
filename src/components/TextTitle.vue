@@ -14,6 +14,9 @@
                 <div class="mobile-layer-stl" v-if="this.$route.path == '/app-development'">
                   <img src="img/app-development/app-mobile.png" :alt="`app ${index}`" v-for="(n, index) of 4" :key="index">
                 </div>
+                <div class="magento-gif" v-if="this.$route.path == '/magento'">
+                  <img src="img/magento/magento.gif" :alt="app">
+                </div>
             </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
@@ -36,13 +39,15 @@
     data() {
       return {
         appDevelompentImg : '../../img/app-development/app-mobile.png',
+        
       }
     },
     mounted() {
       if(this.$route.path == '/app-development'){
               this.appDevelompentImg = ""
           }
-      }
+      } 
+      
   }
 </script>
 
@@ -78,5 +83,15 @@
           }
         }
       }
+  }
+  .magento-gif{
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    box-shadow: -10px -10px 10px #00000014;
+    max-width: 400px;
+    img{
+      width: 100%;
+    }
   }
 </style>

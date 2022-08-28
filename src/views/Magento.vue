@@ -30,6 +30,7 @@ export default {
               title:"That's why Luvimac.",
               description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
               img:'../../img/wordpress/wordpress-development-1.jpg',
+              addClass:'magento-stl',
               data:[
                 {
                   'id':1,
