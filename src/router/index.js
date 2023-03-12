@@ -157,7 +157,7 @@ Vue.use(VueRouter)
     meta: {title: 'Ionic'}
   },
   {
-    path: '/iOS',
+    path: '/ios',
     name: 'iOS',
     component: Ios,
     meta: {title: 'iOS'}

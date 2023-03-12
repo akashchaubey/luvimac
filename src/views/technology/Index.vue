@@ -120,7 +120,6 @@
       </div>
     </section>
 
-
     <section class="lm-services bg section">
       <div class="container wd-container">
         <!-- <div class="sec-title text-center">
@@ -147,7 +146,6 @@
                       <figure class="mobile-img one" >
                         <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/mobile-app-2.png" alt="mobile">
                       </figure>
-                      
                 </div>
               </div>
             </div>
@@ -181,12 +179,7 @@
                 </div>
             </div>
           </div>
-
-
           <div class="row mt-5">
-
-            
-            
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
               <div class="ctn-box mt-4" data-aos="fade-left" data-aos-delay="50">
                 <div class="sec-title pb-1">
@@ -222,16 +215,9 @@
                     </div>
                 </div>
             </div>
-            
           </div>
-
       </div>
     </section>
-
-
-  
-
-
 <!-- 
     <section class="get-started section">
       <div class="container d-flex align-items-center justify-content-center">

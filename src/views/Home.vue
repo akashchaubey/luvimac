@@ -28,7 +28,7 @@
       <div class="container">
         <div class="sec-title text-center">
           <h2>PASSION LEADS TO SUCCESS</h2>
-          <p><small>2013 UNITED THEMES™</small></p>
+            <p><small>We believe that teamwork and an open exchange of ideas leads to the greatest success.</small></p>
         </div>
       </div>
     </section>
@@ -36,7 +36,9 @@
       <div class="container wd-container">
         <div class="sec-title text-center">
         <h2>Our Services.</h2>
-        <p>Do you want to create your own website, blogs, custom webshop and mobile apps for restaurants, fashion stores, real estates and consulting services? Luvimac builds unique websites & native mobile apps and ensures that your website stands out.</p>
+        <div class="sub-text max-800 mx-auto">
+          <p>Do you want to create your own website, blogs, custom webshop and mobile apps for restaurants, fashion stores, real estates and consulting services?<br> Luvimac builds unique websites & native mobile apps and ensures that your website stands out.</p>
+        </div>
       </div>
       <div class="row">
         <div class="col-12">
@@ -64,7 +66,7 @@
       </div>
     </section>
     <Industries />
-    <ClientSlide />
+    <!-- <ClientSlide /> -->
   </div>
 </template>
 

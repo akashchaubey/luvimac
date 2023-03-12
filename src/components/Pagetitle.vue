@@ -5,7 +5,7 @@
         </div>
         <div class="info d-flex flex-column align-items-center justify-content-center">
             <h1 data-aos="fade-up" data-aos-delay="50">{{ mainTtitle }}</h1>
-            <div class="sub-text" data-aos="fade-up" data-aos-delay="300">
+            <div class="sub-text max-800" data-aos="fade-up" data-aos-delay="300">
                 <p> {{ subTitle }}</p>
             </div>
         </div>
@@ -27,16 +27,10 @@ export default {
 
         // console.log('this.$route.path',this.$route.path)
 
-  
-
-
-
-
-
 
         if(this.$route.path == '/about'){
             this.mainTtitle = 'About Us';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.subTitle = 'Before committing to a business deal, it is crucial to thoroughly know the history and background of your potential partners.';
             this.bgImg = "../../img/page-bg/about-bg.jpg" 
 
         } else if(this.$route.path == '/blog'){
@@ -46,7 +40,7 @@ export default {
 
         } else if(this.$route.path == '/technology'){
             this.mainTtitle = 'Technology';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.subTitle = 'The secret to getting ahead is getting started.';
             this.bgImg = "../../img/page-bg/technology-bg.jpg" 
 
         } else if(this.$route.path == '/angular'){
@@ -83,7 +77,7 @@ export default {
         }
         else if(this.$route.path == '/web-development'){
             this.mainTtitle = 'Web Development';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.subTitle = 'Strategic Web Development Agency! Once we commit, we will deliver what is expected and beyond.';
             this.bgImg = "../../img/page-bg/services-bg.jpg" 
 
         }
@@ -128,7 +122,7 @@ export default {
         }
         else if(this.$route.path == '/android'){
             this.mainTtitle = 'Android';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.subTitle = 'We conceive, design, program, maintain and optimize your app.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         else if(this.$route.path == '/ionic'){

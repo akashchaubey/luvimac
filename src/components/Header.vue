@@ -70,13 +70,22 @@
 										<router-link to="/web-development">Web Development</router-link>
 									</li>
 									<li @click="toggleMenu()">
-										<router-link to="/app-development">App Development</router-link>
+										<router-link to="">App Development</router-link>
+										<div class="menu-arrow" @click="showSubMenu('app')" :class="{ open: activeSubTab === 'app' }">
+											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
+										</div>
+										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'app' }">
+											<li><a href="/android">Android</a></li>
+											<li><a href="/ios">iOS</a></li>
+											<li><a href="/flutter">Flutter</a></li>
+											
+										</ul>
 									</li>
 									<li @click="toggleMenu()">
 										<router-link to="/digital-marketing">Digital Marketing</router-link>
 									</li>
 									<li>
-										<router-link to="/e-commerce">E commerce</router-link>
+										<router-link to="">E commerce</router-link>
 										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
