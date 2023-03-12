@@ -89,7 +89,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why choose us",
               shortPara:"We have IT solutions for both local companies and internationally operating organizations that enable faster and smarter collaboration.",
-              leftImg: '<img svg-inline src="../../img/why-choose-us.png" class="img-fluid" />',
+              leftImg: '<img svg-inline src="../../img/magento/why-choose-us.png" class="img-fluid" />',
               data:[
               {
                 "id": 1,

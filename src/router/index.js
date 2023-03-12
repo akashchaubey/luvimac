@@ -34,7 +34,7 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home,
-    meta: {title: 'Home'}
+    meta: {title: 'Home', description: 'test'}
   },
   {
     path: '/about',
@@ -194,6 +194,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title;
   }
+  document.description = to.meta.description;
   next();
 });
 

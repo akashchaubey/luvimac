@@ -6,6 +6,7 @@
             <div class="bg-shade"></div>
             <div class="info text-center">
                 <h1>{{slider.title}}</h1>
+                <!-- {{mainSliderTitle}} -->
                 <p class="mr-auto ml-auto">{{ slider.description }}</p>
                 <div class="cta-btn-wrap flex-box d-flex align-items-center justify-content-center">
                     <a :href="slider.linkOne" class="btn stl-three"><span>Go to</span></a>
@@ -32,6 +33,7 @@ export default {
     components: { 
         carousel 
     },
+    props:['main-slider-title'],
     data(){
         return{
             sliderList:[

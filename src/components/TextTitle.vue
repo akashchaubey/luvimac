@@ -3,7 +3,7 @@
       <div class="container wd-container">
         <div class="sec-title text-center" data-aos="fade-down" data-aos-delay="50">
           <h2>{{ textTitleServices.sectionTitle }}</h2>
-          <div class="sub-text mx-auto max-700">
+          <div class="sub-text mx-auto max-800">
             <p>{{ textTitleServices.sectionDescription }}</p>
           </div>
         </div>
@@ -24,7 +24,7 @@
                 <div class="sub-title line-left">
                   <h2>{{ textTitleServices.subTitle }}</h2>
                 </div>
-               <div class="sub-text">
+               <div class="sub-text" v-html="textTitleServices.subDescription">
                  <p>{{ textTitleServices.subDescription }}</p>
                </div>
               </div>

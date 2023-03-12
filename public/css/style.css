@@ -28,7 +28,7 @@
 [data-light-mode="dark"] {
   --main-clr:#abaebc;
   --bgw-bgb-color: #141618;
-  --font-stl-one: #abaebc;
+  --font-stl-one: #ffffff;
   --font-stl-two: #abaebc;
   --font-stl-three: #abaebc;
   --blue-to-white: #abaebc;
@@ -341,6 +341,10 @@ ul.social.footer a:hover svg {
 
 .max-700 {
   max-width: 700px;
+}
+
+.max-800 {
+  max-width: 800px;
 }
 
 /* all title */

@@ -80,7 +80,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
               shortPara:"Your website is not just a showcase of content or images. It is an integral segment of your marketing and business strategy. We completely understand your business, vision and goals in your industry and competitors to put together a tailor-made strategy to achieve the results you require.",
-              leftImg: '<img svg-inline src="../../img/why-choose-us.png" class="img-fluid" />',
+              leftImg: '<img svg-inline src="../../img/digital-marketing/why-choose-us.png" class="img-fluid" />',
               data:[
               {
                 "id": 1,

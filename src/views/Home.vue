@@ -1,7 +1,7 @@
 <template>
 
   <div class="home">
-      <Slider />
+      <Slider :main-slider-title="metadata.main_image_alt_name" />
         <section class="lm-services section">
       <div class="container wd-container">
         <div class="sec-title text-center">
@@ -60,6 +60,7 @@
     <section class="lm-hm-talk">
       <div class="container wd-container text-center">
         <router-link to="/contact-us">Let’s Talk About Your Project</router-link>
+        {{ homemeta }}
       </div>
     </section>
     <Industries />
@@ -72,15 +73,18 @@
 import Slider from '../components/Slider'
 import ClientSlide from '../components/ClientSlide'
 import Industries from '../components/Industries'
+import homemeta from '../../metadata/home.json'
   export default {
     name: 'Home',
     components: {
     Slider,
     ClientSlide,
     Industries
+    
   },
   data(){
         return{
+          metadata:homemeta,
             HomeServices:[
               {
                 "id": 1,
@@ -150,7 +154,21 @@ import Industries from '../components/Industries'
                 },
             ]
         }
+    },
+    
+      metaInfo() {
+        return { 
+            title: this.metadata.title,
+            meta: [
+                { name: 'description', content: this.metadata.description},
+                { name: 'keyword', content: this.metadata.keyword},
+                { property: 'og:title', content: this.metadata.og_title},
+                { property: 'og:description', content: this.metadata.og_description},
+                {property: 'og:type', content: this.metadata.og_type}
+            ]
+        }
     }
+    
 }
 </script>
 

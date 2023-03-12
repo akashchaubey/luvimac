@@ -40,8 +40,17 @@
     h2 {
         font-size: 3.5rem;
         font-weight: 600;
+        text-align: center;
     }
     .opproach {
+            text-align: center;
+            transition: all .3s ease-in-out;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 5px;
+            box-shadow: 0px 0px 2px;
+            min-width: 150px;
+            color: var(--font-stl-one);
         .opproach-count {
             font-size: 2.5rem;
             font-weight: 600;
@@ -56,6 +65,32 @@
             padding: 1.5rem 0 1rem;
             line-height: 1.1;
             color: var(--font-stl-one);
+            position: relative;
+            transition: all .3s ease;
+            overflow: hidden;
+            &::after {
+                content: "";
+                background: #000000;
+                width: 100%;
+                height: 50px;
+                line-height: 1;
+                position: absolute;
+                top: -50px;
+                left: 0;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 0px;
+                z-index: -1;
+                transition: all .3s ease;
+            }
+            &:hover {
+                color: #ffffff;
+                    &::after {
+                    width: 100%;
+                    top: 13px;
+                    border-bottom-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                }
+            }
         }
         .approach-des {
             margin-bottom: 1.5rem;

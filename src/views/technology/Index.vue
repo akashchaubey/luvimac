@@ -5,8 +5,8 @@
     <section class="lm-services bg section">
       <div class="container wd-container">
         <div class="sec-title text-center" data-aos="fade-down" data-aos-delay="50">
-          <h2>What We Do.</h2>
-          <p>We’re best placed to help build your online business: taking the time to learn about your company,<br> industry and commercial challenges</p>
+          <h2>Techstacks that We do</h2>
+          <p>Planning, designing, developing, and managing projects.<br> With one digital team, you can take advantage of the power of specialization.</p>
         </div>
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
@@ -17,7 +17,10 @@
                 <div class="sec-title">
                   <h2>Tools and Technologies</h2>
                 </div>
-                <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
+                <p>We can help you improve your in-house development with our experienced developers.</p>
+                <p>It is exhausting and takes time to build a good in-house product team. You may need developers, designers and/or other specialists with the right experience in the field of technologies, frameworks, tools and platform development.</p>
+                <p><strong>We take care of the entire development process for you.</strong></p>
+                <p>A high-quality and user-friendly web application can be developed using a variety of methods, technologies, and tools.</p>
               </div>
             </div>
           </div>
@@ -34,8 +37,7 @@
                     <!-- <div class="sub-title">
                       <h3>Full-service IT support</h3>
                     </div> -->
-                    <p data-aos="fade-right" data-aos-delay="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste expedita molestiae non consequatur dolorum?.</p>
-
+                    <p data-aos="fade-right" data-aos-delay="50">We use framework in developing stunning, engaging, successful user interfaces using in demand front end technologies and industry trends. Front-end frameworks such as React.js, Vue.js, and Angular.js are used for building the user interface (UI) of web applications. These frameworks provide developers with pre-built UI components and libraries that they can use to create interactive and responsive web pages.</p>
                     <div class="technology-tools d-flex justify-content-center flex-wrap">
                         <!-- <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
                             <img src="/img/technology/frontend/html.png" alt="html">
@@ -83,7 +85,9 @@
                 <!-- <div class="sub-title">
                   <h3>Full-service IT support</h3>
                 </div> -->
-                <p data-aos="fade-right" data-aos-delay="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste expedita molestiae non consequatur dolorum?.</p>
+                <div class="content-box" data-aos="fade-right" data-aos-delay="50">
+                  <p>Back-end frameworks like Node.Js and Laravel are used for building the server-side logic of web applications. It is used to create lightweight and scalable web applications. With the right combination of frameworks, our skilled developers create customized experiences for users that are tailored to their needs and preferences. Our development team creates powerful back-end solutions, allowing apps to handle heavy user loads with minimal glitches.</p>
+                </div>
                 <div class="technology-tools d-flex justify-content-center flex-wrap">
                     <!-- <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
                         <img src="/img/technology/frontend/html.png" alt="html">
@@ -130,7 +134,11 @@
                 <div class="sec-title pb-1" data-aos="fade-up" data-aos-delay="50">
                   <h2>Mobile Apps Development.</h2>
                 </div>
-                <p data-aos="fade-up" data-aos-delay="50">At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
+                <div class="content-box" data-aos="fade-up" data-aos-delay="50">
+                    <p>You know what nowadays Web applications are not only on your computer. You open them with a web browser, so you always have access with the right credentials, anywhere and on any device.</p>
+                    <p>No I won't say as we're top leading mobile app development agency but we can assure you your dream project would in on safe hand.</p>
+                    <p>We've holds a remote & in-house team of well versed iOS, Android and flutter apps developers who have been working with SMBs, startups and B2B agencie, no matter which industies you're from our aim is to provide you complete development solutions.</p>
+                </div>
                 <div class="mobiles-animation">
                   <img data-aos="fade-right" data-aos-delay="500" src="/img/technology/mobile/mobile-app-bg.png" alt="">
                   <figure class="mobile-img two">
@@ -149,24 +157,24 @@
                         <router-link to="/android" class="technology-item">
                             <img src="/img/technology/mobile/android-icon.svg" alt="html">
                             <div class="technology-name">Android</div>
-                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
+                            <div class="text">We do Android Apps Development for Smartphones, Tablets, Android Wear, and Android TV from the scratch.</div>
                         </router-link>
                         <router-link to="/iOS" class="technology-item">
                             <img src="/img/technology/mobile/apple-icon.svg" alt="html">
                             <div class="technology-name">iOS</div>
-                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
+                            <div class="text">Creating iOS apps that are secure, reliable, and tailored to the needs and preferences of users.</div>
                         </router-link>
                     </div>
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
                         <router-link to="/ionic" class="technology-item">
                             <img src="/img/technology/mobile/ionic-icon.svg" alt="html">
                             <div class="technology-name">Ionic</div>
-                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
+                            <div class="text">Creating interactive and incredible hybrid and cross-platform app for iOS and Android with remarkable efficiency.</div>
                         </router-link>
                         <router-link to="/flutter" class="technology-item">
                             <img src="/img/technology/mobile/flutter-icon.svg" alt="html">
                             <div class="technology-name">Flutter</div>
-                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel.</div>
+                            <div class="text">We take on projects and tasks independently for flutter app development.</div>
                         </router-link>
                     </div>
                     
@@ -184,8 +192,9 @@
                 <div class="sec-title pb-1">
                   <h3 class="technology-title">Best in class for flexibility & ease of use</h3>
                 </div>
-                <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
-               
+                <p> We help you create custom web & mobile apps from scratch at the same time we fit very well into teams in order to support Startups and agencies. Because our working style and strategies are transparent with our client.</p>
+                <p>Appoint Luvimac as your trusted partner because we help you to achieve your targets in a better, faster and more cost effective way. Everything we do is for customers. We strive to deliver the best customer experience possible. We learn from every project we undertake, continuously striving to improve and reach the next level. This ethos has become part of our culture as we strive to provide the highest quality of service.</p>
+                <p> We used to Slack, Trello, Jira, Google, Skype, Zoom for project management and smooth communication</p>
               </div>
             </div>
 
@@ -239,13 +248,26 @@
 </template>
 <script>
 import Pagetitle from '../../components/Pagetitle';
+import technologymetadata from '../../../metadata/technology.json'
 export default { 
   components:{
     Pagetitle,
   },
   data(){
         return{
-        
+        metadata:technologymetadata
+        }
+    },
+    metaInfo() {
+        return { 
+            title: this.metadata.title,
+            meta: [
+                { name: 'description', content: this.metadata.description},
+                { name: 'keyword', content: this.metadata.keyword},
+                { property: 'og:title', content: this.metadata.og_title},
+                { property: 'og:description', content: this.metadata.og_description},
+                {property: 'og:type', content: this.metadata.og_type}
+            ]
         }
     }
   
