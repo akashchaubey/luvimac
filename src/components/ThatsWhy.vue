@@ -8,7 +8,7 @@
                         <div class="sub-text" data-aos="fade-up" data-aos-duration="1000">
                             <p>{{thatWhy.description}}</p>
                         </div>
-                        <div class="check-list">
+                        <!-- <div class="check-list">
                             <ul>
                                 <li data-aos="fade-up" data-aos-duration="1000">We work <strong>pragmatically</strong> and according to <strong>plan</strong></li>
                                 <li data-aos="fade-up" data-aos-duration="1000">We work <strong>with</strong> you, but <strong>for</strong> your visitors</li>
@@ -16,7 +16,7 @@
                                 <li data-aos="fade-up" data-aos-duration="1000">We work content <strong>first</strong> and mobile <strong>first</strong></li>
                                 <li data-aos="fade-up" data-aos-duration="1000">We work with <strong>experiences</strong> to increase <strong>spending</strong></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>		 
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 order-lg-3">
