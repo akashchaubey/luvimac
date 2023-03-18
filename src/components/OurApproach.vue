@@ -73,23 +73,22 @@
                 content: "";
                 background: #000000;
                 width: 100%;
-                height: 50px;
+                height: 75%;
                 line-height: 1;
                 position: absolute;
-                top: -50px;
+                top: 15px;
                 left: 0;
-                border-bottom-left-radius: 0px;
-                border-top-right-radius: 0px;
+                transform: scale(0);
                 z-index: -1;
-                transition: all .3s ease;
+                transition: all .5s ease;
             }
             &:hover {
                 color: #ffffff;
+                transition: all .5s ease;
                     &::after {
                     width: 100%;
-                    top: 13px;
-                    border-bottom-left-radius: 30px;
-                    border-top-right-radius: 30px;
+                    border-radius:5px;
+                    transform: scale(1);
                 }
             }
         }

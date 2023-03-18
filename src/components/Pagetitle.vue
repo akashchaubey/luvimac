@@ -130,7 +130,7 @@ export default {
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
-        else if(this.$route.path == '/iOS'){
+        else if(this.$route.path == '/ios'){
             this.mainTtitle = 'iOS';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"

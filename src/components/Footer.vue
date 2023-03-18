@@ -221,11 +221,11 @@
                             <h3 class="widget-title">NAVIGATION</h3>
                         </div>
                         <ul class="foo nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Our Work</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><router-link to="/">Home</router-link></li>
+                            <li><router-link to="/about-us">About Us</router-link></li>
+                            <!-- <li><router-link to="/blog">Blog</router-link></li> -->
+                            <!-- <li><router-link to="/our-work">Our Work</router-link></li> -->
+                            <li><router-link to="/contact-us">Contact</router-link></li>
                         </ul>
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
@@ -233,12 +233,12 @@
                             <h3 class="widget-title">SERVICES</h3>
                         </div>
                         <ul class="foo nav">
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">App Development</a></li>
-                            <li><a href="#">Magento</a></li>
-                            <li><a href="#">Custom PHP</a></li>
-							<li><a href="#">Digital marketing</a></li>
-							<!-- <li><a href="#">Angular React Vue</a></li> -->
+                            <li><router-link to="/web-development">Web Development</router-link></li>
+                            <!-- <li><router-link to="/app-development">App Development</router-link></li> -->
+                            <li><router-link to="/magento">Magento</router-link></li>
+                            <!-- <li><router-link to="/custom-php">Custom PHP</router-link></li> -->
+							<li><router-link to="/digital-marketing">Digital marketing</router-link></li>
+							<!-- <li><router-link to="/">Angular React Vue</router-link></li> -->
                         </ul>
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pl-lg-5 pl-xl-5">
@@ -259,7 +259,7 @@
 						<div class="social-container">
 							<ul class="social footer">
 								<li v-for="social of socialLinks" :key="social.id">
-									<a href="#" v-html="social.icon">
+									<a href="/" v-html="social.icon">
 									</a>
 								</li>
 							</ul>
@@ -273,12 +273,12 @@
 				<div class="row d-flex flex-md-row-reverse">
 					<div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
 						<ul class="f-link d-flex justify-content-center">
-							<li><a href="#">Privacy</a></li>
-							<li><a href="#">Terms</a></li>
+							<li><router-link to="/">Privacy</router-link></li>
+							<li><router-link to="/">Terms</router-link></li>
 						</ul>
 					</div>
 					<div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
-						<p classs="copyrights">Copyright &copy; 2020 <a href="">Luvimac.com</a> | All Rights Reserved.</p>
+						<p classs="copyrights">Copyright &copy; 2020 <router-link to="/">Luvimac.com</router-link> | All Rights Reserved.</p>
 					</div>
 				</div>
 			</div>

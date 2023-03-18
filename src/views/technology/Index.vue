@@ -48,7 +48,7 @@
                             <div class="technology-name">css</div>
                         </div> -->
                         
-                          <router-link to="/pwa" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <router-link event="" to="/pwa" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                            
                                 <img src="/img/technology/frontend/pwa.png" alt="html">
                                 <div class="technology-name">PWA</div>
@@ -56,19 +56,19 @@
                           </router-link>
                         
                         
-                          <router-link to="/angular" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <router-link event="" to="/angular" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                               <img src="/img/technology/frontend/angular.png" alt="html">
                               <div class="technology-name">Angular</div>
                           </router-link>
                         
                         
-                          <router-link to="/react" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <router-link event="" to="/react" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                               <img src="/img/technology/frontend/reactjs.png" alt="html">
                               <div class="technology-name">React</div>
                           </router-link>
                         
                         
-                          <router-link to="/vue" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <router-link event="" to="/vue" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                               <img src="/img/technology/frontend/vue.png" alt="html">
                               <div class="technology-name">Vue</div>
                           </router-link>
@@ -97,19 +97,19 @@
                         <img src="/img/technology/frontend/css3.png" alt="html">
                         <div class="technology-name">css</div>
                     </div> -->
-                    <router-link to="/custom-php" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    <router-link event="" to="/custom-php" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/php.png" alt="html">
                         <div class="technology-name">PHP</div>
                     </router-link>
-                    <router-link to="/node" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    <router-link event="" to="/node" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/node.webp" alt="html">
                         <div class="technology-name">Node</div>
                     </router-link>
-                    <router-link to="/laravel" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    <router-link event="" to="/laravel" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/laravel.png" alt="html">
                         <div class="technology-name">Laravel</div>
                     </router-link>
-                    <router-link to="/python" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    <router-link event="" to="/python" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/python.png" alt="html">
                         <div class="technology-name">Python</div>
                     </router-link>
@@ -157,14 +157,14 @@
                             <div class="technology-name">Android</div>
                             <div class="text">We do Android Apps Development for Smartphones, Tablets, Android Wear, and Android TV from the scratch.</div>
                         </router-link>
-                        <router-link to="/iOS" class="technology-item">
+                        <router-link to="/ios" class="technology-item">
                             <img src="/img/technology/mobile/apple-icon.svg" alt="html">
                             <div class="technology-name">iOS</div>
                             <div class="text">Creating iOS apps that are secure, reliable, and tailored to the needs and preferences of users.</div>
                         </router-link>
                     </div>
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
-                        <router-link to="/ionic" class="technology-item">
+                        <router-link event="" to="/ionic" class="technology-item">
                             <img src="/img/technology/mobile/ionic-icon.svg" alt="html">
                             <div class="technology-name">Ionic</div>
                             <div class="text">Creating interactive and incredible hybrid and cross-platform app for iOS and Android with remarkable efficiency.</div>

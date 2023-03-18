@@ -3,6 +3,7 @@
     <Pagetitle/>
     <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+    <OurApproach />
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
 </template>
@@ -11,6 +12,7 @@ import Texttitle from '../components/TextTitle';
 import Pagetitle from '../components/Pagetitle';
 import Doweworks from '@/components/DoWeWorks';
 import Services from '../components/Services';
+import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
 export default {
   components:{
@@ -18,6 +20,7 @@ export default {
     Texttitle,
     Doweworks,
     Services,
+    OurApproach,
     Whychooseus
   },
   data(){

@@ -3,7 +3,7 @@
      <Pagetitle/>
       <Texttitle :textTitleServices="texttitle"></Texttitle>
       <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
-      <ThatsWhy />
+      <ThatsWhy :thatWhy="texttitleContent"></ThatsWhy>
       <OurApproach />
       <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
@@ -31,6 +31,25 @@ export default {
   data(){
         return{
           metadata:appData,
+          texttitleContent:{
+              title:"That's why Luvimac.",
+              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              img:'../../img/web-development/web-development-1.jpg',
+              data:[
+                {
+                  'id':1,
+                  'li': 'We work pragmatically and according to plan',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                }
+              ]
+            },
             texttitle:{
               sectionTitle:"What We Do.",
               sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
