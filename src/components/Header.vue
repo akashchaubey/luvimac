@@ -360,8 +360,8 @@ ul.menu {
 		.sub-menu {
 			position: absolute;
 			top: 100%;
-			padding: 40px 0px;
-			min-width: 250px;
+			padding: 10px 0px;
+			min-width: 180px;
 			background: rgba(19, 20, 22, 0.9);
 			box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35);
 			transition: all 0.3s;
@@ -369,7 +369,7 @@ ul.menu {
 			visibility: hidden;
 
 			li {
-				padding: 0px 40px;
+				padding: 0px 25px;
 				display: block;
 
 				a {
@@ -413,7 +413,7 @@ ul.menu {
 
 		&>li {
 			&>.sub-menu {
-				transform: translateY(20px);
+				transform: translateY(0px);
 
 				li {
 					.sub-menu {
