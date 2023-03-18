@@ -213,7 +213,7 @@
 					</svg>
 
                     </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                    <p>Luvimac is your one stop expert team for web design, mobile app development and online marketing. From here we provide online branding for promising start-ups and innovative corporate services. Luvimac makes your creative website ensure modern UI-UX, responsive web design and high conversion. Without hassle.</p>
                    </div>
                 </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 pl-lg-4 pl-xl-5">

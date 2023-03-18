@@ -16,6 +16,7 @@ import OurApproach from '../components/OurApproach';
 import ThatsWhy from '../components/ThatsWhy';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
+import webmetadata from '../../metadata/webDevelopment.json'
 export default {
   components:{
     Pagetitle,
@@ -27,6 +28,7 @@ export default {
   },
   data(){
         return{
+          metadata:webmetadata,
            texttitleContent:{
               title:"That's why Luvimac.",
               description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
@@ -47,15 +49,15 @@ export default {
               ]
             },
             texttitle:{
-              sectionTitle:"What We Do.",
-              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
-              subTitle:'Tools And Technologies',
-              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              sectionTitle:"Web Development Company",
+              sectionDescription:'With our dedicated team we do not develop only websites rather develop the tenor of every web application. Whether we develop an API for a mobile application or create a custom website, it is all about under web development.',
+              subTitle:'We excel at Web Design & Development',
+              subDescription:"Our services help your business online!<br> It doesn't matter that who you are as a designer or developer at Luvimac; everyone works with the same goal in mind: to deliver a salient, eye-catching website that exceeds all expectations of our customers.",
               img:'../../img/web-development/web-development.jpg',
             },
             services:{
               sectionTitle:"Create A Professional Webshop",
-              sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
+              sectionDec:"We are an agile team suited to your needs. We like to work with people who manage themselves. Out of a pool of excellent backend and frontend developers we put together a team that caters exactly to your needs and budget.",
               data:[
                 {
                 "id": 1,
@@ -88,7 +90,7 @@ export default {
                 {
                 "id": 5,
                 "title": "Laravel",
-                "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the Laravel framework and developing new libraries.",
+                "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the PHP Laravel Application Development.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-laravel.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
@@ -103,7 +105,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/why-choose-us.png" class="img-fluid" />',
+              leftImg: '<img svg-inline src="../../img/web-development/why-choose-us.png" class="img-fluid" />',
               data:[
               {
                 "id": 1,
@@ -122,6 +124,18 @@ export default {
             ]
             },
             howItWork:{"bgImg":"../../img/web-development/how-do-we-works.png"},            
+        }
+    },
+    metaInfo() {
+        return { 
+            title: this.metadata.title,
+            meta: [
+                { name: 'description', content: this.metadata.description},
+                { name: 'keyword', content: this.metadata.keyword},
+                { property: 'og:title', content: this.metadata.og_title},
+                { property: 'og:description', content: this.metadata.og_description},
+                {property: 'og:type', content: this.metadata.og_type}
+            ]
         }
     }
 }
