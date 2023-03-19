@@ -32,8 +32,8 @@ export default {
         return{
           metadata:appData,
           texttitleContent:{
-              title:"That's why Luvimac.",
-              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              title:"Put Your Business on Android Apps",
+              description:'<p>We analyze your requirements of the application and suggest a procedure together with a tailor-made offer. After discussion about how the structure of the project should look and which technologies we use, We advise you the phase UX / UI design and then marketing and distribution strategy for your app. </p> <p>Our android app developers create apps for all of Google Play’s major categories including:</p> <ul class="bullet"> <li>Business Apps</li> <li>Social Apps</li> <li>Gaming Apps</li> <li>On-Demand Apps</li> <li>Entertainment Apps</li> <li>Productivity & Personalisation Apps</li> <li>Education Apps</li> <li>Health Care Apps</li> <li>Finance Apps</li> </ul>',
               img:'../../img/web-development/web-development-1.jpg',
               data:[
                 {
@@ -51,56 +51,44 @@ export default {
               ]
             },
             texttitle:{
-              sectionTitle:"What We Do.",
-              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
-              subTitle:'Tools And Technologies',
-              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              sectionTitle:"App with us",
+              sectionDescription:'Developing apps for Android is a profession in itself. As an independent app design and development company we offer Native Android Apps development from the conception of the app to the launch in the Google Play Store.',
+              subTitle:'Native app development',
+              subDescription:'<p>Before the beginning of the project we get involved in a beautiful adventure of our customers where we help companies with their android apps development together. Based on technical challenges of the project, expectations and goals together we create a precise needs analysis for you that becomes very challenging and fun to solve.</p>',
               img:'../../img/app-development/app-development.jpg',
             },
             services:{
-              sectionTitle:"Create A Professional Application",
-              sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
+              title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
+              sectionTitle:"Native Android Apps development with Kotlin & Java",
+              sectionSubText:"for Android Development",
+              sectionDec:"Make dreams come True - We develop the Native Android App with outstanding features. Your institution or business can stand out on the web and mobile together with Luvimac, no matter who you're & where you're! Our steamed team of android app development comes up with a proven track record.",
               data:[
               {
                 "id": 1,
-                "title": "Websites",
-                "description": "Company benefits from a high-quality website. We apply the latest methods and techniques to make your website complete. We ensure that your website is optimally focused on speed, design, user-friendliness and mobile.",
+                "title": "Sprint",
+                "description": "To initiate the process, we first brainstorm and design a sprint based on your ideas. A prototype is then created and tested by users to verify the concept before proceeding with actual app development. It enables us to fine-tune the user experience design while keeping investment and time to a minimum.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-website.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
-                "title": "Webshops",
-                "description": "We build the user experience of your webshop to convert website visitors into customers as effectively as possible. We develop webshops that are aimed at creating new sales opportunities. By effectively offering your products or services online, we jointly build commercial success.",
+                "title": "App Design",
+                "description": "Creative Apps design plays an important role in the mobile apps world. An app design defines how a user thinks and feels about a particular service from a company. Through this approach, we deliver app design that performs optimally and that your customer falls in love with.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-webshop.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 3,
-                "title": "Custom applications",
-                "description": "Our custom application is tailor made for your business and eliminates the need to change your business procedures to fit a pre-developed software. From our premises you can full access to the in-house development team so any issues that arise can be resolved quickly and efficiently.",
+                "title": "App Development",
+                "description": "In the App Development phase, our android app developers develop apps for android usually consist of the development of a backend , API , and management environment. We work on the Agile method and therefore do interim deliveries in which you can give feedback on the app.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
-                "title": "Framework Technologies",
-                "description": "We authorize our clients with adaptive web applications built using PHP, Python, MongoDB, React, Node.js and latest technology to simplify complex business workflows. We use popular frameworks like Vue.Js, Angular.js, JQuery, Laravel etc.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-framework-technologies.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 5,
-                "title": "Laravel",
-                "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the Laravel framework and developing new libraries.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-laravel.svg" class="vue-logo" />',
-                "linkOne": "link1",
-                },
-                {
-                "id": 6,
-                "title": "Design",
-                "description": "Our designer makes a stunning UX/UI design which creates interest to stuck off website visitors. Together with you we create the desired image and online identity. We then implement this in all online services so that it becomes a powerful brand.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-design.svg" class="vue-logo" />',
+                "title": "Maintenance & Support",
+                "description": "After the successful app launch, we will work with you as a development partner. We regularly meet to make the version update. We always look to use new technology to make the app even faster. ",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]
@@ -108,18 +96,19 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
               leftImg: '<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" />',
+              shortPara:"<p>We have all our app developers working at our in-house. We keep transparency in our communication and provide our clients with insight into the advantages and disadvantages of the chosen development platform. At Luvimac we do not indoor only project but for building long-term relationships and high-quality deliveries.</p>",
               data:[
               {
                 "id": 1,
-                "title": "Testing and Quality Assurance",
-                "description": "Our QA guys will prepare detailed test cases to cover all the functionality of the website application. We’ll complete and provide reporting on the functional test execution and any defects detected. Our team can provide automated testing which enhances the services quality and efficiency.",
+                "title": "Prototype & Design Sprint",
+                "description": "<p>We provide our client prototype & design sprint to clear the vision of application. To ensure the best results, our in-house experts in the field of UX, design, development and project management are present.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-testing-quality-assurance.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
-                "title": "Time And On Budget",
-                "description": "A clear working methods and personal contact. We will meet you and discuss your requirements. What do you need? What is the essence of your asignment? We make a concrete step by step plan and clear quotation. We determine the scope of the web development project, create a budget and timeline. Just to make sure, we do weekly status checks on progress and deadlines to keep everyone – you included – on track.",
+                "title": "Quality & Support",
+                "description": `<ul class="bullet"><li>Certified Quality Assurance</li> <li>User Acceptance Testing</li> <li>Exploratory Testing</li> <li>Multi Device Testing</li> <li>Automated Scripted Testing</li> <li>24/7 Support</li> </ul>`,
                 "icon": '<img svg-inline src="../../public/img/services-icon/time-and-on-budget.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }

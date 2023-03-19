@@ -37,6 +37,7 @@
 </template>
 <style lang="scss">
 .ourapproach {
+    padding-bottom: 3.5rem;
     h2 {
         font-size: 3.5rem;
         font-weight: 600;

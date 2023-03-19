@@ -26,19 +26,21 @@ export default {
   data(){
         return{
             texttitle:{
-              sectionTitle:"What We Do.",
-              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
-              subTitle:'Tools And Technologies',
-              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              sectionTitle:"Digital Marketing.",
+              sectionDescription:'Connect with your audience with the target market easily, seamlessly and successfully. We help our b2b & startups agencies get more trafics and sales through online marketing and advertising campaigns, you can generate the revenue you need.',
+              subTitle:'Digital Strategy & Content Creation',
+              subDescription:'Perfection does not exist, but we do bring our solutions one step closer to perfection. At luvimac! We provide digital marketing service to grow your business that suits both start-ups and established companies. Our digital marketing strategies can increase the level of your brand online, bringing you and your customers together.',
               img:'../../img/digital-marketing/web-development.jpg',
             },
             services:{
+              title:`We do our<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Best</span>`,
               sectionTitle:"Digital Strategy & Content  Creation",
-              sectionDec:"Perfection does not exist, but we do bring our solutions one step closer to perfection. At luvimac! We provide digital marketing service to grow your business that suits both start-ups and established companies. Our digital marketing strategies can increase the level of your brand online, bringing you and your customers together.",
+              sectionSubText:"for customer success",
+              sectionDec:"<p>We promote your products & services efficietly</p><p>We optimize your online shop, your website or your mobile solution. We employ strategies to ensure your content is easily discoverable, enhancing your online presence and visibility.</p>",
               data:[
               {
                 "id": 1,
-                "title": "Seo",
+                "title": "SEO",
                 "description": "Improve the traffic results of your website in search engines. Our experienced SEO specialists are ready to help you from technology to good content.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-seo.svg" class="vue-logo" />',
                 "linkOne": "link1",

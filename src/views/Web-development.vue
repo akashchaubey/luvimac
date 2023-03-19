@@ -30,8 +30,8 @@ export default {
         return{
           metadata:webmetadata,
            texttitleContent:{
-              title:"That's why Luvimac.",
-              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              title:"Our added value",
+              description:'<p>We are capable of working with all programming languages like PHP, JavaScript, Python, ASP.NET etc. Our expert team have ability to create stunning web application. They are expert in utilize Angular.Js, Vue.Js, React.Js, Node.Js, ElectronJs and bootstrap framework.</p><p>There is solid backend development support behind every successful software & web application. So it is most important to discuss and know about programming languages which make your website application and ecommerce store run smoothly and lightly to upload data information fastly.</p><p>We always offer our customers a tailor-made solution to guarantee the best result.</p>',
               img:'../../img/web-development/web-development-1.jpg',
               data:[
                 {
@@ -56,7 +56,9 @@ export default {
               img:'../../img/web-development/web-development.jpg',
             },
             services:{
+              title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
               sectionTitle:"Create A Professional Webshop",
+              sectionSubText:"for Web Development",
               sectionDec:"We are an agile team suited to your needs. We like to work with people who manage themselves. Out of a pool of excellent backend and frontend developers we put together a team that caters exactly to your needs and budget.",
               data:[
                 {

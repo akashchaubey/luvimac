@@ -4,14 +4,13 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-box" v-html="commonWhyChoose.leftImg">
-                        {{commonWhyChoose.leftImg}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="ctn-box p18">
                         <div class="sub-title">
                             <h2>{{ commonWhyChoose.sectionTitle }}</h2>
-                            <p>{{ commonWhyChoose.shortPara }}</p>
+                            <div class="sub-text" v-html="commonWhyChoose.shortPara"></div>
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -28,8 +27,7 @@
                                                     <h3 data-toggle="collapse" :data-target="`#collapse-${index}`" class="collapsed">{{ service.title }} <span class="icon-plus"><span class="icon"></span></span></h3>
                                                 </div>
                                                 <div :id="`collapse-${index}`" class="collapse" data-parent="#accordionChooseUs">
-                                                    <div class="card-body">
-                                                        {{ service.description }}
+                                                    <div class="card-body" v-html="service.description">
                                                     </div>
                                                 </div>
                                             </div>
@@ -138,6 +136,14 @@
                             }
                         }
                     }
+                }   
+            }
+            .card-body{
+                p{
+                    display: block;
+                    -webkit-line-clamp: initial;
+                    -webkit-box-orient: initial;
+                    overflow: visible;
                 }
             }
             

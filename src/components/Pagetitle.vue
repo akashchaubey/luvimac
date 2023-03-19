@@ -4,7 +4,7 @@
             <div class="bg" :style="{'background-image': 'url('+ bgImg + ')'}"></div>
         </div>
         <div class="info d-flex flex-column align-items-center justify-content-center">
-            <h1 data-aos="fade-up" data-aos-delay="50">{{ mainTtitle }}</h1>
+            <h1 data-aos="fade-up" data-aos-delay="50" v-html="mainTtitle"></h1>
             <div class="sub-text max-800" data-aos="fade-up" data-aos-delay="300">
                 <p> {{ subTitle }}</p>
             </div>
@@ -88,8 +88,8 @@ export default {
 
         }
         else if(this.$route.path == '/digital-marketing'){
-            this.mainTtitle = 'Digital Marketing';
-            this.subTitle = 'Connect with your audience with the target market easily, seamlessly and successfully.';
+            this.mainTtitle = 'SEO & Digital Marketing';
+            this.subTitle = 'Accelerating brand value through digital innovation';
             this.bgImg = "../../img/page-bg/contact-bg.jpg" 
 
         } 
@@ -121,7 +121,7 @@ export default {
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         else if(this.$route.path == '/android'){
-            this.mainTtitle = 'Android';
+            this.mainTtitle = 'Android Apps Development';
             this.subTitle = 'We conceive, design, program, maintain and optimize your app.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
@@ -131,13 +131,13 @@ export default {
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         else if(this.$route.path == '/ios'){
-            this.mainTtitle = 'iOS';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.mainTtitle = '<span>iOS</span> App Development';
+            this.subTitle = 'Mobile app development for startups & business';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         else if(this.$route.path == '/flutter'){
-            this.mainTtitle = 'Flutter';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.mainTtitle = 'Flutter App Developer';
+            this.subTitle = 'Build Robust & Natively Compiled Mobile apps by Flutter';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         else if(this.$route.path == '/python'){
@@ -162,40 +162,6 @@ export default {
         }
         
     },
-
-    // watch: {
-    // '$route' (to, from) {
-
-    //     console.log('this.$route.path', this.$route.path);
-    //     // console.log('to', to);
-    //     // console.log('from', from);
-
-    //     let CurrentPath = this.$route.path
-        
-    //     const sky = this.$route.path;
-
-    //     switch (sky) {
-    //         case "/about":
-    //             this.mainTtitle = 'About Us';
-    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-    //             this.bgImg = "../../img/page-bg/about-bg.jpg" 
-    //         break;
-    //         case "/blog":
-    //             this.mainTtitle = 'Blog';
-    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-    //             this.bgImg = "../../img/page-bg/blog-bg.jpg"
-    //         break;
-    //         case "/services":
-    //             this.mainTtitle = 'Services';
-    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-    //             this.bgImg = "../../img/page-bg/services-bg.jpg" 
-    //         break;
-    //         default:
-    //             this.mainTtitle = 'Home';
-    //             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
-    //         }
-    //     }
-    // }
 }
 </script>
 
@@ -230,6 +196,7 @@ export default {
         .info{
             height: 100%;
             padding: 0px 15px;
+           
             h1{
                 position: relative;
                 font-size:6rem;
@@ -249,6 +216,9 @@ export default {
                     background: var(--font-stl-two);
                     margin: 0 auto;
                 }
+                    span {
+                        display: inline-block;
+                    } 
                 }
                 p{
                     font-size: 1.12rem;

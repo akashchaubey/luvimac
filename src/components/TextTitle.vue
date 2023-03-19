@@ -25,7 +25,6 @@
                   <h2>{{ textTitleServices.subTitle }}</h2>
                 </div>
                <div class="sub-text" v-html="textTitleServices.subDescription">
-                 <p>{{ textTitleServices.subDescription }}</p>
                </div>
               </div>
             </div>

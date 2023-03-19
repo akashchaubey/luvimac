@@ -2,9 +2,10 @@
     <section class="section we-works">
         <div class="container wd-container">
         <div class="main-title">
-                <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000">How Do We</div>
-                <div class="works" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Works</div>
-                <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">for Web Development</div>
+                <h2 class="subtitle-text-work" v-html="commonServices.title" data-aos="fade-up" data-aos-duration="1000"></h2>
+                <!-- <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000">How Do We</div>
+                <div class="works" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Works</div> -->
+                <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{{commonServices.sectionSubText}}</div>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -13,7 +14,6 @@
                             {{ commonServices.sectionTitle }}
                         </div>
                         <div class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec">
-                        {{ commonServices.sectionDec }}
                         </div>
                     </div>
                 </div>
@@ -24,10 +24,8 @@
                                 <div class="icon-box" v-html="service.icon"></div>
                                 <div class="second-item-title mb-md-3">{{ service.title }}</div>
                             </div>
-                            
                             <div class="second-item-dec">{{ service.description }}</div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -122,6 +120,7 @@ export default {
         line-height: 4.4vw;
     }
     .works {
+        display: block;
         font-size: 11vw;
         line-height: 11vw;
     } 

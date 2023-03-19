@@ -1,13 +1,12 @@
 <template>
-  <div class="inner">
-  <Pagetitle/>
-  <Texttitle :textTitleServices="texttitle"></Texttitle>
-  <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
-  <ThatsWhy :thatWhy="texttitleContent"></ThatsWhy>
-  <OurApproach />
-  <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
-  
-  </div>
+    <div class="inner">
+     <Pagetitle/>
+      <Texttitle :textTitleServices="texttitle"></Texttitle>
+      <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+      <ThatsWhy :thatWhy="texttitleContent"></ThatsWhy>
+      <OurApproach />
+      <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
+    </div>
 </template>
 <script>
 
@@ -20,153 +19,147 @@ import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
 import appData from '../../metadata/appDevelopment'
 export default {
-components:{
-  Pagetitle,
-  Texttitle,
-  OurApproach,
-  ThatsWhy,
-  // Services,
-  Whychooseus,
-  Doweworks
-},
-data(){
-      return{
-        metadata:appData,
-        texttitleContent:{
-            title:"That's why Luvimac.",
-            description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
-            img:'../../img/web-development/web-development-1.jpg',
-            data:[
-              {
-                'id':1,
-                'li': 'We work pragmatically and according to plan',
-              },
-              {
-                'id':2,
-                'li': 'We work with you, but for your visitors',
-              },
-              {
-                'id':2,
-                'li': 'We work with you, but for your visitors',
-              }
-            ]
-          },
-          texttitle:{
-            sectionTitle:"What We Do.",
-            sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
-            subTitle:'Tools And Technologies',
-            subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
-            img:'../../img/app-development/app-development.jpg',
-          },
-          services:{
-            sectionTitle:"Create A Professional Application",
-            sectionDec:"We’re a creative agency located in <strong>Brooklyn, New York.</strong><br> We’ve won a ton of awards and have been featured in all of the magazines.",
-            data:[
-            {
-              "id": 1,
-              "title": "Websites",
-              "description": "Company benefits from a high-quality website. We apply the latest methods and techniques to make your website complete. We ensure that your website is optimally focused on speed, design, user-friendliness and mobile.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-website.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              },
-              {
-              "id": 2,
-              "title": "Webshops",
-              "description": "We build the user experience of your webshop to convert website visitors into customers as effectively as possible. We develop webshops that are aimed at creating new sales opportunities. By effectively offering your products or services online, we jointly build commercial success.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-webshop.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              },
-              {
-              "id": 3,
-              "title": "Custom applications",
-              "description": "Our custom application is tailor made for your business and eliminates the need to change your business procedures to fit a pre-developed software. From our premises you can full access to the in-house development team so any issues that arise can be resolved quickly and efficiently.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              },
-              {
-              "id": 4,
-              "title": "Framework Technologies",
-              "description": "We authorize our clients with adaptive web applications built using PHP, Python, MongoDB, React, Node.js and latest technology to simplify complex business workflows. We use popular frameworks like Vue.Js, Angular.js, JQuery, Laravel etc.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-framework-technologies.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              },
-              {
-              "id": 5,
-              "title": "Laravel",
-              "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the Laravel framework and developing new libraries.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-laravel.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              },
-              {
-              "id": 6,
-              "title": "Design",
-              "description": "Our designer makes a stunning UX/UI design which creates interest to stuck off website visitors. Together with you we create the desired image and online identity. We then implement this in all online services so that it becomes a powerful brand.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-design.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              }
-          ]
-          },
-          whyChooseUsServices:{
-            sectionTitle:"Why Choose Us",
-            leftImg: '<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" />',
-            data:[
-            {
-              "id": 1,
-              "title": "Testing and Quality Assurance",
-              "description": "Our QA guys will prepare detailed test cases to cover all the functionality of the website application. We’ll complete and provide reporting on the functional test execution and any defects detected. Our team can provide automated testing which enhances the services quality and efficiency.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/lm-testing-quality-assurance.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              },
-              {
-              "id": 2,
-              "title": "Time And On Budget",
-              "description": "A clear working methods and personal contact. We will meet you and discuss your requirements. What do you need? What is the essence of your asignment? We make a concrete step by step plan and clear quotation. We determine the scope of the web development project, create a budget and timeline. Just to make sure, we do weekly status checks on progress and deadlines to keep everyone – you included – on track.",
-              "icon": '<img svg-inline src="../../public/img/services-icon/time-and-on-budget.svg" class="vue-logo" />',
-              "linkOne": "link1",
-              }
-          ]
-          },
-          howItWork:{"bgImg":"../../img/web-development/how-do-we-works.png"},            
-      }
+  components:{
+    Pagetitle,
+    Texttitle,
+    OurApproach,
+    ThatsWhy,
+    // Services,
+    Whychooseus,
+    Doweworks
   },
-  metaInfo() {
-      return { 
-          title: this.metadata.title,
-          meta: [
-              { name: 'description', content: this.metadata.description},
-              { name: 'keyword', content: this.metadata.keyword},
-              { property: 'og:title', content: this.metadata.og_title},
-              { property: 'og:description', content: this.metadata.og_description},
-              {property: 'og:type', content: this.metadata.og_type}
-          ]
-      }
-  }
+  data(){
+        return{
+          metadata:appData,
+          texttitleContent:{
+              title:"Everything about iOS Development",
+              description:'<p>We employ strategists and skilled iOS Apple developers for apps development projects who fully master Swift and Objective-C. We design the user interface, set up a technology stack, develop a back end and front end.</p> <p>We make custom apps for each of our customers. We value professionalism and want to develop the best apps that meet every customer need. Are you looking for a successful iOS solution? Then hire an experienced company to develop your apps.</p><p>By providing product prototyping we intricate details of the project and the user flow. Based on this, we develop graphic designs.</p>',
+              img:'../../img/web-development/web-development-1.jpg',
+              data:[
+                {
+                  'id':1,
+                  'li': 'We work pragmatically and according to plan',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                }
+              ]
+            },
+            texttitle:{
+              
+              sectionTitle:"Fulltime & Part time App Developer",
+              sectionDescription:'We are tech versed in mobile apps development worldwide. Whether you’re a Startup or an Enterprise, Luvimac’s driven, smart and experienced team is ready to collaborate with you  to build a leading-edge mobile app solution for your next app project that will set you apart.',
+              subTitle:'iOS App Innovation',
+              subDescription:'<p>Most innovative businesses trust us to build their apps. We work collaboratively with you to develop a tailored application that meets your unique needs and requirements. We develop all our apps utilizing Swift, objective C with latest architecture and design practices. We ensure flawless execution to satisfy your needs. Our technical experts work with you to gather all requirements and define the scope of the mobile apps development project.</p>',
+              img:'../../img/app-development/app-development.jpg',
+            },
+            services:{
+              title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
+              sectionTitle:"Your app in our hands, this is how it works",
+              sectionSubText:"for iOS Development",
+              sectionDec:"<We>We partner with forward thinking clients, to transform ideas in real products. We work hard to create the most beautiful iOS Apps. Our basic requirements are regular feedback discussions and open communication - internally and externally.</p>",
+              data:[
+              {
+                "id": 1,
+                "title": "App Design",
+                "description": "iPhone users believe in user-friendliness. We believe that an app should trigger something from the user from the first touch. UI/UX Design is paramount to how the user engages with our mobile application and has a massive impact on success of the app",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-website.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 2,
+                "title": "App Development",
+                "description": "Building an iPhone app requires a different approach. We help you to develop a mobile strategy, concept, design and the realization of your iOS applications. We build your app or iOS Native in intensive Scrum development sprints.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-webshop.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 3,
+                "title": "Maintenance & Support",
+                "description": "The launch is just the beginning. After the launching apps we measure how the users experience the app or website. Take advantage of our iOS support and maintenance services and focus on your business as we maintain, manage and support your iOS applications.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 4,
+                "title": "Agile approach",
+                "description": "Our iOS app development process is agile, enabling us to deliver products to customers on time, guarantee better quality and mitigate risks.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 4,
+                "title": "Testing",
+                "description": "We can help you every step of the project development, from concept to finished product and beyond. We take care of  every aspect of your project:  analysis, project management, development, implementation, testing, etc. - all tailored to your needs.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                }
+            ]
+            },
+            whyChooseUsServices:{
+              sectionTitle:"Why Choose Us",
+              leftImg: '<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" />',
+              shortPara:"<p>From strategies and concepts to development and deploy' we have all techniques in-house. We are passionate about mobile app development, guiding you from that initial spark to a high quality solution.</p>",
+              data:[
+              {
+                "id": 1,
+                "title": "Expert Developers",
+                "description": "<p>Our experienced iOS developers specialize in Native iOS solutions for apps, the development of iOS apps and the debugging and optimization of code in these apps.</p>",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-testing-quality-assurance.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                },
+                {
+                "id": 2,
+                "title": "Knowledge partner",
+                "description": `<p>Direct communication  with the right person, while maintaining a single point of contact for all your questions.</p>`,
+                "icon": '<img svg-inline src="../../public/img/services-icon/time-and-on-budget.svg" class="vue-logo" />',
+                "linkOne": "link1",
+                }
+            ]
+            },
+            howItWork:{"bgImg":"../../img/web-development/how-do-we-works.png"},            
+        }
+    },
+    metaInfo() {
+        return { 
+            title: this.metadata.title,
+            meta: [
+                { name: 'description', content: this.metadata.description},
+                { name: 'keyword', content: this.metadata.keyword},
+                { property: 'og:title', content: this.metadata.og_title},
+                { property: 'og:description', content: this.metadata.og_description},
+                {property: 'og:type', content: this.metadata.og_type}
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-.how-it-work{
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
-   >.container-fluid{ max-width: 1590px;}
-  p{font-size: 18px;}
-}
-
-@media(min-width: 768px){
-   .how-it-work{
-     .ctn-box{
-      padding-right: 25px;
-      padding: 7vh 0px;
-     }
-   }
-}
-
-@media(max-width: 767px){
   .how-it-work{
-    background-image: none !important; 
-      p{font-size: 16px;}
-    }
-}
-
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+     >.container-fluid{ max-width: 1590px;}
+    p{font-size: 18px;}
+  }
+  @media(min-width: 768px){
+     .how-it-work{
+       .ctn-box{
+        padding-right: 25px;
+        padding: 7vh 0px;
+       }
+     }
+  }
+  @media(max-width: 767px){
+    .how-it-work{
+      background-image: none !important; 
+        p{font-size: 16px;}
+      }
+  }
 </style>
