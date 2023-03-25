@@ -158,20 +158,20 @@ export default {
       border-radius:4px;
     }
     .left-wrap{
-      background: var(--bg-color);
+      background: var(--main-bg-color);
       padding: 40px;
       border-radius: 0px 6px 6px 0px;
       height: 100%;
       .sub-title{
-        h3{ color:#fff; }
+        h3{ color:var(--strok-text); }
       }
     }
     .right-wrap{
       padding: 40px;
     }
     ul.contact-info{
-      .icon-wrap{ width: 20px; margin-right: 10px; svg{ height: 100%; height: auto; fill:#fff } }
-      span{color: #fff;}
+      .icon-wrap{ width: 20px; margin-right: 10px; svg{ height: 100%; height: auto; fill:var(--strok-text) } }
+      span{color: var(--strok-text);}
       li{ padding-bottom: 20px;}
     }
   }

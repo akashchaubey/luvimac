@@ -62,7 +62,6 @@
     <section class="lm-hm-talk">
       <div class="container wd-container text-center">
         <router-link to="/contact-us">Let’s Talk About Your Project</router-link>
-        {{ homemeta }}
       </div>
     </section>
     <Industries />
@@ -200,9 +199,9 @@ import homemeta from '../../metadata/home.json'
   }
 
   .lm-hm-talk{
-    background: #141618;
+    background: var(--main-bg-color);
     padding: 45px 0px;
-    a{color:var(--w-color); font-size: 20px; font-weight: 700;}
+    a{color:var(--strok-text); font-size: 20px; font-weight: 700;}
   }
 
   @media(max-width: 991px){
