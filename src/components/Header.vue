@@ -75,9 +75,9 @@
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'app' }">
-											<li><a href="/android">Android</a></li>
-											<li><a href="/ios">iOS</a></li>
-											<li><a href="/flutter">Flutter</a></li>
+											<li><router-link to="/android">Android</router-link></li>
+											<li><router-link to="/ios">iOS</router-link></li>
+											<li><router-link to="/flutter">Flutter</router-link></li>
 											
 										</ul>
 									</li>
@@ -90,8 +90,8 @@
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'commerce' }">
-											<li><a href="/magento">Magento</a></li>
-											<li><a href="/wordpress">Wordpress</a></li>
+											<li><router-link to="/magento">Magento</router-link></li>
+											<li><router-link to="/wordpress">Wordpress</router-link></li>
 											<!-- <li><a href="/custom-php">Custom php</a></li> -->
 										</ul>
 									</li>
