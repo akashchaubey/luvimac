@@ -74,7 +74,7 @@ export default {
                 "id": 2,
                 "title": "UI/UX Design",
                 "description": "Starting with a focus on UX design during the initial phase. By prioritizing the UX/UI design, we ensure that your concept comes to life in a visually appealing and intuitive way. Flutter gives you the ability to directly support multiple platforms., which makes the development process much more efficient and cost-effective",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-webshop.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-web-design-development.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
