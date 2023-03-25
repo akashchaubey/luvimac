@@ -13,7 +13,7 @@
                         <div class="first-item-title mb-3" data-aos="fade-up" data-aos-duration="1000">
                             {{ commonServices.sectionTitle }}
                         </div>
-                        <div class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec">
+                        <div id="ddd" class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec">
                         </div>
                     </div>
                 </div>
@@ -35,6 +35,16 @@
 <script>
 export default {
     props: ['commonServices', 'pageClass'],
+    // mounted() {
+    //     window.addEventListener('scroll', this.updateScroll);
+    // },
+    // methods:{
+    //     updateScroll() {
+    //         const element = document.getElementById("ddd");
+    //         var rect = element.getBoundingClientRect();
+    //         console.log(rect.top, rect.right, rect.bottom, rect.left);
+	// 	},
+    // }
 }
 </script>
 
@@ -117,7 +127,8 @@ export default {
 @media screen and (min-width:992px) {
     .subtitle-text-work {
         font-size: 4.4vw;
-        line-height: 4.4vw;
+        line-height: 1.3;
+        margin-bottom: 0;
     }
     .works {
         display: block;
