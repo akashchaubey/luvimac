@@ -95,13 +95,13 @@ export default {
         } 
         else if(this.$route.path == '/magento'){
             this.mainTtitle = 'Magento';
-            this.subTitle = 'We are happy to help you develop and optimize your Magento webshop.';
+            this.subTitle = 'Magento eCommerce development company';
             this.bgImg = "../../img/page-bg/contact-bg.jpg" 
 
         }
         else if(this.$route.path == '/wordpress'){
-            this.mainTtitle = 'Wordpress';
-            this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.mainTtitle = 'WordPress Development';
+            this.subTitle = 'Web design & development, strong in customization, proven concepts that meet your needs.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg" 
 
         }
@@ -196,14 +196,13 @@ export default {
         .info{
             height: 100%;
             padding: 0px 15px;
-           
             h1{
                 position: relative;
-                font-size:6rem;
+                font-size:4.5rem;
                 font-weight: 700;
                 letter-spacing: -0.2rem;
                 color:var(--w-color);
-                text-transform: uppercase;
+                text-transform: capitalize;
                 margin-bottom: 15px;
                 &:after{
                     content: "";

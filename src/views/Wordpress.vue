@@ -27,8 +27,8 @@ export default {
   data(){
         return{
             texttitleContent:{
-              title:"That's why Luvimac.",
-              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              title:"Workflow & Process",
+              description:'<p>We provide mockup to verify their website requirements, until our end user is satisfied. We make an appointment to discuss with our client why certain choices have been made and how / whether we can technically realize them.</p><p>We believe in building a work culture of personal responsibility and trust, where people want to stay for a long time.</p><p>Advantages of engagement model</p><p>We always pay attention to the convenience for the customer to update the website himself later. Once the site is finished, we may support migration of the content and launch the website.</p>',
               img:'../../img/wordpress/wordpress-development-1.jpg',
               data:[
                 {
@@ -46,15 +46,17 @@ export default {
               ]
             },
             texttitle:{
-              sectionTitle:"What We Do.",
-              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
-              subTitle:'Tools And Technologies',
-              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              sectionTitle:"WordPress Development Company",
+              sectionDescription:'We can help you to create your WordPress Website. Find the solution about WordPress here. Fast, Secure and Scalable WooCommerce Shops at Luvimac. WordPress is intuitive and easy to manage platform with all the features to manage the websites content.',
+              subTitle:'Our WordPress Services',
+              subDescription:'Looking for a developer for your WordPress website or WooCommerce webshop? We design and build professional WordPress websites for our end user that are well-liked by Google and perform well in search engine ranking. We do agreements with our client and usually work on the basis of an agreed price.',
                img:'../../img/wordpress/wordpress-development.jpg',
             },
             services:{
+               title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
               sectionTitle:"WordPress Development, Support, Maintenance",
-              sectionDec:"Web design & development, strong in customization, proven concepts that meet your needs.",
+              sectionSubText:"for Wordpress webshop",
+              sectionDec:"By utilizing a headless frontend, WordPress can be further enhanced to support application-based websites, unlocking even greater potential.",
               data:[
               {
                 "id": 1,
@@ -72,29 +74,29 @@ export default {
                 },
                 {
                 "id": 3,
-                "title": "Custom applications",
-                "description": "Our custom application is tailor made for your business and eliminates the need to change your business procedures to fit a pre-developed software. From our premises you can full access to the in-house development team so any issues that arise can be resolved quickly and efficiently.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "title": "Wordpress Plug-in",
+                "description": "Custom plugin development and WordPress API integrations ensure a 100% fit for any special challenges you and your clients meet.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-plug-in.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
-                "title": "Wordpress Plug-in",
-                "description": "Custom plugin development and WordPress API integrations ensure a 100% fit for any special challenges you and your clients meet.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-plugin.svg" class="vue-logo" />',
+                "title": "Support & Maintenance",
+                "description": "With our friendly and talented development team. We offer WordPress maintenance contracts for regular support and maintenance to ensure that you don't have any problems with your website or if you need changes in the future.",
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 5,
-                "title": "Support & Maintenance",
-                "description": "We have skilled laravel developers in-house to take over existing Laravel projects. Our developers also actively participate in improving the Laravel framework and developing new libraries.",
+                "title": "PSD to WordPress Design",
+                "description": "If you have a PSD that you want to convert into WordPress, So our team of WordPress development is ready for you. Our WordPress web designers, developers, and conversion specialists put their skill to create a good wireframe and structure for your wordpress websites",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-maintenance-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 6,
-                "title": "Design",
-                "description": "With our friendly and talented development team. We offer WordPress maintenance contracts for regular support and maintenance to ensure that you don't have any problems with your website or if you need changes in the future.",
+                "title": "SEO Friendly",
+                "description": "We can increase your conversion and ensure a higher position in search engines like Google. In WordPress we can technically optimize the website like functional and visual design, we use a number of tricks to also present the content for search engines such as Google",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-design.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }

@@ -78,7 +78,6 @@
 											<li><a href="/android">Android</a></li>
 											<li><a href="/ios">iOS</a></li>
 											<li><a href="/flutter">Flutter</a></li>
-											
 										</ul>
 									</li>
 									<li @click="toggleMenu()">

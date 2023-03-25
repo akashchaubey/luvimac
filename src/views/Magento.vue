@@ -27,8 +27,8 @@ export default {
   data(){
         return{
           texttitleContent:{
-              title:"That's why Luvimac.",
-              description:'Growth through design. Sell with your distinctive character. With the right specialists who help you get started in front of and behind the scenes.',
+              title:"Why actually Magento?",
+              description:'<p>Increase your online income</p><p>Magento is the marketplace leader in the field of webshop ecommerce platform. Magento e-commerce is an open-source multishop platform.</p><p>Magento helps you grow your online income. It offers tools to attract more traffic, increase conversion, create and maintain customer loyalty. It is a scalable platform that can grow step by step.</p>',
               img:'../../img/wordpress/wordpress-development-1.jpg',
               addClass:'magento-stl',
               data:[
@@ -47,15 +47,17 @@ export default {
               ]
             },
             texttitle:{
-              sectionTitle:"What We Do.",
-              sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
+              sectionTitle:"Create a professional webshop",
+              sectionDescription:'We are happy to help you develop and optimize your Magento webshop.',
               subTitle:'Tools And Technologies',
-              subDescription:'At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.',
+              subDescription:'To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.',
               img:'../../img/magento/web-development.jpg',
             },
             services:{
-              sectionTitle:"Magento eCommerce development company",
-              sectionDec:"To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.",
+              title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
+              sectionTitle:"We develop sophisticated e-commerce solutions",
+              sectionSubText:"for Magento commerce",
+              sectionDec:"We lead demanding e-commerce projects to success. With our interdisciplinary teams of UX specialists with a high level of industry expertise, certified Magento developers, a well thought-out development process and many years of experience, we ensure the success of your project.",
               data:[
               {
                 "id": 1,
@@ -87,8 +89,8 @@ export default {
                 }            ]
             },
             whyChooseUsServices:{
-              sectionTitle:"Why choose us",
-              shortPara:"We have IT solutions for both local companies and internationally operating organizations that enable faster and smarter collaboration.",
+              sectionTitle:"The benefits of choosing us",
+              shortPara:"<p>We have IT solutions for both local companies and internationally operating organizations that enable faster and smarter collaboration.</p><p>Luvimac offers a customer-friendly platform, where content and user experience would be more focused on the end user.</p>",
               leftImg: '<img svg-inline src="../../img/magento/why-choose-us.png" class="img-fluid" />',
               data:[
               {
@@ -101,11 +103,11 @@ export default {
                 {
                 "id": 2,
                 "title": "Quality Service",
-                "description": "By hiring our developer, you are assured of a website built with enhanced security measures. Your customer data is safe from hackers and your website ranks higher in search engine results.",
+                "description": "Our skilled and expert team always ensures that all the needs of your ecommerce website and stores are fulfilled flawlessly. You can engage one or more expert developers directly.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-quality.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
-            ]
+              ]
             },
             howItWork:{"bgImg":"../../img/m-how-it-work-bg.png"},           
         }
