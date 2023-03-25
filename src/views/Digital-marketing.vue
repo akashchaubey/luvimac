@@ -29,7 +29,7 @@ export default {
               sectionTitle:"Digital Marketing.",
               sectionDescription:'Connect with your audience with the target market easily, seamlessly and successfully. We help our b2b & startups agencies get more trafics and sales through online marketing and advertising campaigns, you can generate the revenue you need.',
               subTitle:'Digital Strategy & Content Creation',
-              subDescription:'Perfection does not exist, but we do bring our solutions one step closer to perfection. At luvimac! We provide digital marketing service to grow your business that suits both start-ups and established companies. Our digital marketing strategies can increase the level of your brand online, bringing you and your customers together.',
+              subDescription:'<p>Perfection does not exist, but we do bring our solutions one step closer to perfection. At luvimac! We provide digital marketing service to grow your business that suits both start-ups and established companies. Our digital marketing strategies can increase the level of your brand online, bringing you and your customers together.</p>',
               img:'../../img/digital-marketing/web-development.jpg',
             },
             services:{
@@ -90,14 +90,14 @@ export default {
               {
                 "id": 1,
                 "title": "Quality Service",
-                "description": "We have an expert dynamic team. Transparency and openness lead to more confidence. As an online marketing partner We ensure clients to provide fruitful results, more conversion, leads, customers and higher return.",
+                "description": "<p>We have an expert dynamic team. Transparency and openness lead to more confidence. As an online marketing partner We ensure clients to provide fruitful results, more conversion, leads, customers and higher return.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-quality.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "Feel free to contact",
-                "description": "Anyone can reach us by 24x7. We are ready to help you. Send us direct email or do phone calls. We will respond immediately.",
+                "description": "<p>Anyone can reach us by 24x7. We are ready to help you. Send us direct email or do phone calls. We will respond immediately.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-mail.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }

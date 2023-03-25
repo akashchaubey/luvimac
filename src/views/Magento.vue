@@ -50,7 +50,7 @@ export default {
               sectionTitle:"Create a professional webshop",
               sectionDescription:'We are happy to help you develop and optimize your Magento webshop.',
               subTitle:'Tools And Technologies',
-              subDescription:'To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.',
+              subDescription:'<p>To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.</p>',
               img:'../../img/magento/web-development.jpg',
             },
             services:{
@@ -96,14 +96,14 @@ export default {
               {
                 "id": 1,
                 "title": "On Time Delivery",
-                "description": "We develop and implement smart and high-quality e-commerce solutions that add value for our customers, and for their customers. Together we believe in on time delivery of projects.",
+                "description": "<p>We develop and implement smart and high-quality e-commerce solutions that add value for our customers, and for their customers. Together we believe in on time delivery of projects.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-on-time-delivery.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "Quality Service",
-                "description": "Our skilled and expert team always ensures that all the needs of your ecommerce website and stores are fulfilled flawlessly. You can engage one or more expert developers directly.",
+                "description": "<p>Our skilled and expert team always ensures that all the needs of your ecommerce website and stores are fulfilled flawlessly. You can engage one or more expert developers directly.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-quality.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }

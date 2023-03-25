@@ -49,7 +49,7 @@ export default {
               sectionTitle:"WordPress Development Company",
               sectionDescription:'We can help you to create your WordPress Website. Find the solution about WordPress here. Fast, Secure and Scalable WooCommerce Shops at Luvimac. WordPress is intuitive and easy to manage platform with all the features to manage the websites content.',
               subTitle:'Our WordPress Services',
-              subDescription:'Looking for a developer for your WordPress website or WooCommerce webshop? We design and build professional WordPress websites for our end user that are well-liked by Google and perform well in search engine ranking. We do agreements with our client and usually work on the basis of an agreed price.',
+              subDescription:'<p>Looking for a developer for your WordPress website or WooCommerce webshop? We design and build professional WordPress websites for our end user that are well-liked by Google and perform well in search engine ranking. We do agreements with our client and usually work on the basis of an agreed price.</p>',
                img:'../../img/wordpress/wordpress-development.jpg',
             },
             services:{
@@ -110,14 +110,14 @@ export default {
               {
                 "id": 1,
                 "title": "100% Customer Satisfaction",
-                "description": "We are a customer-oriented company. We treat every development project with the care and attention it deserves to ensure the best possible results.",
+                "description": "<p>We are a customer-oriented company. We treat every development project with the care and attention it deserves to ensure the best possible results.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-satisfaction.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "Quality & Security",
-                "description": "By hiring our developer, you are assured of a website built with enhanced security measures. Your customer data is safe from hackers and your website ranks higher in search engine results.",
+                "description": "<p>By hiring our developer, you are assured of a website built with enhanced security measures. Your customer data is safe from hackers and your website ranks higher in search engine results.</p>",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-quality.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }

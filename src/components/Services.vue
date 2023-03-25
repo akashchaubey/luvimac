@@ -37,7 +37,7 @@
         },
         methods: {
             readMore(value){
-                console.log("called", value)
+                // console.log("called", value)
                 if (this.loadMore == value) {
                     this.loadMore = ''
                 }else{

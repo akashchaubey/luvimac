@@ -125,7 +125,7 @@ export default {
     methods: {
       onScroll(e) {
         this.windowTop = window.top.scrollY /* or: e.target.documentElement.scrollTop */
-        console.log({ top: this.windowTop });
+        // console.log({ top: this.windowTop });
       },
     },
     metaInfo() {
