@@ -422,6 +422,7 @@ ul.social.footer a:hover svg {
 ul.bullet li {
   position: relative;
   padding-left: 15px;
+  color: var(--p-color);
 }
 
 ul.bullet li:after {
@@ -432,7 +433,7 @@ ul.bullet li:after {
   width: 6px;
   height: 6px;
   border-radius: 100px;
-  background: var(--main-clr);
+  background: currentColor;
 }
 
 .check-list ul {

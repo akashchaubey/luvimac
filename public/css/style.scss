@@ -392,6 +392,7 @@ ul.bullet{
     li{
         position: relative;
         padding-left: 15px;
+        color: var(--p-color);
         &:after{
             content: "";
             position: absolute;
@@ -400,7 +401,7 @@ ul.bullet{
             width: 6px;
             height: 6px;
             border-radius: 100px;
-            background: var(--main-clr);
+            background: currentColor;
         }
     }
 }

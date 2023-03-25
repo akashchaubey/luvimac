@@ -67,7 +67,7 @@ export default {
                 "id": 1,
                 "title": "Flutter App",
                 "description": "Building apps in Flutter, It make fast and productive programming and working whole on both Android and iOS devices. Our Flutter mobile apps feature an elegant interface combined with an aesthetic appearance to delight its users.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-website.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-flutter.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {

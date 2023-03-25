@@ -90,14 +90,14 @@ export default {
                 "id": 5,
                 "title": "PSD to WordPress Design",
                 "description": "If you have a PSD that you want to convert into WordPress, So our team of WordPress development is ready for you. Our WordPress web designers, developers, and conversion specialists put their skill to create a good wireframe and structure for your wordpress websites",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-maintenance-support.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-psd-wordpress.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 6,
                 "title": "SEO Friendly",
                 "description": "We can increase your conversion and ensure a higher position in search engines like Google. In WordPress we can technically optimize the website like functional and visual design, we use a number of tricks to also present the content for search engines such as Google",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-design.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-seo-friendly.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]

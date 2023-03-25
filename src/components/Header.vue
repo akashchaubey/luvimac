@@ -60,7 +60,7 @@
 								<router-link to="/technology">Technology</router-link>
 							</li>
 							<li>
-								<router-link to="/services"><span @click="toggleMenu()">Services</span></router-link>
+								<router-link to=""><span @click="toggleMenu()">Services</span></router-link>
 								<div class="menu-arrow" @click="showMenu('services')"
 									:class="{ open: activeTab === 'services' }">
 									<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
