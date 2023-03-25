@@ -76,7 +76,7 @@
         },
         methods: {
             readMore(value) {
-                console.log("called", value)
+                // console.log("called", value)
                 if (this.loadMore == value) {
                     this.loadMore = ''
                 } else {
@@ -111,7 +111,7 @@
                         min-width: 26px;
                         height: 26px;
                         position: relative;
-                        color: #000;
+                        color: var(--font-stl-one);
                         .icon{
                             display: inline-flex;
                             width: 20px;

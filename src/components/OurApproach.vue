@@ -70,28 +70,28 @@
             position: relative;
             transition: all .3s ease;
             overflow: hidden;
-            &::after {
-                content: "";
-                background: #000000;
-                width: 100%;
-                height: 75%;
-                line-height: 1;
-                position: absolute;
-                top: 15px;
-                left: 0;
-                transform: scale(0);
-                z-index: -1;
-                transition: all .5s ease;
-            }
-            &:hover {
-                color: #ffffff;
-                transition: all .5s ease;
-                    &::after {
-                    width: 100%;
-                    border-radius:5px;
-                    transform: scale(1);
-                }
-            }
+            // &::after {
+            //     content: "";
+            //     background: #000000;
+            //     width: 100%;
+            //     height: 75%;
+            //     line-height: 1;
+            //     position: absolute;
+            //     top: 15px;
+            //     left: 0;
+            //     transform: scale(0);
+            //     z-index: -1;
+            //     transition: all .5s ease;
+            // }
+            // &:hover {
+            //     color: #ffffff;
+            //     transition: all .5s ease;
+            //         &::after {
+            //         width: 100%;
+            //         border-radius:5px;
+            //         transform: scale(1);
+            //     }
+            // }
         }
         .approach-des {
             margin-bottom: 1.5rem;

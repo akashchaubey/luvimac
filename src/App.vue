@@ -33,11 +33,11 @@ export default {
       mounted() {
         window.addEventListener('scroll', this.updateScroll);
       },
-      watch:{
-        $route (to, from){
-            console.log('called', this.$route.name)
-        }
-    }
+    //   watch:{
+    //     $route (to, from){
+    //         console.log('called', this.$route.name)
+    //     }
+    // }
 
   }
 </script>

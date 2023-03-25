@@ -144,7 +144,7 @@
 
 			},
 			showMenu(value) {
-				console.log('called', value)
+				// console.log('called', value)
 				if (value == this.activeTab) {
 					this.activeTab = ''
 				} else {
@@ -153,7 +153,7 @@
 
 			},
 			showSubMenu(value) {
-				console.log('called', value)
+				// console.log('called', value)
 				if (value == this.activeSubTab) {
 					this.activeSubTab = ''
 				} else {

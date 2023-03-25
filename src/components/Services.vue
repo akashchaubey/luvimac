@@ -3,7 +3,7 @@
         <div class="container wd-container">
             <div class="sec-title text-center">
             <h2>{{ commonServices.sectionTitle }}</h2>
-            <p v-html="commonServices.sectionDec">{{ commonServices.sectionDec }}</p>
+            <!-- <p v-html="commonServices.sectionDec">{{ commonServices.sectionDec }}</p> -->
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12" v-for="service of commonServices.data" :key="service.service">
@@ -37,7 +37,7 @@
         },
         methods: {
             readMore(value){
-                console.log("called", value)
+                // console.log("called", value)
                 if (this.loadMore == value) {
                     this.loadMore = ''
                 }else{
