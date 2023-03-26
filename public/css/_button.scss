@@ -16,39 +16,39 @@
       text-transform: uppercase;
     }
   
-    // &.stl-one {
-    //   background: var(--s-color);
-    //   color: var(--w-color);
+    &.stl-one {
+      background: var(--s-color);
+      color: var(--w-color);
   
-    //   &:hover {
-    //     background: var(--b-color);
-    //     color: var(--w-color);
-    //   }
-    // }
+      &:hover {
+        background: var(--b-color);
+        color: var(--w-color);
+      }
+    }
   
-    // &.stl-three {
-    //   border: 0.01rem solid var(--w-color);
-    //   background: none;
-    //   color: var(--w-color);
+    &.stl-three {
+      border: 0.01rem solid var(--w-color);
+      background: none;
+      color: var(--w-color);
   
-    //   &:hover {
-    //     background: var(--s-color);
-    //     color: var(--w-color);
-    //     border-color: var(--s-color);
-    //   }
-    // }
+      &:hover {
+        background: var(--s-color);
+        color: var(--w-color);
+        border-color: var(--s-color);
+      }
+    }
   
-    // &.stl-four {
-    //   border: 0.01rem solid var(--main-clr);
-    //   background: var(--main-clr);
-    //   color: var(--w-color);
+    &.stl-four {
+      border: 0.01rem solid var(--main-clr);
+      background: var(--main-clr);
+      color: var(--w-color);
   
-    //   &:hover {
-    //     background: var(--s-color);
-    //     color: var(--w-color);
-    //     border-color: var(--s-color);
-    //   }
-    // }
+      &:hover {
+        background: var(--s-color);
+        color: var(--w-color);
+        border-color: var(--s-color);
+      }
+    }
 
     &.cta-black{
         color: var(--btn-txt-white);

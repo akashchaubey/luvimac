@@ -313,6 +313,40 @@ p {
   text-transform: uppercase;
 }
 
+.btn.stl-one {
+  background: var(--s-color);
+  color: var(--w-color);
+}
+
+.btn.stl-one:hover {
+  background: var(--b-color);
+  color: var(--w-color);
+}
+
+.btn.stl-three {
+  border: 0.01rem solid var(--w-color);
+  background: none;
+  color: var(--w-color);
+}
+
+.btn.stl-three:hover {
+  background: var(--s-color);
+  color: var(--w-color);
+  border-color: var(--s-color);
+}
+
+.btn.stl-four {
+  border: 0.01rem solid var(--main-clr);
+  background: var(--main-clr);
+  color: var(--w-color);
+}
+
+.btn.stl-four:hover {
+  background: var(--s-color);
+  color: var(--w-color);
+  border-color: var(--s-color);
+}
+
 .btn.cta-black {
   color: var(--btn-txt-white);
   border-color: var(--btn-txt-white);
