@@ -1,7 +1,7 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-      <section class="section contact-us">
+      <section class="section contact-us pt-100 pb-100">
         <div class="container">
           <div class="contact-box-wrap">
             <div class="row no-gutters flex-md-row-reverse">

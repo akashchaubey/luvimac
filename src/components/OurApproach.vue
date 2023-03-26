@@ -1,5 +1,5 @@
 <template>
-    <section class="section ourapproach">
+    <section class="section ourapproach pt-50 pb-50">
         <div class="container wd-container">
                 <h2 data-aos="fade-up" data-aos-duration="1000">Our Approach</h2>
             <div class="row">

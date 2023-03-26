@@ -1,5 +1,5 @@
 <template>
-    <section class="section">
+    <section class="section pt-50 pb-50">
 		<div class="container wd-container">
 			<div class="row align-items-start justify-content-between">
                 <div class="col-lg-6 order-lg-2 align-self-center">

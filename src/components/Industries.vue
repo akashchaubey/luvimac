@@ -1,5 +1,5 @@
 <template>
-        <section class="lm-services section">
+        <section class="section lm-services pt-100 pb-100">
             <div class="container wd-container">
                 <div class="sec-title text-center">
                     <h2 data-aos="fade-up" data-aos-delay="50">Industries</h2>

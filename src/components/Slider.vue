@@ -6,12 +6,10 @@
             <div class="bg-shade"></div>
             <div class="info text-center">
                 <h1>{{slider.title}}</h1>
-                <!-- {{mainSliderTitle}} -->
                 <p class="mr-auto ml-auto">{{ slider.description }}</p>
                 <div class="cta-btn-wrap flex-box d-flex align-items-center justify-content-center">
-                    <a :href="slider.linkOne" class="btn stl-three"><span>Go to</span></a>
-                    <span class="or">or</span>
-                    <a :href="slider.linkTwo" class="btn stl-three"><span>Contact Us</span></a>
+                    <a :href="slider.linkOne" class="btn cta-black"><span>Go to</span></a>
+                    <a :href="slider.linkTwo" class="btn cta-black"><span>Contact Us</span></a>
                 </div>
             </div>
         </div>
@@ -92,7 +90,7 @@ export default {
         .info{position: relative; z-index: 1;}
         h1{
             color: var(--w-color);
-            font-size: 5.625rem;
+            font-size: 4.5rem;
             margin-bottom: 2.5rem;
             font-weight: 800;
             position: relative;
@@ -127,7 +125,6 @@ export default {
         }
         .or{font-size: 15px; color:var(--w-color); display: inline-block; margin: 10px; font-style: italic;}
     }
-
     .arrow{
         position: absolute;
         top: 0;
@@ -147,7 +144,6 @@ export default {
                 opacity: 0.5;
             }
         }
-
     }
 }
 
@@ -160,38 +156,37 @@ export default {
 }
 
 @media(max-width: 1199px){
-    .main-banner{
-        .slide{
-            h1{ font-size: 4.7rem; }
-        }
+  .main-banner{
+    .slide{
+      h1{ font-size: 4rem; }
     }
+  }
 }
 @media(max-width: 991px){
-    .main-banner{
-        .slide{
-            padding: 0px 50px;
-            h1{ font-size: 4rem; }
-        }
+  .main-banner{
+    .slide{
+      padding: 0px 50px;
+      h1{ font-size: 3.5rem; }
     }
+  }
 }
 @media(max-width: 767px){
-    .main-banner{
-        .slide{
-            padding: 0px 40px;
-            h1{ font-size: 3rem; }
-        }
+  .main-banner{
+    .slide{
+      padding: 0px 40px;
+      h1{ font-size: 2.5rem; }
     }
+  }
 }
 @media(max-width: 480px){
-    .main-banner{
-        .slide{
-            h1{ font-size: 2.5rem; }
-            .flex-box{
-                flex-direction: column;
-                a{margin: 0 0 5px;}
-            }
-        }
+  .main-banner{
+    .slide{
+      h1{ font-size: 1.75rem; }
+      .flex-box{
+        flex-direction: column;
+        a{margin: 0 0 5px;}
+      }
     }
+  }
 }
-
 </style>

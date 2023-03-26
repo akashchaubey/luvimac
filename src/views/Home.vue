@@ -2,7 +2,7 @@
 
   <div class="home">
       <Slider :main-slider-title="metadata.main_image_alt_name" />
-        <section class="lm-services section">
+        <section class="section lm-services pt-100 pb-100">
       <div class="container wd-container">
         <div class="sec-title text-center">
         <h2 data-aos="fade-up" data-aos-delay="50">About Luvimac</h2>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section class="lm-home-services section">
+    <section class="section lm-home-services pt-100 pb-100">
       <div class="container wd-container">
         <div class="sec-title text-center">
         <h2>Our Services.</h2>

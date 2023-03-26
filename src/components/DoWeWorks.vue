@@ -1,5 +1,5 @@
 <template>
-    <section class="section we-works">
+    <section class="section we-works pt-50 pb-100">
         <div class="container wd-container">
         <div class="main-title">
                 <h2 class="subtitle-text-work" v-html="commonServices.title" data-aos="fade-up" data-aos-duration="1000"></h2>

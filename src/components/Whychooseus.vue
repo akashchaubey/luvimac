@@ -1,5 +1,5 @@
 <template>
-    <section class="section why-choose-us">
+    <section class="section why-choose-us pt-50 pb-100">
         <div class="container wd-container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">

@@ -93,7 +93,7 @@ export default {
                 "linkOne": "link1",
                 },
                 {
-                "id": 4,
+                "id": 5,
                 "title": "Testing",
                 "description": "We can help you every step of the project development, from concept to finished product and beyond. We take care of  every aspect of your project:  analysis, project management, development, implementation, testing, etc. - all tailored to your needs.",
                 "icon": '<img svg-inline src="../../public/img/services-icon/lm-testing-quality-assurance.svg" class="vue-logo" />',

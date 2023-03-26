@@ -2,7 +2,7 @@
     <div class="inner technology">
       <Pagetitle/>
  
-    <section class="lm-services bg section">
+    <section class="section lm-services bg pt-100 pb-50">
       <div class="container wd-container">
         <div class="sec-title text-center" data-aos="fade-down" data-aos-delay="50">
           <h2>Techstacks that We do</h2>
@@ -26,7 +26,7 @@
           </div>
       </div>
     </section>
-    <section class="lm-services bg section">
+    <section class="section lm-services bg pt-50 pb-50">
       <div class="container wd-container">
         <div class="row web-development flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
@@ -36,31 +36,28 @@
                     </div>
                     <p data-aos="fade-right" data-aos-delay="50">We use framework in developing stunning, engaging, successful user interfaces using in demand front end technologies and industry trends. Front-end frameworks such as React.js, Vue.js, and Angular.js are used for building the user interface (UI) of web applications. These frameworks provide developers with pre-built UI components and libraries that they can use to create interactive and responsive web pages.</p>
                     <div class="technology-tools d-flex justify-content-center flex-wrap">
-                        
-                        <router-link event="" to="/pwa" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
-                          
-                              <img src="/img/technology/frontend/pwa.png" alt="html">
-                              <div class="technology-name">PWA</div>
-                            
-                        </router-link>
+                        <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <img src="/img/technology/frontend/pwa.png" alt="html">
+                          <div class="technology-name">PWA</div>
+                        </a>
                         
                         
-                          <router-link event="" to="/angular" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                               <img src="/img/technology/frontend/angular.png" alt="html">
                               <div class="technology-name">Angular</div>
-                          </router-link>
+                          </a>
                         
                         
-                          <router-link event="" to="/react" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                               <img src="/img/technology/frontend/reactjs.png" alt="html">
                               <div class="technology-name">React</div>
-                          </router-link>
+                          </a>
                         
                         
-                          <router-link event="" to="/vue" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                               <img src="/img/technology/frontend/vue.png" alt="html">
                               <div class="technology-name">Vue</div>
-                          </router-link>
+                          </a>
                         
                     </div>
                     
@@ -78,30 +75,22 @@
                   <p>Back-end frameworks like Node.Js and Laravel are used for building the server-side logic of web applications. It is used to create lightweight and scalable web applications. With the right combination of frameworks, our skilled developers create customized experiences for users that are tailored to their needs and preferences. Our development team creates powerful back-end solutions, allowing apps to handle heavy user loads with minimal glitches.</p>
                 </div>
                 <div class="technology-tools d-flex justify-content-center flex-wrap">
-                    <!-- <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
-                        <img src="/img/technology/frontend/html.png" alt="html">
-                        <div class="technology-name">Html</div>
-                    </div>
-                    <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
-                        <img src="/img/technology/frontend/css3.png" alt="html">
-                        <div class="technology-name">css</div>
-                    </div> -->
-                    <router-link event="" to="/custom-php" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/php.png" alt="html">
                         <div class="technology-name">PHP</div>
-                    </router-link>
-                    <router-link event="" to="/node" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    </a>
+                    <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/node.webp" alt="html">
                         <div class="technology-name">Node</div>
-                    </router-link>
-                    <router-link event="" to="/laravel" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    </a>
+                    <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/laravel.png" alt="html">
                         <div class="technology-name">Laravel</div>
-                    </router-link>
-                    <router-link event="" to="/python" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                    </a>
+                    <a class="technology-item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="/img/technology/backend/python.png" alt="html">
                         <div class="technology-name">Python</div>
-                    </router-link>
+                    </a>
                 </div>
               </div>
             </div>
@@ -109,7 +98,7 @@
       </div>
     </section>
 
-    <section class="lm-services bg section">
+    <section class="section lm-services bg pt-50 pb-100">
       <div class="container wd-container">
         <!-- <div class="sec-title text-center">
           <h2 data-aos="fade-up" data-aos-delay="50">What We Do.</h2>
@@ -153,11 +142,11 @@
                         </router-link>
                     </div>
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
-                        <router-link event="" to="/ionic" class="technology-item">
+                        <a class="technology-item">
                             <img src="/img/technology/mobile/ionic-icon.png" alt="html">
                             <div class="technology-name">Ionic</div>
                             <div class="text">Creating interactive and incredible hybrid and cross-platform app for iOS and Android with remarkable efficiency.</div>
-                        </router-link>
+                        </a>
                         <router-link to="/flutter" class="technology-item">
                             <img src="/img/technology/mobile/flutter-icon.png" alt="html">
                             <div class="technology-name">Flutter</div>

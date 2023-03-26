@@ -1,7 +1,7 @@
 <template>
     <div class="inner">
       <Pagetitle/>
-    <section class="our-mission section" style="overflow:hidden;">
+    <section class="our-mission section pt-100 pb-100" style="overflow:hidden;">
       <div class="container-fluid wd-container">
         <div class="row flex-md-row-reverse">
           <div class="col-lg-6 col-md-6 col-12">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </section>
-    <section class="lm-services bg section">
+    <section class="section lm-services bg pt-100 pb-100">
       <div class="container wd-container">
         <div class="sec-title text-center">
           <h2>What We Do.</h2>
@@ -145,8 +145,6 @@ export default {
 
 <style lang="scss" scoped>
 .bgImg{
-    // max-width: 480px;
-    // max-height: 581px;
     width: calc(100% - 15px);
     height: calc(100% - 8px);
     position: absolute;
@@ -156,7 +154,6 @@ export default {
     background-image: linear-gradient(-45deg,#ff3b3b,#ffa219 85%);
     opacity: .7;
     z-index: -1;
-
 }
   .get-started{
     position: relative;

@@ -1,5 +1,5 @@
 <template>
-    <section class="lm-services bg section">
+    <section class="section lm-services bg pt-100 pb-50">
       <div class="container wd-container">
         <div class="sec-title text-center" data-aos="fade-down" data-aos-delay="50">
           <h2>{{ textTitleServices.sectionTitle }}</h2>
