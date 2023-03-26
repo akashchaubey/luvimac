@@ -82,7 +82,7 @@ export default {
 .industries {
     height: 80vh;
     .industries_name {
-        width: 280px;
+        // width: 310px;
         .industries_title {
             font-size: 2.1vw;
             line-height: 2.5vw;
