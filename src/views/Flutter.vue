@@ -81,21 +81,21 @@ export default {
                 "id": 3,
                 "title": "Flutter App Migration",
                 "description": "By migrating your app to Flutter, you'll enjoy faster development times, improved performance, and a more efficient development process overall. With our Flutter app migration services, we can help you seamlessly transition your existing Android and iOS apps to the Flutter framework",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-app-migration.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
                 "title": "Third-Party APIs Integration",
                 "description": "We customize server-side APIs for cross-platform mobile apps according to specific business needs and integrate them seamlessly into the app development process. Our flutter developer can help you launch full-fledged Flutter apps.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-api-integration.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
                 "title": "App Maintenance & Support",
                 "description": "We incorporate the latest technologies and frameworks to deliver Flutter apps that are secure, scalable, and user-friendly. Despite it dev team has skilled in fullstack development, have experience with HTML, CSS and React.Js, Vue.Js, Angular.Js, Node.Js and Laravel. These skill enable us to mainten & support your existing app as well.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]

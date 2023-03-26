@@ -67,28 +67,28 @@ export default {
                 "id": 1,
                 "title": "Sprint",
                 "description": "To initiate the process, we first brainstorm and design a sprint based on your ideas. A prototype is then created and tested by users to verify the concept before proceeding with actual app development. It enables us to fine-tune the user experience design while keeping investment and time to a minimum.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-website.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-sprint.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 2,
                 "title": "App Design",
                 "description": "Creative Apps design plays an important role in the mobile apps world. An app design defines how a user thinks and feels about a particular service from a company. Through this approach, we deliver app design that performs optimally and that your customer falls in love with.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-webshop.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-app-development.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 3,
                 "title": "App Development",
                 "description": "In the App Development phase, our android app developers develop apps for android usually consist of the development of a backend , API , and management environment. We work on the Agile method and therefore do interim deliveries in which you can give feedback on the app.",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-app-development.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 },
                 {
                 "id": 4,
                 "title": "Maintenance & Support",
                 "description": "After the successful app launch, we will work with you as a development partner. We regularly meet to make the version update. We always look to use new technology to make the app even faster. ",
-                "icon": '<img svg-inline src="../../public/img/services-icon/lm-custom-applications.svg" class="vue-logo" />',
+                "icon": '<img svg-inline src="../../public/img/services-icon/lm-support.svg" class="vue-logo" />',
                 "linkOne": "link1",
                 }
             ]

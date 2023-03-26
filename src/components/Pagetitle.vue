@@ -90,19 +90,19 @@ export default {
         else if(this.$route.path == '/digital-marketing'){
             this.mainTtitle = 'SEO & Digital Marketing';
             this.subTitle = 'Accelerating brand value through digital innovation';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg" 
+            this.bgImg = "../../img/page-bg/digital-bg.jpg" 
 
         } 
         else if(this.$route.path == '/magento'){
             this.mainTtitle = 'Magento';
             this.subTitle = 'Magento eCommerce development company';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg" 
+            this.bgImg = "../../img/page-bg/magento-bg.jpg" 
 
         }
         else if(this.$route.path == '/wordpress'){
             this.mainTtitle = 'WordPress Development';
             this.subTitle = 'Web design & development, strong in customization, proven concepts that meet your needs.';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg" 
+            this.bgImg = "../../img/page-bg/wordpress-bg.jpg" 
 
         }
         else if(this.$route.path == '/custom-php'){
@@ -123,7 +123,7 @@ export default {
         else if(this.$route.path == '/android'){
             this.mainTtitle = 'Android Apps Development';
             this.subTitle = 'We conceive, design, program, maintain and optimize your app.';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+            this.bgImg = "../../img/page-bg/android-bg.jpg"
         }
         else if(this.$route.path == '/ionic'){
             this.mainTtitle = 'Ionic';
@@ -133,12 +133,12 @@ export default {
         else if(this.$route.path == '/ios'){
             this.mainTtitle = '<span>iOS</span> App Development';
             this.subTitle = 'Mobile app development for startups & business';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+            this.bgImg = "../../img/page-bg/ios-bg.jpg"
         }
         else if(this.$route.path == '/flutter'){
             this.mainTtitle = 'Flutter App Developer';
             this.subTitle = 'Build Robust & Natively Compiled Mobile apps by Flutter';
-            this.bgImg = "../../img/page-bg/contact-bg.jpg"
+            this.bgImg = "../../img/page-bg/flutter-bg.jpg"
         }
         else if(this.$route.path == '/python'){
             this.mainTtitle = 'Python';
@@ -196,6 +196,10 @@ export default {
         .info{
             height: 100%;
             padding: 0px 15px;
+            span {
+                display: inline-block;
+                text-transform: initial;
+                } 
             h1{
                 position: relative;
                 font-size:4.5rem;
@@ -215,9 +219,7 @@ export default {
                     background: var(--font-stl-two);
                     margin: 0 auto;
                 }
-                    span {
-                        display: inline-block;
-                    } 
+                
                 }
                 p{
                     font-size: 1.12rem;

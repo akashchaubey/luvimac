@@ -34,26 +34,15 @@
                     <div class="sec-title" data-aos="fade-down" data-aos-delay="50">
                       <h2>Frontend Development.</h2>
                     </div>
-                    <!-- <div class="sub-title">
-                      <h3>Full-service IT support</h3>
-                    </div> -->
                     <p data-aos="fade-right" data-aos-delay="50">We use framework in developing stunning, engaging, successful user interfaces using in demand front end technologies and industry trends. Front-end frameworks such as React.js, Vue.js, and Angular.js are used for building the user interface (UI) of web applications. These frameworks provide developers with pre-built UI components and libraries that they can use to create interactive and responsive web pages.</p>
                     <div class="technology-tools d-flex justify-content-center flex-wrap">
-                        <!-- <div class="technology-item" data-aos="fade-right" data-aos-delay="50">
-                            <img src="/img/technology/frontend/html.png" alt="html">
-                            <div class="technology-name">Html</div>
-                        </div>
-                        <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
-                            <img src="/img/technology/frontend/css3.png" alt="html">
-                            <div class="technology-name">css</div>
-                        </div> -->
                         
-                          <router-link event="" to="/pwa" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
-                           
-                                <img src="/img/technology/frontend/pwa.png" alt="html">
-                                <div class="technology-name">PWA</div>
-                              
-                          </router-link>
+                        <router-link event="" to="/pwa" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
+                          
+                              <img src="/img/technology/frontend/pwa.png" alt="html">
+                              <div class="technology-name">PWA</div>
+                            
+                        </router-link>
                         
                         
                           <router-link event="" to="/angular" class="technology-item" data-aos="fade-up" data-aos-duration="1000">
@@ -153,24 +142,24 @@
                 <div class="image-section d-flex justify-content-center">
                     <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
                         <router-link to="/android" class="technology-item">
-                            <img src="/img/technology/mobile/android-icon.svg" alt="html">
+                            <img src="/img/technology/mobile/android-icon.png" alt="html">
                             <div class="technology-name">Android</div>
                             <div class="text">We do Android Apps Development for Smartphones, Tablets, Android Wear, and Android TV from the scratch.</div>
                         </router-link>
                         <router-link to="/ios" class="technology-item">
-                            <img src="/img/technology/mobile/apple-icon.svg" alt="html">
+                            <img src="/img/technology/mobile/apple-icon.png" alt="html">
                             <div class="technology-name">iOS</div>
                             <div class="text">Creating iOS apps that are secure, reliable, and tailored to the needs and preferences of users.</div>
                         </router-link>
                     </div>
                     <div class="technology-tools d-flex flex-column mt-4" data-aos="fade-up" data-aos-delay="50">
                         <router-link event="" to="/ionic" class="technology-item">
-                            <img src="/img/technology/mobile/ionic-icon.svg" alt="html">
+                            <img src="/img/technology/mobile/ionic-icon.png" alt="html">
                             <div class="technology-name">Ionic</div>
                             <div class="text">Creating interactive and incredible hybrid and cross-platform app for iOS and Android with remarkable efficiency.</div>
                         </router-link>
                         <router-link to="/flutter" class="technology-item">
-                            <img src="/img/technology/mobile/flutter-icon.svg" alt="html">
+                            <img src="/img/technology/mobile/flutter-icon.png" alt="html">
                             <div class="technology-name">Flutter</div>
                             <div class="text">We take on projects and tasks independently for flutter app development.</div>
                         </router-link>
@@ -218,18 +207,6 @@
           </div>
       </div>
     </section>
-<!-- 
-    <section class="get-started section">
-      <div class="container d-flex align-items-center justify-content-center">
-        <div class="box-container">
-             <div class="sec-title wt text-center">
-              <h2>Get Started</h2>
-              <p>Lets Increase your business & knowledge. We deliver a high quality version of custom software and webshop that meets the basic needs. This is the place where you can get your own development teams in the short term.</p>
-              <a href="/contact-us" class="btn stl-one">Let’s Get Started</a>
-            </div>
-        </div>
-      </div>
-    </section> -->
     </div>
 </template>
 <script>
@@ -256,7 +233,6 @@ export default {
             ]
         }
     }
-  
 };
 </script>
 

@@ -70,7 +70,7 @@
 										<router-link to="/web-development">Web Development</router-link>
 									</li>
 									<li @click="toggleMenu()">
-										<router-link to="">App Development</router-link>
+										<router-link to="/">App Development</router-link>
 										<div class="menu-arrow" @click="showSubMenu('app')" :class="{ open: activeSubTab === 'app' }">
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
