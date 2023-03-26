@@ -1,6 +1,49 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --main-clr:#000;
+  --m-color: #000;
+  --s-color: #2948ff;
+  --w-color: #fff;
+  --p-color: #666666;
+  --b-color: #36383d;
+  --black-color: #000;
+  --w-b-color: #fff;
+  --bgw-bgb-color: #fff;
+  --font-stl-one: #000;
+  --font-stl-two: #fff;
+  --font-stl-three: #141618;
+  --blue-to-white: #2948ff;
+  --brd-color: rgba(229, 229, 229, 1);
+  --abt-bg-color: #fafafa;
+  --bg-color:#141618;
+  --strok-text:#fff;
+  --main-bg-color:#000;
+  --title-line-clr:#000;
+  --footer-bg:#141618;
+  --btn-black:#000;
+  --btn-txt-white:#fff;
+  --font-primary:'Montserrat', sans-serif;
+  --font-secondary:'Poppins', sans-serif;
+}
+
+[data-theme="dark"] {
+  --main-clr:#abaebc;
+  --bgw-bgb-color: #141618;
+  --font-stl-one: #ffffff;
+  --font-stl-two: #abaebc;
+  --font-stl-three: #abaebc;
+  --blue-to-white: #abaebc;
+  --brd-color: rgba(60, 60, 60, 1);
+  --abt-bg-color: #141618;
+  --w-b-color:#fff;
+  --p-color: #abaebc;
+  --strok-text:#141618;
+  --main-bg-color:#fff;
+  --title-line-clr:#abaebc;
+}
+
 body::-moz-scrollbar {
   width: 0.5rem;
   background: var(--w-color);
@@ -118,49 +161,6 @@ p {
   font-size: 1rem;
   line-height: 28px;
   color: var(--p-color);
-}
-
-:root {
-  --main-clr:#000;
-  --m-color: #000;
-  --s-color: #2948ff;
-  --w-color: #fff;
-  --p-color: #666666;
-  --b-color: #36383d;
-  --black-color: #000;
-  --w-b-color: #fff;
-  --bgw-bgb-color: #fff;
-  --font-stl-one: #000;
-  --font-stl-two: #fff;
-  --font-stl-three: #141618;
-  --blue-to-white: #2948ff;
-  --brd-color: rgba(229, 229, 229, 1);
-  --abt-bg-color: #fafafa;
-  --bg-color:#141618;
-  --strok-text:#fff;
-  --main-bg-color:#000;
-  --title-line-clr:#000;
-  --footer-bg:#141618;
-  --btn-black:#000;
-  --btn-txt-white:#fff;
-  --font-primary:'Montserrat', sans-serif;
-  --font-secondary:'Poppins', sans-serif;
-}
-
-[data-light-mode="dark"] {
-  --main-clr:#abaebc;
-  --bgw-bgb-color: #141618;
-  --font-stl-one: #ffffff;
-  --font-stl-two: #abaebc;
-  --font-stl-three: #abaebc;
-  --blue-to-white: #abaebc;
-  --brd-color: rgba(60, 60, 60, 1);
-  --abt-bg-color: #141618;
-  --w-b-color:#fff;
-  --p-color: #abaebc;
-  --strok-text:#141618;
-  --main-bg-color:#fff;
-  --title-line-clr:#abaebc;
 }
 
 .section {
@@ -347,14 +347,47 @@ p {
   border-color: var(--s-color);
 }
 
-.btn.cta-black {
+.btn.cta-black-outline {
   color: var(--btn-txt-white);
   border-color: var(--btn-txt-white);
 }
 
-.btn.cta-black:hover {
+.btn.cta-black-outline:hover {
   border: 1px solid var(--btn-black);
   background: var(--btn-black);
+}
+
+.btn.cta-black {
+  color: var(--btn-txt-white);
+  border: 1px solid var(--btn-black);
+  background: var(--btn-black);
+}
+
+.btn.cta-black:hover {
+  color: var(--btn-txt-white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme=light]):not([data-theme=dark]) .btn.cta-black {
+    color: var(--btn-black);
+    background: var(--btn-txt-white);
+  }
+  :root:not([data-theme=light]):not([data-theme=dark]) .btn.cta-black:hover {
+    border-color: var(--btn-txt-white);
+    color: var(--btn-txt-white);
+    background: none;
+  }
+}
+
+:root[data-theme=dark] .btn.cta-black {
+  color: var(--btn-black);
+  background: var(--btn-txt-white);
+}
+
+:root[data-theme=dark] .btn.cta-black:hover {
+  border-color: var(--btn-txt-white);
+  color: var(--btn-txt-white);
+  background: none;
 }
 
 .sec-title {

@@ -50,12 +50,29 @@
       }
     }
 
-    &.cta-black{
+    &.cta-black-outline{
         color: var(--btn-txt-white);
         border-color: var(--btn-txt-white);
       &:hover{
         border: 1px solid var(--btn-black);
         background: var(--btn-black);
+      }
+    }
+    &.cta-black{
+      color: var(--btn-txt-white);
+      border: 1px solid var(--btn-black);
+      background: var(--btn-black);
+      &:hover{
+        color: var(--btn-txt-white);
+      }
+      @include dark {
+        color:var(--btn-black);
+        background: var(--btn-txt-white);
+        &:hover{
+            border-color: var(--btn-txt-white);
+            color: var(--btn-txt-white);
+            background: none;
+        }
       }
     }
   }

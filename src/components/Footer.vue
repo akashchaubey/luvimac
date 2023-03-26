@@ -278,7 +278,7 @@
 						</ul>
 					</div>
 					<div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
-						<p classs="copyrights">Copyright &copy; 2020 <router-link to="/">Luvimac.com</router-link> | All Rights Reserved.</p>
+						<p classs="copyrights">Copyright &copy; {{copyrightYear}} <router-link to="/">Luvimac.com</router-link> | All Rights Reserved.</p>
 					</div>
 				</div>
 			</div>
@@ -291,6 +291,7 @@ export default {
 	name:'Footer',
 	data() {
 		return {
+			copyrightYear: '',
 			socialLinks:[
 				{
                 "id": 1,
@@ -325,6 +326,10 @@ export default {
 			]
 		}
 	},
+	mounted() {
+		const currentYear = new Date().getFullYear();
+    	this.$set(this, 'copyrightYear', currentYear);
+	}
 }
 </script>
 

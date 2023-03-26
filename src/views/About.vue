@@ -17,7 +17,7 @@
                 <h3>Full-service IT support</h3>
               </div>
               <p>At Luvimac We provide our managed IT services to small and big size of businesses that have had software developed and to organizations that are looking for outsourcing expertise for the maintenance and development of their application. Whatever form of IT resource you are looking for, we can support you in this.</p>
-              <a href="#" class="btn stl-one">Learn More</a>
+              <a href="#" class="btn cta-black">Learn More</a>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="col-12 text-center">
-          <a href="/contact-us" class="btn stl-one">Start a Project</a>
+          <a href="/contact-us" class="btn cta-black">Start a Project</a>
         </div>
       </div>
       </div>
@@ -52,7 +52,7 @@
              <div class="sec-title wt text-center">
               <h2>Get Started</h2>
               <p>Lets Increase your business & knowledge. We deliver a high quality version of custom software and webshop that meets the basic needs. This is the place where you can get your own development teams in the short term.</p>
-              <a href="/contact-us" class="btn stl-one">Let’s Get Started</a>
+              <a href="/contact-us" class="btn cta-black-outline">Let’s Get Started</a>
             </div>
         </div>
       </div>
