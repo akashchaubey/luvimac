@@ -80,6 +80,7 @@ export default {
 </script>
 <style lang="scss">
 .industries {
+    height: 80vh;
     .industries_name {
         width: 280px;
         .industries_title {
@@ -142,6 +143,7 @@ export default {
 }
 @media screen and (max-width:767px) {
     .industries {
+        height: auto;
         display: flex;
         .industries_name {
             .industries_title {
