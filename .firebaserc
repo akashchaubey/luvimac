@@ -1,5 +1,10 @@
 {
   "projects": {
-    "default": "luvimac"
-  }
+    "default": "luvimac-8110e",
+    "staging": "luvimac-8110e",
+    "stagint": "luvimac-5bdf7",
+    "stage": "luvi-stage"
+  },
+  "targets": {},
+  "etags": {}
 }
