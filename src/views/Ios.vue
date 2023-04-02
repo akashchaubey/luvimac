@@ -17,7 +17,7 @@ import ThatsWhy from '../components/ThatsWhy';
 // import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
-import appData from '../../metadata/appDevelopment'
+import appData from '../../metadata/ios.json'
 export default {
   components:{
     Pagetitle,
@@ -34,7 +34,7 @@ export default {
           texttitleContent:{
               title:"Everything about iOS Development",
               description:'<p>We employ strategists and skilled iOS Apple developers for apps development projects who fully master Swift and Objective-C. We design the user interface, set up a technology stack, develop a back end and front end.</p> <p>We make custom apps for each of our customers. We value professionalism and want to develop the best apps that meet every customer need. Are you looking for a successful iOS solution? Then hire an experienced company to develop your apps.</p><p>By providing product prototyping we intricate details of the project and the user flow. Based on this, we develop graphic designs.</p>',
-              img:'../../img/web-development/web-development-1.jpg',
+              img:'../../img/app-development/everything-about-ios-development.png',
               data:[
                 {
                   'id':1,
@@ -56,7 +56,7 @@ export default {
               sectionDescription:'We are tech versed in mobile apps development worldwide. Whether you’re a Startup or an Enterprise, Luvimac’s driven, smart and experienced team is ready to collaborate with you  to build a leading-edge mobile app solution for your next app project that will set you apart.',
               subTitle:'iOS App Innovation',
               subDescription:'<p>Most innovative businesses trust us to build their apps. We work collaboratively with you to develop a tailored application that meets your unique needs and requirements. We develop all our apps utilizing Swift, objective C with latest architecture and design practices. We ensure flawless execution to satisfy your needs. Our technical experts work with you to gather all requirements and define the scope of the mobile apps development project.</p>',
-              img:'../../img/app-development/app-development.jpg',
+              img:'../../img/app-development/ios-app-innovation.png',
             },
             services:{
               title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
@@ -103,7 +103,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" />',
+              leftImg: '<img svg-inline src="../../img/app-development/ios-why-choose-us.png" class="img-fluid" />',
               shortPara:"<p>From strategies and concepts to development and deploy' we have all techniques in-house. We are passionate about mobile app development, guiding you from that initial spark to a high quality solution.</p>",
               data:[
               {
@@ -128,12 +128,14 @@ export default {
     metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

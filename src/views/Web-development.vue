@@ -33,6 +33,7 @@ export default {
               title:"Our added value",
               description:'<p>We are capable of working with all programming languages like PHP, JavaScript, Python, ASP.NET etc. Our expert team have ability to create stunning web application. They are expert in utilize Angular.Js, Vue.Js, React.Js, Node.Js, ElectronJs and bootstrap framework.</p><p>There is solid backend development support behind every successful software & web application. So it is most important to discuss and know about programming languages which make your website application and ecommerce store run smoothly and lightly to upload data information fastly.</p><p>We always offer our customers a tailor-made solution to guarantee the best result.</p>',
               img:'../../img/web-development/web-development-1.jpg',
+              alt:webmetadata.image2_alt_name,
               data:[
                 {
                   'id':1,
@@ -54,6 +55,7 @@ export default {
               subTitle:'We excel at Web Design & Development',
               subDescription:"<p>Our services help your business online!<br> It doesn't matter that who you are as a designer or developer at Luvimac; everyone works with the same goal in mind: to deliver a salient, eye-catching website that exceeds all expectations of our customers.</p>",
               img:'../../img/web-development/web-development.jpg',
+              alt:webmetadata.image1_alt_name,
             },
             services:{
               title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
@@ -107,7 +109,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/web-development/why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/web-development/why-choose-us.png" class="img-fluid" alt:${webmetadata.image3_alt_name} />`,
               data:[
               {
                 "id": 1,
@@ -131,12 +133,14 @@ export default {
     metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

@@ -145,10 +145,10 @@ Vue.use(VueRouter)
     meta: {title: 'python'}
   },
   {
-    path: '/android',
-    name: 'Android',
+    path: '/android-app-development',
+    name: 'Android-app-development',
     component: Android,
-    meta: {title: 'Android'}
+    meta: {title: 'Android App Development'}
   },
   {
     path: '/ionic',
@@ -157,16 +157,16 @@ Vue.use(VueRouter)
     meta: {title: 'Ionic'}
   },
   {
-    path: '/ios',
-    name: 'iOS',
+    path: '/ios-app-development',
+    name: 'ios-app-development',
     component: Ios,
-    meta: {title: 'iOS'}
+    meta: {title: 'IOS App Development'}
   },
   {
-    path: '/flutter',
-    name: 'Flutter',
+    path: '/flutter-app-development',
+    name: 'Flutter-app-development',
     component: Flutter,
-    meta: {title: 'Flutter'}
+    meta: {title: 'Flutter App Development'}
   },
   {
     path: '/our-work',

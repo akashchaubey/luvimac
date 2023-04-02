@@ -24,6 +24,7 @@
       </div>
       </div>
     </section>
+    
     <section class="lm-passion section d-flex align-items-center">
       <div class="container">
         <div class="sec-title text-center">
@@ -32,6 +33,7 @@
         </div>
       </div>
     </section>
+   
     <section class="section lm-home-services pt-100 pb-100">
       <div class="container wd-container">
         <div class="sec-title text-center">
@@ -42,7 +44,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-            <img src="../../public/img/lm-home-services.png" class="img-fluid" alt="">
+            <img src="../../public/img/lm-home-services.png" class="img-fluid" :alt=metadata.image1_alt_name>
         </div>
       </div>
         <div class="row">
@@ -59,6 +61,7 @@
         </div>
       </div>
     </section>
+    <Technologies />
     <section class="lm-hm-talk">
       <div class="container wd-container text-center">
         <router-link to="/contact-us">Let’s Talk About Your Project</router-link>
@@ -66,6 +69,7 @@
     </section>
     <Industries />
     <!-- <ClientSlide /> -->
+    
   </div>
 </template>
 
@@ -74,14 +78,15 @@
 import Slider from '../components/Slider'
 import ClientSlide from '../components/ClientSlide'
 import Industries from '../components/Industries'
+import Technologies from '../components/Technologies.vue'
 import homemeta from '../../metadata/home.json'
   export default {
     name: 'Home',
     components: {
     Slider,
     ClientSlide,
-    Industries
-    
+    Industries,
+    Technologies
   },
   data(){
         return{
@@ -160,12 +165,14 @@ import homemeta from '../../metadata/home.json'
       metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

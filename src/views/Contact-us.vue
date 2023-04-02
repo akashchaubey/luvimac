@@ -110,12 +110,14 @@ export default {
   metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

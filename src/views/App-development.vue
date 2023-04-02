@@ -17,7 +17,7 @@ import ThatsWhy from '../components/ThatsWhy';
 // import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
-import appData from '../../metadata/appDevelopment'
+// import appData from '../../metadata/ios.json'
 export default {
   components:{
     Pagetitle,
@@ -30,7 +30,7 @@ export default {
   },
   data(){
         return{
-          metadata:appData,
+          // metadata:appData,
             texttitle:{
               sectionTitle:"What We Do.",
               sectionDescription:'We’re best placed to help build your online business: taking the time to learn about your company, industry and commercial challenges',
@@ -109,18 +109,20 @@ export default {
             howItWork:{"bgImg":"../../img/web-development/how-do-we-works.png"},            
         }
     },
-    metaInfo() {
-        return { 
-            title: this.metadata.title,
-            meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
-            ]
-        }
-    }
+    // metaInfo() {
+    //     return { 
+    //         title: this.metadata.title,
+    //         meta: [
+    //             { name: 'description', content: this.metadata.description},
+    //             { name: 'keyword', content: this.metadata.keyword},
+    //             { name: 'twitter:title', content: this.metadata.twitter_title},
+    //             { property: 'og:title', content: this.metadata.og_title},
+    //             { property: 'og:description', content: this.metadata.og_description},
+    //             {property: 'og:type', content: this.metadata.og_type},
+    //             {property: 'og:url', content: this.metadata.og_url}
+    //         ]
+    //     }
+    // }
 }
 </script>
 

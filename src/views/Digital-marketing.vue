@@ -14,6 +14,7 @@ import Doweworks from '@/components/DoWeWorks';
 import Services from '../components/Services';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
+import digitalMarketingmeta from '../../metadata/digitalMarketing.json'
 export default {
   components:{
     Pagetitle,
@@ -25,12 +26,14 @@ export default {
   },
   data(){
         return{
+          metadata:digitalMarketingmeta,
             texttitle:{
               sectionTitle:"Digital Marketing.",
               sectionDescription:'Connect with your audience with the target market easily, seamlessly and successfully. We help our b2b & startups agencies get more trafics and sales through online marketing and advertising campaigns, you can generate the revenue you need.',
               subTitle:'Digital Strategy & Content Creation',
               subDescription:'<p>Perfection does not exist, but we do bring our solutions one step closer to perfection. At luvimac! We provide digital marketing service to grow your business that suits both start-ups and established companies. Our digital marketing strategies can increase the level of your brand online, bringing you and your customers together.</p>',
               img:'../../img/digital-marketing/web-development.jpg',
+              alt:digitalMarketingmeta.image1_alt_name,
             },
             services:{
               title:`We do our<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Best</span>`,
@@ -85,7 +88,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
               shortPara:"<p>Your website is not just a showcase of content or images. It is an integral segment of your marketing and business strategy. We completely understand your business, vision and goals in your industry and competitors to put together a tailor-made strategy to achieve the results you require.</p>",
-              leftImg: '<img svg-inline src="../../img/digital-marketing/why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/digital-marketing/why-choose-us.png" class="img-fluid" alt:${digitalMarketingmeta.image2_alt_name} />`,
               data:[
               {
                 "id": 1,
@@ -105,6 +108,20 @@ export default {
             },
             howItWork:{"bgImg":"../../img/digital-marketing/how-do-we-works.png"},           
         }
+    },
+    metaInfo() {
+      return { 
+        title: this.metadata.title,
+        link:[{ rel:"canonical", href: window.location.href}],
+        meta: [
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
+            ]
+      }
     }
 }
 </script>

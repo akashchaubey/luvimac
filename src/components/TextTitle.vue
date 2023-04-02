@@ -19,8 +19,8 @@
                 </div>
             </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
-              <div class="ctn-box pr-5" data-aos="fade-right" data-aos-delay="80">
+            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center pt-4 pt-md-0">
+              <div class="ctn-box pe-lg-5" data-aos="fade-right" data-aos-delay="80">
                 <div class="sub-title line-left">
                   <h2>{{ textTitleServices.subTitle }}</h2>
                 </div>

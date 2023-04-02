@@ -53,9 +53,6 @@
 							<li @click="toggleMenu()">
 								<router-link to="/about">About</router-link>
 							</li>
-							<!-- <li @click="toggleMenu()">
-								<router-link to="/blog">Blog</router-link>
-							</li> -->
 							<li @click="toggleMenu()">
 								<router-link to="/technology">Technology</router-link>
 							</li>
@@ -69,15 +66,15 @@
 									<li @click="toggleMenu()">
 										<router-link to="/web-development">Web Development</router-link>
 									</li>
-									<li @click="toggleMenu()">
+									<li>
 										<router-link to="/">App Development</router-link>
 										<div class="menu-arrow" @click="showSubMenu('app')" :class="{ open: activeSubTab === 'app' }">
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'app' }">
-											<li><router-link to="/android">Android</router-link></li>
-											<li><router-link to="/ios">iOS</router-link></li>
-											<li><router-link to="/flutter">Flutter</router-link></li>
+											<li @click="toggleMenu()"><router-link to="/android-app-development">Android</router-link></li>
+											<li @click="toggleMenu()"><router-link to="/ios-app-development"><span class="text-lowercase">i</span>OS</router-link></li>
+											<li @click="toggleMenu()"><router-link to="/flutter-app-development">Flutter</router-link></li>
 										</ul>
 									</li>
 									<li @click="toggleMenu()">
@@ -89,17 +86,13 @@
 											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'commerce' }">
-											<li><router-link to="/magento">Magento</router-link></li>
-											<li><router-link to="/wordpress">Wordpress</router-link></li>
-											<!-- <li><a href="/custom-php">Custom php</a></li> -->
+											<li @click="toggleMenu()"><router-link to="/magento">Magento</router-link></li>
+											<li @click="toggleMenu()"><router-link to="/wordpress">Wordpress</router-link></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<!-- <li @click="toggleMenu()">
-								<router-link to="/our-work">Our Work</router-link>
-							</li> -->
-							<li>
+							<li @click="toggleMenu()">
 								<router-link to="/contact-us">Contact Us</router-link>
 							</li>
 						</ul>
@@ -114,12 +107,12 @@
 	export default {
 		name: 'Header',
 		data() {
-
 			return {
 				show: false,
 				scrollPosition: null,
 				activeTab: '',
-				activeSubTab: ''
+				activeSubTab: '',
+
 			}
 		},
 		mounted() {
@@ -141,31 +134,24 @@
 			},
 			toggleMenu() {
 				this.show = !this.show
-
 			},
 			showMenu(value) {
-				// console.log('called', value)
 				if (value == this.activeTab) {
 					this.activeTab = ''
 				} else {
 					this.activeTab = value
 				}
-
 			},
 			showSubMenu(value) {
-				// console.log('called', value)
 				if (value == this.activeSubTab) {
 					this.activeSubTab = ''
 				} else {
 					this.activeSubTab = value
 				}
-
 			}
 		}
 	}
 </script>
-
-
 <style lang="scss" scoped>
 .toggle {
 	width: 26px;

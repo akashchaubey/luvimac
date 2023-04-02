@@ -17,7 +17,7 @@ import ThatsWhy from '../components/ThatsWhy';
 // import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
-import appData from '../../metadata/appDevelopment'
+import appData from '../../metadata/flutter.json'
 export default {
   components:{
     Pagetitle,
@@ -55,7 +55,7 @@ export default {
               sectionDescription:`We're growing a agency and help agencies to complete their project, help SMBs, startups to build their apps from scratch. Most of IT agencies outsource the project to Luvimac and we provide them end to end services to fullfil their apps development in Flutter.`,
               subTitle:'Build Flutter Apps',
               subDescription:'<p>Flutter is rapidly becoming the go-to choice for businesses worldwide who want to build high-quality apps on cross platforms. With its lightweight and efficient design, Flutter seamlessly runs on both Android and iOS, providing a smooth user experience across all devices. Developed by Google, this open-source mobile application development framework offers unparalleled flexibility and customization options, making it an ideal choice for businesses of all sizes. Whether you are building a simple app or a complex enterprise-level solution, Flutter can help you achieve your goals quickly and efficiently. Experience the power of Flutter and take your app development to the next level.</p>',
-              img:'../../img/app-development/app-development.jpg',
+              img:'../../img/app-development/build-flutter-apps.png',
             },
             services:{
               title:`How we can<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Assist</span>`,
@@ -127,12 +127,14 @@ export default {
     metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

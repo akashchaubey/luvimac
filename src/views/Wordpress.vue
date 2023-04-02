@@ -15,6 +15,7 @@ import Doweworks from '@/components/DoWeWorks';
 import ThatsWhy from '../components/ThatsWhy';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
+import wordpressmeta from '../../metadata/magento.json'
 export default {
   components:{
     Pagetitle,
@@ -26,6 +27,7 @@ export default {
   },
   data(){
         return{
+          metadata:wordpressmeta,
             texttitleContent:{
               title:"Workflow & Process",
               description:'<p>We provide mockup to verify their website requirements, until our end user is satisfied. We make an appointment to discuss with our client why certain choices have been made and how / whether we can technically realize them.</p><p>We believe in building a work culture of personal responsibility and trust, where people want to stay for a long time.</p><p>Advantages of engagement model</p><p>We always pay attention to the convenience for the customer to update the website himself later. Once the site is finished, we may support migration of the content and launch the website.</p>',
@@ -125,6 +127,20 @@ export default {
             },
             howItWork:{"bgImg":"../../img/m-how-it-work-bg.png"},           
         }
+    },
+    metaInfo() {
+      return { 
+        title: this.metadata.title,
+        link:[{ rel:"canonical", href: window.location.href}],
+        meta: [
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
+            ]
+      }
     }
 }
 </script>

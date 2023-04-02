@@ -17,7 +17,7 @@ import ThatsWhy from '../components/ThatsWhy';
 // import Services from '../components/Services';
 import Whychooseus from '../components/Whychooseus';
 import Doweworks from '@/components/DoWeWorks';
-import appData from '../../metadata/appDevelopment'
+import appData from '../../metadata/android.json'
 export default {
   components:{
     Pagetitle,
@@ -34,7 +34,7 @@ export default {
           texttitleContent:{
               title:"Put Your Business on Android Apps",
               description:'<p>We analyze your requirements of the application and suggest a procedure together with a tailor-made offer. After discussion about how the structure of the project should look and which technologies we use, We advise you the phase UX / UI design and then marketing and distribution strategy for your app. </p> <p>Our android app developers create apps for all of Google Play’s major categories including:</p> <ul class="bullet"> <li>Business Apps</li> <li>Social Apps</li> <li>Gaming Apps</li> <li>On-Demand Apps</li> <li>Entertainment Apps</li> <li>Productivity & Personalisation Apps</li> <li>Education Apps</li> <li>Health Care Apps</li> <li>Finance Apps</li> </ul>',
-              img:'../../img/web-development/web-development-1.jpg',
+              img:'../../img/app-development/put-your-business-on-android-apps.png',
               data:[
                 {
                   'id':1,
@@ -120,12 +120,14 @@ export default {
     metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

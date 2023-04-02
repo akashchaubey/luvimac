@@ -1,16 +1,10 @@
 {
-    "title":"Home",
-    "description":"title name",
-    "keyword":"title name",
-    "og_type":"dfdsfds",
-    "og_title":"sdfdsf dsfsdfds",
-    "og_description":"dsfdsfsdfdsfdsfdsf dsfds ds fds fds fdsf",
+    "title":"Web Development | Frontend Developer | Web Development Company",
+    "description":"For those seeking to outsource their web & mobile apps needs, We assure to them to get an efficient ideal solution end to end webshop & apps development.",
+    "keyword":"web development, android development,offshore magento outsourcing,reactjs development germany,vuejs development netherlands,custom application,shopify development ",
+    "twitter_title":"Web Development | Frontend Developer | Web Development Company",
+    "og_title":"Web Development | Frontend Developer | Web Development Company",
+    "og_description":"For those seeking to outsource their web & mobile apps needs, We assure to them to get an efficient ideal solution end to end webshop & apps development.",
     "_comment": "yaha se image ka title and alt start ho rha hai",
-    "main_image_alt_name":"alt name image 1",
-    "image2_alt_name":"alt name image 2",
-    "image3_alt_name":"alt name image 3",
-    "image4_alt_name":"alt name image 4",
-    "image5_alt_name":"alt name image 5",
-    "image6_alt_name":"alt name image 6",
-    "image7_alt_name":"alt name image 7"
+    "image1_alt_name":"alt name image 1"
 }

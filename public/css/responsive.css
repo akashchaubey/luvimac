@@ -9,16 +9,7 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .wd-container {
-    max-width: 1200px;
-  }
-}
-
 @media (min-width: 1600px) {
-  .wd-container {
-    max-width: 1560px;
-  }
   .srvs-single-box.left {
     padding-right: 100px;
   }

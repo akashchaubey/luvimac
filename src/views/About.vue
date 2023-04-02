@@ -4,8 +4,8 @@
     <section class="our-mission section pt-100 pb-100" style="overflow:hidden;">
       <div class="container-fluid wd-container">
         <div class="row flex-md-row-reverse">
-          <div class="col-lg-6 col-md-6 col-12">
-              <img src="../../public/img/about/our-mision-2.jpg" class="img-fluid">
+          <div class="col-lg-6 col-md-6 col-12 position-relative">
+              <img src="../../public/img/about/our-mision-2.jpg" class="img-fluid" :alt=metadata.image1_alt_name>
               <div class="bgImg" :style="{transform: 'translate3d(0px, '+(-80+windowTop/5)+'px , 0px)'}"></div>
           </div>
           <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
@@ -131,13 +131,15 @@ export default {
     metaInfo() {
       return { 
         title: this.metadata.title,
+        link:[{ rel:"canonical", href: window.location.href}],
         meta: [
-          { name: 'description', content: this.metadata.description},
-          { name: 'keyword', content: this.metadata.keyword},
-          { property: 'og:title', content: this.metadata.og_title},
-          { property: 'og:description', content: this.metadata.og_description},
-          {property: 'og:type', content: this.metadata.og_type}
-        ]
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
+            ]
       }
     }
 };

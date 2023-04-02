@@ -15,6 +15,7 @@ import Doweworks from '@/components/DoWeWorks';
 import ThatsWhy from '../components/ThatsWhy';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
+import magentometa from '../../metadata/magento.json'
 export default {
   components:{
     Pagetitle,
@@ -26,6 +27,7 @@ export default {
   },
   data(){
         return{
+          metadata:magentometa,
           texttitleContent:{
               title:"Why actually Magento?",
               description:'<p>Increase your online income</p><p>Magento is the marketplace leader in the field of webshop ecommerce platform. Magento e-commerce is an open-source multishop platform.</p><p>Magento helps you grow your online income. It offers tools to attract more traffic, increase conversion, create and maintain customer loyalty. It is a scalable platform that can grow step by step.</p>',
@@ -111,6 +113,20 @@ export default {
             },
             howItWork:{"bgImg":"../../img/m-how-it-work-bg.png"},           
         }
+    },
+    metaInfo() {
+      return { 
+        title: this.metadata.title,
+        link:[{ rel:"canonical", href: window.location.href}],
+        meta: [
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
+            ]
+      }
     }
 }
 </script>

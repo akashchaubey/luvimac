@@ -10,7 +10,7 @@
         </div>
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="/img/technology/tools.svg" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
+                <img src="/img/technology/tools.svg" data-aos="fade-left" data-aos-delay="300" class="img-fluid" :alt=metadata.image1_alt_name>
             </div>
             <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
               <div class="ctn-box" data-aos="fade-right" data-aos-delay="80">
@@ -117,12 +117,12 @@
                     <p>We've holds a remote & in-house team of well versed iOS, Android and flutter apps developers who have been working with SMBs, startups and B2B agencie, no matter which industies you're from our aim is to provide you complete development solutions.</p>
                 </div>
                 <div class="mobiles-animation">
-                  <img data-aos="fade-right" data-aos-delay="500" src="/img/technology/mobile/mobile-app-bg.png" alt="">
+                  <img data-aos="fade-right" data-aos-delay="500" src="/img/technology/mobile/mobile-app-bg.png" :alt=metadata.image2_alt_name>
                   <figure class="mobile-img two">
-                      <img data-aos="fade-down" data-aos-delay="750" src="/img/technology/mobile/mobile-app-1.png" alt="mobile">
+                      <img data-aos="fade-down" data-aos-delay="750" src="/img/technology/mobile/mobile-app-1.png" :alt=metadata.image3_alt_name>
                     </figure>
                       <figure class="mobile-img one" >
-                        <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/mobile-app-2.png" alt="mobile">
+                        <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/mobile-app-2.png" :alt=metadata.image4_alt_name>
                       </figure>
                 </div>
               </div>
@@ -130,12 +130,12 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="image-section d-flex justify-content-center">
                     <div class="technology-tools d-flex flex-column" data-aos="fade-down" data-aos-delay="50">
-                        <router-link to="/android" class="technology-item">
+                        <router-link to="/android-app-development" class="technology-item">
                             <img src="/img/technology/mobile/android-icon.png" alt="html">
                             <div class="technology-name">Android</div>
                             <div class="text">We do Android Apps Development for Smartphones, Tablets, Android Wear, and Android TV from the scratch.</div>
                         </router-link>
-                        <router-link to="/ios" class="technology-item">
+                        <router-link to="/ios-app-development" class="technology-item">
                             <img src="/img/technology/mobile/apple-icon.png" alt="html">
                             <div class="technology-name">iOS</div>
                             <div class="text">Creating iOS apps that are secure, reliable, and tailored to the needs and preferences of users.</div>
@@ -147,7 +147,7 @@
                             <div class="technology-name">Ionic</div>
                             <div class="text">Creating interactive and incredible hybrid and cross-platform app for iOS and Android with remarkable efficiency.</div>
                         </a>
-                        <router-link to="/flutter" class="technology-item">
+                        <router-link to="/flutter-app-development" class="technology-item">
                             <img src="/img/technology/mobile/flutter-icon.png" alt="html">
                             <div class="technology-name">Flutter</div>
                             <div class="text">We take on projects and tasks independently for flutter app development.</div>
@@ -213,12 +213,14 @@ export default {
     metaInfo() {
         return { 
             title: this.metadata.title,
+            link:[{ rel:"canonical", href: window.location.href}],
             meta: [
-                { name: 'description', content: this.metadata.description},
-                { name: 'keyword', content: this.metadata.keyword},
-                { property: 'og:title', content: this.metadata.og_title},
-                { property: 'og:description', content: this.metadata.og_description},
-                {property: 'og:type', content: this.metadata.og_type}
+            { name: 'description', content: this.metadata.description},
+              { name: 'keyword', content: this.metadata.keyword},
+              { name: 'twitter:title', content: this.metadata.twitter_title},
+              { property: 'og:title', content: this.metadata.og_title},
+              { property: 'og:description', content: this.metadata.og_description},
+              {property: 'og:url', content: window.location.href}
             ]
         }
     }

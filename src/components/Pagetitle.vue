@@ -3,7 +3,7 @@
         <div class="page-bg">
             <div class="bg" :style="{'background-image': 'url('+ bgImg + ')'}"></div>
         </div>
-        <div class="info d-flex flex-column align-items-center justify-content-center">
+        <div class="info d-flex flex-column align-items-center justify-content-center text-center">
             <h1 data-aos="fade-up" data-aos-delay="50" v-html="mainTtitle"></h1>
             <div class="sub-text max-800" data-aos="fade-up" data-aos-delay="300">
                 <p> {{ subTitle }}</p>
@@ -120,7 +120,7 @@ export default {
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
-        else if(this.$route.path == '/android'){
+        else if(this.$route.path == '/android-app-development'){
             this.mainTtitle = 'Android Apps Development';
             this.subTitle = 'We conceive, design, program, maintain and optimize your app.';
             this.bgImg = "../../img/page-bg/android-bg.jpg"
@@ -130,12 +130,12 @@ export default {
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
-        else if(this.$route.path == '/ios'){
+        else if(this.$route.path == '/ios-app-development'){
             this.mainTtitle = '<span>iOS</span> App Development';
             this.subTitle = 'Mobile app development for startups & business';
             this.bgImg = "../../img/page-bg/ios-bg.jpg"
         }
-        else if(this.$route.path == '/flutter'){
+        else if(this.$route.path == '/flutter-app-development'){
             this.mainTtitle = 'Flutter App Developer';
             this.subTitle = 'Build Robust & Natively Compiled Mobile apps by Flutter';
             this.bgImg = "../../img/page-bg/flutter-bg.jpg"
@@ -179,9 +179,7 @@ export default {
             z-index: -1;
             .bg{
                 height: 100%;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: center center;
+                background: no-repeat center / cover;
             }
             &:before{
                 content: '';
