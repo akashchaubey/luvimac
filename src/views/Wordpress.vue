@@ -32,6 +32,7 @@ export default {
               title:"Workflow & Process",
               description:'<p>We provide mockup to verify their website requirements, until our end user is satisfied. We make an appointment to discuss with our client why certain choices have been made and how / whether we can technically realize them.</p><p>We believe in building a work culture of personal responsibility and trust, where people want to stay for a long time.</p><p>Advantages of engagement model</p><p>We always pay attention to the convenience for the customer to update the website himself later. Once the site is finished, we may support migration of the content and launch the website.</p>',
               img:'../../img/wordpress/wordpress-development-1.jpg',
+              alt:wordpressmeta.image2_alt_name,
               data:[
                 {
                   'id':1,
@@ -52,7 +53,8 @@ export default {
               sectionDescription:'We can help you to create your WordPress Website. Find the solution about WordPress here. Fast, Secure and Scalable WooCommerce Shops at Luvimac. WordPress is intuitive and easy to manage platform with all the features to manage the websites content.',
               subTitle:'Our WordPress Services',
               subDescription:'<p>Looking for a developer for your WordPress website or WooCommerce webshop? We design and build professional WordPress websites for our end user that are well-liked by Google and perform well in search engine ranking. We do agreements with our client and usually work on the basis of an agreed price.</p>',
-               img:'../../img/wordpress/wordpress-development.jpg',
+              img:'../../img/wordpress/wordpress-development.jpg',
+              alt:wordpressmeta.image1_alt_name,
             },
             services:{
                title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
@@ -107,7 +109,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
               shortPara:"Have you built a site in WordPress yourself or wanto create from a sketch. If things go wrong we are always here to help you and give 100% unique solutions. You can be sure that everything in the website design & development can actually be technically realized in WordPress.",
-              leftImg: '<img svg-inline src="../../img/wordpress/why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/wordpress/why-choose-us.png" class="img-fluid" alt="${wordpressmeta.image3_alt_name}" />`,
               data:[
               {
                 "id": 1,

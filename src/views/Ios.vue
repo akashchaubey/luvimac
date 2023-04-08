@@ -35,6 +35,7 @@ export default {
               title:"Everything about iOS Development",
               description:'<p>We employ strategists and skilled iOS Apple developers for apps development projects who fully master Swift and Objective-C. We design the user interface, set up a technology stack, develop a back end and front end.</p> <p>We make custom apps for each of our customers. We value professionalism and want to develop the best apps that meet every customer need. Are you looking for a successful iOS solution? Then hire an experienced company to develop your apps.</p><p>By providing product prototyping we intricate details of the project and the user flow. Based on this, we develop graphic designs.</p>',
               img:'../../img/app-development/everything-about-ios-development.png',
+              alt:appData.image2_alt_name,
               data:[
                 {
                   'id':1,
@@ -57,6 +58,7 @@ export default {
               subTitle:'iOS App Innovation',
               subDescription:'<p>Most innovative businesses trust us to build their apps. We work collaboratively with you to develop a tailored application that meets your unique needs and requirements. We develop all our apps utilizing Swift, objective C with latest architecture and design practices. We ensure flawless execution to satisfy your needs. Our technical experts work with you to gather all requirements and define the scope of the mobile apps development project.</p>',
               img:'../../img/app-development/ios-app-innovation.png',
+              alt:appData.image1_alt_name
             },
             services:{
               title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
@@ -103,7 +105,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/app-development/ios-why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/app-development/ios-why-choose-us.png" class="img-fluid" alt="${appData.image3_alt_name} />`,
               shortPara:"<p>From strategies and concepts to development and deploy' we have all techniques in-house. We are passionate about mobile app development, guiding you from that initial spark to a high quality solution.</p>",
               data:[
               {

@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 order-lg-3">
                     <div class="thatswhyImg" data-aos="fade-up" data-aos-duration="1000">
-                        <img :src="thatWhy.img" style="width:100%;" alt="" class="sb-media ">
+                        <img :src="thatWhy.img" style="width:100%;" :alt="thatWhy.alt" class="sb-media ">
                     </div>
                 </div>
 			</div>

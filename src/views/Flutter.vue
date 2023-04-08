@@ -35,6 +35,7 @@ export default {
               title:"Innovate and grow",
               description:'<p>Partner with us to bring your app idea to life. Our team of experts specializes in custom Flutter App development, offering top-quality design, development, and maintenance services for all platforms. </p> <p>We create exactly the app that works for your organization and users. Whether you are a small start-up or a large-scale enterprise: we look at which technology suits you best, in order to launch a successful digital product.</p><p>Flutter eliminates the need to develop separate apps for different platforms. By using a single codebase, a Flutter app can be compiled into both iOS and Android apps, streamlining the development process and saving time and resources.</p>',
               img:'../../img/web-development/web-development-1.jpg',
+              alt:appData.image2_alt_name,
               data:[
                 {
                   'id':1,
@@ -56,6 +57,7 @@ export default {
               subTitle:'Build Flutter Apps',
               subDescription:'<p>Flutter is rapidly becoming the go-to choice for businesses worldwide who want to build high-quality apps on cross platforms. With its lightweight and efficient design, Flutter seamlessly runs on both Android and iOS, providing a smooth user experience across all devices. Developed by Google, this open-source mobile application development framework offers unparalleled flexibility and customization options, making it an ideal choice for businesses of all sizes. Whether you are building a simple app or a complex enterprise-level solution, Flutter can help you achieve your goals quickly and efficiently. Experience the power of Flutter and take your app development to the next level.</p>',
               img:'../../img/app-development/build-flutter-apps.png',
+              alt:appData.image1_alt_name,
             },
             services:{
               title:`How we can<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Assist</span>`,
@@ -102,7 +104,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" alt="${appData.image3_alt_name}" />`,
               shortPara:"<p>At every step of the journey, our team of experienced professionals is dedicated to ensuring the success of your project. From inception to completion, we help sketch you the smartest yet quickest solution for your cross-platform development project and bring to life the expectations you aspire for them. Partner with us for unparalleled service and rest easy knowing that your project is in good hands.</p>",
               data:[
               {

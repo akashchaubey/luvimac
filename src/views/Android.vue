@@ -35,6 +35,7 @@ export default {
               title:"Put Your Business on Android Apps",
               description:'<p>We analyze your requirements of the application and suggest a procedure together with a tailor-made offer. After discussion about how the structure of the project should look and which technologies we use, We advise you the phase UX / UI design and then marketing and distribution strategy for your app. </p> <p>Our android app developers create apps for all of Google Play’s major categories including:</p> <ul class="bullet"> <li>Business Apps</li> <li>Social Apps</li> <li>Gaming Apps</li> <li>On-Demand Apps</li> <li>Entertainment Apps</li> <li>Productivity & Personalisation Apps</li> <li>Education Apps</li> <li>Health Care Apps</li> <li>Finance Apps</li> </ul>',
               img:'../../img/app-development/put-your-business-on-android-apps.png',
+              alt:appData.image3_alt_name,
               data:[
                 {
                   'id':1,
@@ -56,6 +57,8 @@ export default {
               subTitle:'Native app development',
               subDescription:'<p>Before the beginning of the project we get involved in a beautiful adventure of our customers where we help companies with their android apps development together. Based on technical challenges of the project, expectations and goals together we create a precise needs analysis for you that becomes very challenging and fun to solve.</p>',
               img:'../../img/app-development/app-development.jpg',
+              alt:appData.image1_alt_name,
+              alt1:appData.image2_alt_name,
             },
             services:{
               title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
@@ -95,7 +98,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: '<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" alt:${appData.image3_alt_name} />`,
               shortPara:"<p>We have all our app developers working at our in-house. We keep transparency in our communication and provide our clients with insight into the advantages and disadvantages of the chosen development platform. At Luvimac we do not indoor only project but for building long-term relationships and high-quality deliveries.</p>",
               data:[
               {

@@ -10,12 +10,12 @@
         <div class="row flex-md-row-reverse">
             <div class="col-lg-6 col-md-6 col-12">
               <div class="img-box-wrap">
-                <img :src="textTitleServices.img" data-aos="fade-left" data-aos-delay="300" class="img-fluid">
-                <div v-if="this.$route.path == '/android'" class="mobile-layer-stl">
-                  <img src="img/app-development/app-mobile.png" alt="android" v-for="(n, index) of 4" :key="index">
+                <img :src="textTitleServices.img" data-aos="fade-left" data-aos-delay="300" class="img-fluid" :alt="textTitleServices.alt">
+                <div v-if="this.$route.path == '/android-app-development'" class="mobile-layer-stl">
+                  <img src="img/app-development/app-mobile.png" :alt="textTitleServices.alt1" v-for="(n, index) of 4" :key="index">
                 </div>
                 <div v-if="this.$route.path == '/magento'" class="magento-gif">
-                  <img src="img/magento/magento.gif" alt="magento">
+                  <img src="img/magento/magento.gif" :alt="textTitleServices.alt1">
                 </div>
             </div>
             </div>
@@ -69,15 +69,15 @@
             opacity: 0.4;
           }
           &:nth-child(2){
-            transform: translate(25px, -25px);
+            transform: translate(15px, -15px);
             opacity: 0.6;
           }
           &:nth-child(3){
-            transform: translate(50px, -50px);
+            transform: translate(30px, -30px);
             opacity: 0.8;
           }
           &:nth-child(4){
-            transform: translate(75px, -75px);
+            transform: translate(45px, -45px);
             opacity: 1;
           }
         }

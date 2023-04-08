@@ -32,6 +32,7 @@ export default {
               title:"Why actually Magento?",
               description:'<p>Increase your online income</p><p>Magento is the marketplace leader in the field of webshop ecommerce platform. Magento e-commerce is an open-source multishop platform.</p><p>Magento helps you grow your online income. It offers tools to attract more traffic, increase conversion, create and maintain customer loyalty. It is a scalable platform that can grow step by step.</p>',
               img:'../../img/wordpress/wordpress-development-1.jpg',
+              alt:magentometa.image3_alt_name,
               addClass:'magento-stl',
               data:[
                 {
@@ -54,6 +55,8 @@ export default {
               subTitle:'Tools And Technologies',
               subDescription:'<p>To design and build a Magento website and fulfill your custom magento eCommerce shop requirements you need a team of Magento developers. Our in-house team of specialist Magento developers works to build, support and improve Magento websites or Magento webshop.</p>',
               img:'../../img/magento/web-development.jpg',
+              alt:magentometa.image1_alt_name,
+              alt1:magentometa.image2_alt_name,
             },
             services:{
               title:`How do we<span class='works' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Work</span>`,
@@ -93,7 +96,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"The benefits of choosing us",
               shortPara:"<p>We have IT solutions for both local companies and internationally operating organizations that enable faster and smarter collaboration.</p><p>Luvimac offers a customer-friendly platform, where content and user experience would be more focused on the end user.</p>",
-              leftImg: '<img svg-inline src="../../img/magento/why-choose-us.png" class="img-fluid" />',
+              leftImg: `<img svg-inline src="../../img/magento/why-choose-us.png" class="img-fluid" alt="${magentometa.image4_alt_name}" />`,
               data:[
               {
                 "id": 1,
