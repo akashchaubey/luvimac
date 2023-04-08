@@ -3,6 +3,7 @@
     <Pagetitle/>
     <Texttitle :textTitleServices="texttitle"></Texttitle>
     <Doweworks :commonServices="services" :servicesSectionClass="'web'"></Doweworks>
+    <ThatsWhy :thatWhy="texttitleContent"></ThatsWhy>
     <OurApproach />
     <Whychooseus :commonWhyChoose="whyChooseUsServices" :whyChooseClass="'web'"></Whychooseus>
     </div>
@@ -12,6 +13,7 @@ import Texttitle from '../components/TextTitle';
 import Pagetitle from '../components/Pagetitle';
 import Doweworks from '@/components/DoWeWorks';
 import Services from '../components/Services';
+import ThatsWhy from '../components/ThatsWhy';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
 import digitalMarketingmeta from '../../metadata/digitalMarketing.json'
@@ -21,18 +23,39 @@ export default {
     Texttitle,
     Doweworks,
     Services,
+    ThatsWhy, 
     OurApproach,
     Whychooseus
   },
   data(){
         return{
           metadata:digitalMarketingmeta,
+          texttitleContent:{
+              title:"Our added value",
+              description:'<p>We are capable of working with all programming languages like PHP, JavaScript, Python, ASP.NET etc. Our expert team have ability to create stunning web application. They are expert in utilize Angular.Js, Vue.Js, React.Js, Node.Js, ElectronJs and bootstrap framework.</p><p>There is solid backend development support behind every successful software & web application. So it is most important to discuss and know about programming languages which make your website application and ecommerce store run smoothly and lightly to upload data information fastly.</p><p>We always offer our customers a tailor-made solution to guarantee the best result.</p>',
+              img:'../../img/digital-marketing/innovate-and-grow.png',
+              alt:digitalMarketingmeta.image2_alt_name,
+              data:[
+                {
+                  'id':1,
+                  'li': 'We work pragmatically and according to plan',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                },
+                {
+                  'id':2,
+                  'li': 'We work with you, but for your visitors',
+                }
+              ]
+            },
             texttitle:{
               sectionTitle:"Digital Marketing.",
               sectionDescription:'Connect with your audience with the target market easily, seamlessly and successfully. We help our b2b & startups agencies get more trafics and sales through online marketing and advertising campaigns, you can generate the revenue you need.',
               subTitle:'Digital Strategy & Content Creation',
               subDescription:'<p>Perfection does not exist, but we do bring our solutions one step closer to perfection. At luvimac! We provide digital marketing service to grow your business that suits both start-ups and established companies. Our digital marketing strategies can increase the level of your brand online, bringing you and your customers together.</p>',
-              img:'../../img/digital-marketing/web-development.jpg',
+              img:'../../img/digital-marketing/digital-strategy-and-content-creation.jpg',
               alt:digitalMarketingmeta.image1_alt_name,
             },
             services:{
@@ -88,7 +111,7 @@ export default {
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
               shortPara:"<p>Your website is not just a showcase of content or images. It is an integral segment of your marketing and business strategy. We completely understand your business, vision and goals in your industry and competitors to put together a tailor-made strategy to achieve the results you require.</p>",
-              leftImg: `<img svg-inline src="../../img/digital-marketing/why-choose-us.png" class="img-fluid" alt:${digitalMarketingmeta.image2_alt_name} />`,
+              leftImg: `<img svg-inline src="../../img/digital-marketing/why-choose-us.png" class="img-fluid" alt:${digitalMarketingmeta.image3_alt_name} />`,
               data:[
               {
                 "id": 1,

@@ -34,7 +34,7 @@ export default {
           texttitleContent:{
               title:"Innovate and grow",
               description:'<p>Partner with us to bring your app idea to life. Our team of experts specializes in custom Flutter App development, offering top-quality design, development, and maintenance services for all platforms. </p> <p>We create exactly the app that works for your organization and users. Whether you are a small start-up or a large-scale enterprise: we look at which technology suits you best, in order to launch a successful digital product.</p><p>Flutter eliminates the need to develop separate apps for different platforms. By using a single codebase, a Flutter app can be compiled into both iOS and Android apps, streamlining the development process and saving time and resources.</p>',
-              img:'../../img/web-development/web-development-1.jpg',
+              img:'../../img/app-development/innovate-and-grow.png',
               alt:appData.image2_alt_name,
               data:[
                 {
@@ -104,7 +104,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: `<img svg-inline src="../../img/app-development/why-choose-us.png" class="img-fluid" alt="${appData.image3_alt_name}" />`,
+              leftImg: `<img svg-inline src="../../img/app-development/flutter-why-choose-us.png" class="img-fluid" alt="${appData.image3_alt_name}" />`,
               shortPara:"<p>At every step of the journey, our team of experienced professionals is dedicated to ensuring the success of your project. From inception to completion, we help sketch you the smartest yet quickest solution for your cross-platform development project and bring to life the expectations you aspire for them. Partner with us for unparalleled service and rest easy knowing that your project is in good hands.</p>",
               data:[
               {
