@@ -105,7 +105,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              leftImg: `<img svg-inline src="../../img/app-development/ios-why-choose-us.png" class="img-fluid" alt="${appData.image3_alt_name} />`,
+              leftImg: `<img svg-inline src="../../img/app-development/ios-why-choose-us.png" class="img-fluid" alt="${appData.image3_alt_name}" />`,
               shortPara:"<p>From strategies and concepts to development and deploy' we have all techniques in-house. We are passionate about mobile app development, guiding you from that initial spark to a high quality solution.</p>",
               data:[
               {
