@@ -1,10 +1,10 @@
 <template>
   <footer>
-    <div class="footer-top">
+    <div class="fo-top pb-xl-5 pb-lg-5 pb-md-4 pb-sm-3 pb-3">
       <div class="container wd-container">
         <div class="row">
-          <div class="col-xl-4 pb-3 pb-xl-0">
-            <div class="block about">
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pr-lg-5 pr-xl-5">
+            <div class="widget about">
               <div class="foo-logo">
                 <svg
                   version="1.1"
@@ -315,94 +315,62 @@
               </p>
             </div>
           </div>
-          <div class="col-xl-8">
-            <div class="footer-menu">
-              <div class="accordion" id="footer-accordion">
-                <div class="accordion-item">
-                  <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#acc-content-1">Company <span class="icon-box"><Icon name="down-arrow-icon" :width="16" :height="16" /></span></h3>
-                  <div id="acc-content-1" class="accordion-collapse collapse" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
-                      <ul>
-												<li><router-link to="/">Home</router-link></li>
-												<li><router-link to="/about-us">About Us</router-link></li>
-                        <li><router-link to="/contact-us">Contact</router-link></li>
-											</ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#acc-content-2">Capabilities<span class="icon-box"><Icon name="down-arrow-icon" :width="16" :height="16" /></span></h3>
-                  <div id="acc-content-2" class="accordion-collapse collapse" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
-                      <ul>
-												<li><a>Design</a></li>
-												<li><a>Development</a></li>
-												<li><a>Business Consulting</a></li>
-												<li><a>Technology Consulting</a></li>
-												<li><a>Staff Augmentation</a></li>
-												<li><a>Hire On-Demand</a></li>
-												<li><a>SEO Marketing</a></li>
-											</ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#acc-content-3">Solutions<span class="icon-box"><Icon name="down-arrow-icon" :width="16" :height="16" /></span></h3>
-                  <div id="acc-content-3" class="accordion-collapse collapse" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
-                      <ul>
-												<li><a>eLearning</a></li>
-												<li><a>eCommerce</a></li>
-												<li><a>Web Portals</a></li>
-												<li><a>Low Code Solutions</a></li>
-												<li><a>No Code Solutions</a></li>
-												<li><a>Logistics</a></li>
-											</ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h3 class="collapsed" data-bs-toggle="collapse" data-bs-target="#acc-content-4">Technologies<span class="icon-box"><Icon name="down-arrow-icon" :width="16" :height="16" /></span></h3>
-                  <div id="acc-content-4" class="accordion-collapse collapse" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
-                      <ul>
-                        <li><router-link to="/technology">Technology</router-link></li>
-                        <li><router-link to="/wordpress">WordPress</router-link></li>
-                        <li><router-link to="/magento">Magento</router-link></li>
-                        <li><router-link to="/android-app-development">Android App</router-link></li>
-                        <li><router-link to="/ios-app-development">iOS App</router-link></li>
-                        <li><router-link to="/flutter-app-development">Flutter App</router-link></li>
-											</ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 pl-lg-4 pl-xl-5">
+            <div class="widget">
+              <h3 class="widget-title">NAVIGATION</h3>
+            </div>
+            <ul class="foo nav">
+              <li><router-link to="/">Home</router-link></li>
+              <li><router-link to="/about-us">About Us</router-link></li>
+              <li><router-link to="/contact-us">Contact</router-link></li>
+            </ul>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div class="widget">
+              <h3 class="widget-title">SERVICES</h3>
+            </div>
+            <ul class="foo nav">
+              <li>
+                <router-link to="/web-development">Web Development</router-link>
+              </li>
+              <li><router-link to="/magento">Magento</router-link></li>
+              <li>
+                <router-link to="/digital-marketing"
+                  >Digital marketing</router-link
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pl-lg-5 pl-xl-5">
+            <div class="widget pt-4">
+              <h3 class="widget-title">Social Media</h3>
+            </div>
+            <div class="social-container">
+              <ul class="social footer">
+                <li v-for="social of socialLinks" :key="social.id">
+                  <a href="/" v-html="social.icon"> </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="fo-bottom">
       <div class="container wd-container">
-        <div class="row align-items-center">
-          <div class="col-md-3 pb-3 pb-md-0 text-center text-md-start">
-            <ul class="footer-link">
-              <li><router-link to="/privacy-policy">Privacy Policy</router-link></li>
+        <div class="row d-flex flex-md-row-reverse">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+            <ul class="f-link d-flex justify-content-center">
+              <li><router-link to="/">Privacy</router-link></li>
+              <li><router-link to="/">Terms</router-link></li>
             </ul>
           </div>
-          <div class="col-md-6 pb-3 pb-md-0 text-center">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
             <p classs="copyrights">
               Copyright &copy; {{ copyrightYear }}
               <router-link to="/">Luvimac.com</router-link> | All Rights
               Reserved.
             </p>
-          </div>
-          <div class="col-md-3 text-center text-md-end">
-            <ul class="social footer">
-                <li v-for="social of socialLinks" :key="social.id">
-                  <a href="/" v-html="social.icon"> </a>
-                </li>
-              </ul>
           </div>
         </div>
       </div>
@@ -410,10 +378,8 @@
   </footer>
 </template>
 <script>
-import Icon from '../inc/Icon.vue';
 export default {
   name: "Footer",
-  components: { Icon },
   data() {
     return {
       copyrightYear: "",
@@ -441,7 +407,13 @@ export default {
           title: "Linkdin",
           icon: '<svg version="1.1" id="Bold" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"> <g> <path d="M24.6,24.6L24.6,24.6L24.6,24.6l0-8.8c0-4.3-0.9-7.7-6-7.7c-2.4,0-4.1,1.3-4.7,2.6h-0.1V8.5H9v16.1h5v-8 c0-2.1,0.4-4.1,3-4.1c2.6,0,2.6,2.4,2.6,4.3v7.8L24.6,24.6z"/> <path d="M0.8,8.5h5v16.1h-5L0.8,8.5z"/> <path d="M3.3,0.4c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9s2.9-1.3,2.9-2.9C6.2,1.7,4.9,0.4,3.3,0.4z"/> </g> </svg>',
           link: "link",
-        }
+        },
+        {
+          id: 5,
+          title: "Linkdin",
+          icon: '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"> <path d="M13.1,0.4c-6.6,0-9.9,4.7-9.9,8.7c0,2.4,0.9,4.5,2.8,5.3c0.3,0.1,0.6,0,0.7-0.3C6.8,13.9,6.9,13.2,7,13c0-0.4,0-0.5-0.2-0.8 c-0.6-0.7-0.9-1.5-0.9-2.7c0-3.5,2.6-6.7,6.8-6.7c3.7,0,5.8,2.3,5.8,5.3c0,4-1.8,7.4-4.4,7.4c-1.5,0-2.5-1.2-2.2-2.7 c0.4-1.8,1.2-3.7,1.2-4.9c0-1.1-0.6-2.1-1.9-2.1c-1.5,0-2.7,1.5-2.7,3.6c0,1.3,0.4,2.2,0.4,2.2S7.4,18,7.1,19.2 c-0.5,2.2-0.1,5,0,5.3c0,0.2,0.2,0.2,0.3,0.1c0.1-0.2,1.9-2.4,2.5-4.6c0.2-0.6,1-3.8,1-3.8c0.5,0.9,1.9,1.7,3.4,1.7 c4.5,0,7.5-4.1,7.5-9.5C21.8,4.2,18.3,0.4,13.1,0.4z"/> </svg>',
+          link: "link",
+        },
       ],
     };
   },
@@ -454,12 +426,8 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  overflow: hidden;
+  padding: 80px 0px 0px;
   background-color: var(--footer-bg);
-  .footer-top {
-    padding: 80px 0px 50px;
-    overflow: hidden;
-  }
   .foo-logo {
     margin-bottom: 15px;
     svg {
@@ -468,78 +436,61 @@ footer {
     }
   }
 
-  .block {
+  .widget {
+    .widget-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--font-stl-two);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
     &.about {
       p {
         color: rgba(240, 240, 240, 0.7) !important;
       }
     }
   }
-  .footer-menu {
-    .accordion {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -15px -30px;
-      .accordion-item {
-        width: 25%;
-        padding: 0px 15px 30px;
-        border: none;
-        background: none;
-        h3 {
-          font-size: 16px;
-          font-weight: 600;
-          color: var(--font-stl-two);
-          text-transform: uppercase;
-          margin: 0 0 20px;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+
+  ul.foo {
+    &.nav {
+      margin-bottom: 20px;
+    }
+
+    li {
+      padding-left: 0px;
+      display: block;
+      width: 100%;
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: rgba(240, 240, 240, 0.7) !important;
+        padding-left: 15px;
+        padding: 8px 0px 8px 15px;
+        position: relative;
+        &:before {
+          content: "\eaca";
+          position: absolute;
+          left: -3px;
+          top: 9px;
+          font-size: 12px;
+          font-family: IcoFont;
+          font-weight: 400;
+          color: rgba(240, 240, 240, 0.7) !important;
+          transition: all 0.3s;
         }
-      }
-      .accordion-body {
-        padding: 0;
-        ul {
-          li {
-            display: block;
-            width: 100%;
-            &:not(:last-child) {
-              padding: 0 0 10px;
-            }
-            a {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 1.2;
-              color: rgba(240, 240, 240, 0.7) !important;
-              padding-left: 15px;
-              padding: 8px 0px 8px 15px;
-              position: relative;
-              &:before {
-                content: "\eaca";
-                position: absolute;
-                left: -3px;
-                top: 12px;
-                font-size: 12px;
-                font-family: IcoFont;
-                font-weight: 400;
-                color: rgba(240, 240, 240, 0.7) !important;
-                transition: all 0.3s;
-              }
-              &:hover {
-                background: none;
-                color: var(--w-color) !important;
-                &:before {
-                  color: var(--w-color) !important;
-                  left: 0px;
-                }
-              }
-            }
+        &:hover {
+          background: none;
+          color: var(--w-color) !important;
+          &:before {
+            color: var(--w-color) !important;
+            left: 0px;
           }
         }
       }
     }
   }
-  .footer-bottom {
+  .fo-bottom {
     padding: 20px 0px;
     border-top: 1px solid;
     p {
@@ -551,9 +502,7 @@ footer {
         color: rgba(240, 240, 240, 0.7) !important;
       }
     }
-    ul.footer-link {
-      display: inline-flex  ;
-      flex-wrap: wrap;
+    ul.f-link {
       li {
         padding: 0px 10px;
         a {
@@ -563,58 +512,5 @@ footer {
       }
     }
   }
-  @media(min-width:768px){
-    .footer-menu {
-      .accordion {
-        h3{
-          pointer-events: none;
-          .icon-box{display: none;}
-        }
-        .accordion-collapse {
-          display: block !important;
-        }
-      }
-    }
-  }
-  @media(max-width:991px){
-    .footer-top{
-      padding: 50px 0px 50px;
-    }
-  }
-  @media(max-width:767px){
-    .footer-top{
-      padding: 35px 0px 35px;
-    }
-    .footer-menu {
-      .accordion{
-        flex-direction: column;
-        .accordion-item{
-          width: 100%;
-          padding: 0px 15px 15px;
-          h3{
-            margin: 0;
-            padding: 3px 0;
-            .icon-box{
-              padding: 5px;
-              .icon{
-                transition: all 0.3s ease-in-out;
-              }
-            }
-            &:not(.collapsed){
-              .icon-box{
-                .icon{
-                  transform: rotate(180deg);
-                }
-              }
-            }
-          }
-          .accordion-body{
-            padding: 15px 0 0;
-          }
-        }
-      }
-    }
-  }
 }
-
 </style>

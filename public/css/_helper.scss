@@ -48,9 +48,18 @@
   .pt-100, .pt-150{padding-top: 50px;}
   .pb-100, .pb-150{padding-bottom: 50px;}
   .py-100, .py-150{padding: 50px 0;}
+
+  .pt-50{padding-top: 25px;}
+  .pb-50{padding-bottom: 25px;}
+  .py-50{padding: 25px 0;}
 }
 @media(max-width:767px){
-  .pt-50, .pt-100, .pt-150{padding-top: 35px;}
-  .pb-50, .pb-100, .pb-150{padding-bottom: 35px;}
-  .py-50, .py-100, .py-150{padding: 35px 0;}
+  .pt-100, .pt-150{padding-top: 35px;}
+  .pb-100, .pb-150{padding-bottom: 35px;}
+  .py-100, .py-150{padding: 35px 0;}
+
+  .pt-50{padding-top: 17px;}
+  .pb-50{padding-bottom: 17px;}
+  .py-50{padding: 17px 0;}
+
 }

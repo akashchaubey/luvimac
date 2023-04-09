@@ -1,117 +1,110 @@
 <template>
-    <section class="section we-works pt-50 pb-100">
-        <div class="container wd-container">
-        <div class="main-title">
-                <h2 class="subtitle-text-work" v-html="commonServices.title" data-aos="fade-up" data-aos-duration="1000"></h2>
-                <!-- <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000">How Do We</div>
-                <div class="works" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">Works</div> -->
-                <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{{commonServices.sectionSubText}}</div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="first-item">
-                        <div class="first-item-title mb-3" data-aos="fade-up" data-aos-duration="1000">
-                            {{ commonServices.sectionTitle }}
-                        </div>
-                        <div id="ddd" class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="second-item">
-                        <div class="second-item-content mb-3" data-aos="fade-up" data-aos-duration="1000" v-for="service of commonServices.data" :key="service.id">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="icon-box" v-html="service.icon"></div>
-                                <div class="second-item-title mb-md-3">{{ service.title }}</div>
-                            </div>
-                            <div class="second-item-dec">{{ service.description }}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="section we-works pt-50 pb-50">
+    <div class="container wd-container">
+      <div class="main-title">
+        <h2 class="subtitle-text-work" v-html="commonServices.title" data-aos="fade-up" data-aos-duration="1000"></h2>
+        <div class="subtitle-text-work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{{commonServices.sectionSubText}}</div>
         </div>
-    </section>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="first-item">
+            <div class="first-item-title mb-3" data-aos="fade-up" data-aos-duration="1000">{{ commonServices.sectionTitle }}</div>
+            <div id="ddd" class="first-item-dec mb-3" data-aos="fade-up" data-aos-duration="1000" v-html="commonServices.sectionDec"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="second-item">
+            <li class="second-item-content mb-3" data-aos="fade-up" data-aos-duration="1000" v-for="service of commonServices.data" :key="service.id">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-box" v-html="service.icon"></div>
+                <div class="second-item-title mb-md-3">{{ service.title }}</div>
+              </div>
+              <div class="second-item-dec">{{ service.description }}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 <script>
 export default {
     props: ['commonServices', 'pageClass'],
-    // mounted() {
-    //     window.addEventListener('scroll', this.updateScroll);
-    // },
-    // methods:{
-    //     updateScroll() {
-    //         const element = document.getElementById("ddd");
-    //         var rect = element.getBoundingClientRect();
-    //         console.log(rect.top, rect.right, rect.bottom, rect.left);
-	// 	},
-    // }
 }
 </script>
 
 <style lang="scss">
 .subtitle-text-work {
-    font-size: 10vw;
-    line-height: 10vw;
-    font-weight: 800;
+  font-size: 10vw;
+  line-height: 10vw;
+  font-weight: 800;
 }
 .works {
-        font-size: 14vw;
-        line-height: 14vw;
-        -webkit-text-stroke: 1.4px var(--font-stl-one);
-        color: var(--strok-text);
-        letter-spacing: -.9vw;
-        font-weight: 800;
-    }
+  display: block;
+  font-size: 14vw;
+  line-height: 14vw;
+  -webkit-text-stroke: 1.4px var(--font-stl-one);
+  color: var(--strok-text);
+  letter-spacing: -.9vw;
+  font-weight: 800;
+}
 .we-works {
-    color: var(--font-stl-one);
-    .first-item {
-        position: sticky;
-        top: 70px;
-        left: 0;
-        .first-item-title {
-            font-size: 22px;
-            line-height: 26px;
-            font-weight: 800;
-        }
-        // .first-item-dec {
-        //     font-size: 22px;
-        //     line-height: 26px;
-        // }
+  color: var(--font-stl-one);
+  .first-item {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    .first-item-title {
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 800;
     }
-    .second-item {
-        .second-item-content {
-                padding: 15px;
-                transition: all .5s ease-in-out;
-                box-shadow: none;
-                border-radius: 10px;
-                &:hover {
-                    box-shadow: 0 5px 20px 0px #0000001a;
-                    .icon-box {
-                        svg {
-                            transform: rotateY(180deg);
-                             transition: all .5s ease-in-out;
-                        }
-                    }
-                }
-            .icon-box {
-                margin-right: 15px;
-                // padding-top: 15px;
-                svg {
-                    width: 64px;
-                    height: 64px;
-                    fill: var(--font-stl-one);
-                    transform: rotateY(0deg);
-                     transition: all .5s ease-in-out;
-                }
-            }
-            .second-item-title {
-                font-size: 32px;
-                line-height: 45px;
-                letter-spacing: -2px;
-                font-weight: 800;
-            }
+  }
+  .second-item {
+    position: sticky;
+    top: 100px;
+    li{
+      position: sticky;
+      background: var(--bg-white-black-100);
+      @for $i from 1 through 8 {
+        &:nth-child(#{$i}n) {
+          top: 64px + $i * 10px;
         }
+      }
+
     }
+    .second-item-content {
+      padding: 15px;
+      transition: all .5s ease-in-out;
+      box-shadow: none;
+      border-radius: 10px;
+      &:hover {
+        box-shadow: 0 5px 20px 0px #0000001a;
+        .icon-box {
+          svg {
+            transform: rotateY(180deg);
+            transition: all .5s ease-in-out;
+          }
+        }
+      }
+      .icon-box {
+        margin-right: 15px;
+        svg {
+          width: 64px;
+          height: 64px;
+          fill: var(--font-stl-one);
+          transform: rotateY(0deg);
+          transition: all .5s ease-in-out;
+        }
+      }
+      .second-item-title {
+        font-size: 32px;
+        line-height: 45px;
+        letter-spacing: -2px;
+        font-weight: 800;
+      }
+    }
+  }
 }
 
 @media screen and (min-width:576px) {

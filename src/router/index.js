@@ -25,6 +25,7 @@ import Android from '../views/Android.vue'
 import Ionic from '../views/Ionic.vue'
 import Ios from '../views/Ios.vue'
 import Flutter from '../views/Flutter.vue'
+import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 
 
 Vue.use(VueRouter)
@@ -179,6 +180,12 @@ Vue.use(VueRouter)
     name: 'contact us',
     component: ContactUs,
     meta: {title: 'contact us'}
+  },
+  {
+    path: '/privacy-policy',
+    name: 'Privacy Policy',
+    component: PrivacyPolicy,
+    meta: {title: 'Privacy Policy'}
   }
 ]
 

@@ -31,7 +31,7 @@
 
 					<div class="btn-dark-light">
 						<a href="javascript:void(0)" @click="toggleColor()">
-							<img svg-inline src="../../public/img/icons/dark-light.svg" alt="dark light">
+							<Icon name="dark-light-icon" :width="25" :height="25" />
 						</a>
 					</div>
 
@@ -60,7 +60,7 @@
 								<router-link to=""><span @click="toggleMenu()">Services</span></router-link>
 								<div class="menu-arrow" @click="showMenu('services')"
 									:class="{ open: activeTab === 'services' }">
-									<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
+									<Icon name="down-arrow-icon" :width="16" :height="16" />
 								</div>
 								<ul class="sub-menu" :class="{ showMega: activeTab === 'services' }">
 									<li @click="toggleMenu()">
@@ -69,7 +69,7 @@
 									<li>
 										<router-link to="">App Development</router-link>
 										<div class="menu-arrow" @click="showSubMenu('app')" :class="{ open: activeSubTab === 'app' }">
-											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
+											<Icon name="down-arrow-icon" :width="16" :height="16" />
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'app' }">
 											<li @click="toggleMenu()"><router-link to="/android-app-development">Android</router-link></li>
@@ -83,7 +83,7 @@
 									<li>
 										<router-link to="">E commerce</router-link>
 										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
-											<img svg-inline src="../../public/img/icons/down-arrow.svg" alt="arrow">
+											<Icon name="down-arrow-icon" :width="16" :height="16" />
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'commerce' }">
 											<li @click="toggleMenu()"><router-link to="/magento">Magento</router-link></li>
@@ -104,8 +104,10 @@
 	</header>
 </template>
 <script>
+	import Icon from '../inc/Icon.vue';
 	export default {
 		name: 'Header',
+		components: { Icon },
 		data() {
 			return {
 				show: false,
@@ -157,14 +159,12 @@
 	width: 26px;
 	height: 20px;
 	position: relative;
-
 	span {
 		display: block;
 		width: 100%;
 		height: 2px;
 		background: var(--font-stl-two);
 		border-radius: 2px;
-
 		&:after,
 		&:before {
 			content: "";
@@ -175,11 +175,9 @@
 			background: var(--font-stl-two);
 			border-radius: 2px;
 		}
-
 		&:after {
 			top: 0px;
 		}
-
 		&:before {
 			bottom: 0px;
 		}
@@ -188,19 +186,15 @@
 	&.toggleOpen {
 		margin: 15px 10px;
 	}
-
 	&.toggleClose {
 		margin: 12px 12px 12px auto;
-
 		span {
 			background: none;
-
 			&:after {
 				top: auto;
 				transform: rotate(45deg);
 				background: var(--font-stl-one);
 			}
-
 			&:before {
 				bottom: auto;
 				transform: rotate(-45deg);
@@ -211,10 +205,9 @@
 }
 
 .btn-dark-light {
-	svg {
-		width: 25px;
-		fill: #fff
-	}
+  a{
+    color: #fff;
+  }
 }
 
 .logo {
@@ -266,7 +259,6 @@ ul.menu {
 	.toggle {
 		span {
 			background: var(--font-stl-three);
-
 			&:after,
 			&:before {
 				background: var(--font-stl-three);
@@ -276,7 +268,6 @@ ul.menu {
 		&.toggleClose {
 			span {
 				background: none;
-
 				&:after,
 				&:before {
 					background: var(--w-b-color);
@@ -293,9 +284,9 @@ ul.menu {
 	}
 
 	.btn-dark-light {
-		svg {
-			fill: var(--font-stl-three);
-		}
+    a{
+      color: var(--font-stl-three);
+    }
 	}
 
 	ul.social {
@@ -356,14 +347,12 @@ ul.menu {
 			li {
 				padding: 0px 25px;
 				display: block;
-
 				a {
 					position: relative;
 					padding: 0px 0px;
 					font-weight: 400;
 					overflow: hidden;
 					display: inline-block;
-
 					&:after {
 						content: " ";
 						position: absolute;
@@ -374,7 +363,6 @@ ul.menu {
 						background-color: var(--s-color);
 						transition: all 0.3s;
 					}
-
 					&:hover {
 						color: #fff;
 
@@ -383,11 +371,9 @@ ul.menu {
 						}
 					}
 				}
-
 				&:hover {
 					&>a {
 						color: #fff;
-
 						&:after {
 							width: calc(100% + 1px);
 						}
@@ -399,7 +385,6 @@ ul.menu {
 		&>li {
 			&>.sub-menu {
 				transform: translateY(0px);
-
 				li {
 					.sub-menu {
 						right: -100%;
@@ -455,17 +440,11 @@ ul.menu {
 
 @media(max-width:1024px) {
 	.menu-arrow {
+    color: var(--font-stl-one);
 		transition: all 0.3s ease-in-out;
 		cursor: pointer;
 		padding: 8px 10px;
 		margin-left: auto;
-
-		svg {
-			fill: var(--font-stl-one);
-			;
-			width: 20px;
-		}
-
 		&.open {
 			transform: rotate(180deg);
 		}

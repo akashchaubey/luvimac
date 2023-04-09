@@ -15,7 +15,7 @@
               <li v-for="(item, index) in tab.list" :key="index">
                 <div class="box">
                   <div class="icon-box">
-                    <Icon :name="item.logo" width="40" height="40" />
+                    <TechIcon :name="item.logo" :width="40" :height="40" />
                   </div>
                   <span>{{ item.name }}</span>
                 </div>
@@ -28,11 +28,11 @@
   </template>
   
   <script>
-  import Icon from '../inc/Icon.vue';
+  import TechIcon from '../inc/TechIcon.vue';
   
   export default {
     name: 'Technologies',
-    components: { Icon },
+    components: { TechIcon },
     data() {
       return {
         activeTab: 0,

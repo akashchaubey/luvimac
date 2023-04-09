@@ -29,7 +29,7 @@
       <div class="container">
         <div class="sec-title text-center">
           <h2>PASSION LEADS TO SUCCESS</h2>
-            <p><small>We believe that teamwork and an open exchange of ideas leads to the greatest success.</small></p>
+          <p><small>We believe that teamwork and an open exchange of ideas leads to the greatest success.</small></p>
         </div>
       </div>
     </section>
@@ -63,13 +63,13 @@
     </section>
     <Technologies />
     <section class="lm-hm-talk">
-      <div class="container wd-container text-center">
-        <router-link to="/contact-us">Let’s Talk About Your Project</router-link>
+      <div class="container text-center">
+        <!-- <router-link to="/contact-us">Let’s Talk About Your Project</router-link> -->
+        <h3 class="h2 pt-3 text-start">Hire {{ typedText }}</h3>
       </div>
     </section>
     <Industries />
     <!-- <ClientSlide /> -->
-    
   </div>
 </template>
 
@@ -91,7 +91,10 @@ import homemeta from '../../metadata/home.json'
   data(){
         return{
           metadata:homemeta,
-            HomeServices:[
+          typedText: '',
+          currentIndex: 0,
+          messages: ['Vue Js Developer', 'React Js Developer', 'Angular Js Developer'],  
+          HomeServices:[
               {
                 "id": 1,
                 "title": "Branding & Design",
@@ -161,6 +164,41 @@ import homemeta from '../../metadata/home.json'
             ]
         }
     },
+    mounted() {
+      this.typeMessage();
+    },
+    methods: {
+    typeMessage() {
+      const currentMessage = this.messages[this.currentIndex];
+      const currentText = currentMessage.substring(0, this.typedText.length + 1);
+      this.typedText = currentText;
+      if (currentText === currentMessage) {
+        setTimeout(() => {
+          this.eraseMessage();
+        }, 2000);
+      } else {
+        setTimeout(() => {
+          this.typeMessage();
+        }, 100);
+      }
+    },
+
+    eraseMessage() {
+      const currentMessage = this.messages[this.currentIndex];
+      const currentText = currentMessage.substring(0, this.typedText.length - 1);
+      this.typedText = currentText;
+      if (currentText === '') {
+        this.currentIndex = (this.currentIndex + 1) % this.messages.length;
+        setTimeout(() => {
+          this.typeMessage();
+        }, 500);
+      } else {
+        setTimeout(() => {
+          this.eraseMessage();
+        }, 50);
+      }
+    },
+  },
     
       metaInfo() {
         return { 
@@ -203,12 +241,21 @@ import homemeta from '../../metadata/home.json'
       background: var(--black-color);
       opacity: 0.9;
     }
+    
   }
 
   .lm-hm-talk{
     background: var(--main-bg-color);
     padding: 45px 0px;
+    .container{
+      max-width: 800px;
+    }
     a{color:var(--strok-text); font-size: 20px; font-weight: 700;}
+    h3{
+      color: var(--strok-text);
+      font-size: 3rem;
+      text-transform: initial;
+    }
   }
 
   @media(max-width: 991px){

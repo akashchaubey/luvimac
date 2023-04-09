@@ -156,6 +156,11 @@ export default {
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
+        else if(this.$route.path == '/privacy-policy'){
+            this.mainTtitle = 'Privacy Policy';
+            // this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
+            this.bgImg = "../../img/page-bg/privacy.jpg"
+        }
         else {
             this.mainTtitle = 'Home';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';

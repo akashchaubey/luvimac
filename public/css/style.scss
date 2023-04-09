@@ -19,6 +19,7 @@ ul.social {
   }
 
   &.footer {
+    display: inline-flex;
     a {
       width: 34px;
       height: 34px;
@@ -129,49 +130,6 @@ ul.bullet {
       height: 6px;
       border-radius: 100px;
       background: currentColor;
-    }
-  }
-}
-
-.check-list {
-  ul {
-    margin: 0 0 2rem;
-    padding: 0;
-    list-style: none;
-    line-height: 1.5;
-
-    li {
-      padding-left: 2.5rem;
-      position: relative;
-      margin: 0.8rem 0;
-      color: var(--font-stl-one);
-
-      &:first-child {
-        margin-top: 0;
-      }
-
-      &::before {
-        background-image: url('../../public/img/icons/check.svg');
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 1.25rem 1.25rem;
-        content: "​";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 2.5rem;
-      }
-    }
-  }
-}
-
-body[data-light-mode="dark"] .check-list {
-  ul {
-    li {
-      &::before {
-        background-image: url('../../public/img/icons/check-dark.svg');
-      }
     }
   }
 }
