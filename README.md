@@ -1,4 +1,4 @@
-# luvi
+# luvimac
 
 ## Project setup
 ```

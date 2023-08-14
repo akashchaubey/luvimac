@@ -11,7 +11,7 @@ import './../public/css/icofont.min.css';
 import './../public/css/style.css';
 import './../public/css/responsive.css';
 // import 'jquery/src/jquery.js';
-// import '../public/js/main.js';
+// import '../public/js/main.js';np
 
 import store from './store'
 import AOS from 'aos';

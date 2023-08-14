@@ -26,6 +26,7 @@ import Ionic from '../views/Ionic.vue'
 import Ios from '../views/Ios.vue'
 import Flutter from '../views/Flutter.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy.vue'
+import NotFound from '../views/Not-found.vue'
 
 
 Vue.use(VueRouter)
@@ -110,13 +111,13 @@ Vue.use(VueRouter)
     meta: {title: 'Digital Marketing'}
   },
   {
-    path: '/magento',
+    path: '/magento-ecommerce-development',
     name: 'Magento',
     component: Magento,
     meta: {title: 'Magento'}
   },
   {
-    path: '/wordpress',
+    path: '/wordpress-website-development',
     name: 'Wordpress',
     component: Wordpress,
     meta: {title: 'Wordpress'}
@@ -186,6 +187,12 @@ Vue.use(VueRouter)
     name: 'Privacy Policy',
     component: PrivacyPolicy,
     meta: {title: 'Privacy Policy'}
+  },
+  {
+      path: '/404', name: 'NotFound', component: NotFound
+  },
+  {
+      path: '/:catchAll(.*)', redirect:'404'
   }
 ]
 

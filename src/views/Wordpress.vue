@@ -15,7 +15,7 @@ import Doweworks from '@/components/DoWeWorks';
 import ThatsWhy from '../components/ThatsWhy';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import wordpressmeta from '../../metadata/magento.json'
+import wordpressmeta from '../../metadata/wordpress.json'
 export default {
   components:{
     Pagetitle,
@@ -108,7 +108,7 @@ export default {
             },
             whyChooseUsServices:{
               sectionTitle:"Why Choose Us",
-              shortPara:"Have you built a site in WordPress yourself or wanto create from a sketch. If things go wrong we are always here to help you and give 100% unique solutions. You can be sure that everything in the website design & development can actually be technically realized in WordPress.",
+              shortPara:"<p>Have you built a site in WordPress yourself or wanto create from a sketch. If things go wrong we are always here to help you and give 100% unique solutions. You can be sure that everything in the website design & development can actually be technically realized in WordPress.</p>",
               leftImg: `<img svg-inline src="../../img/wordpress/why-choose-us.png" class="img-fluid" alt="${wordpressmeta.image3_alt_name}" />`,
               data:[
               {

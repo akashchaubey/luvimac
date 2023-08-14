@@ -17,7 +17,7 @@ importScripts(
   "/precache-manifest.eef76817df8adbbc6d4013cbde4c7a89.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "luvi"});
+workbox.core.setCacheNameDetails({prefix: "luvimac"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {

@@ -324,8 +324,8 @@
                     <div class="accordion-body">
                       <ul>
 												<li><router-link to="/">Home</router-link></li>
-												<li><router-link to="/about-us">About Us</router-link></li>
-                        <li><router-link to="/contact-us">Contact</router-link></li>
+												<li><router-link to="/about">About Us</router-link></li>
+                        <!-- <li><router-link to="/contact-us">Contact</router-link></li> -->
 											</ul>
                     </div>
                   </div>
@@ -367,8 +367,8 @@
                     <div class="accordion-body">
                       <ul>
                         <li><router-link to="/technology">Technology</router-link></li>
-                        <li><router-link to="/wordpress">WordPress</router-link></li>
-                        <li><router-link to="/magento">Magento</router-link></li>
+                        <li><router-link to="/wordpress-website-development">WordPress</router-link></li>
+                        <li><router-link to="/magento-ecommerce-development">Magento</router-link></li>
                         <li><router-link to="/android-app-development">Android App</router-link></li>
                         <li><router-link to="/ios-app-development">iOS App</router-link></li>
                         <li><router-link to="/flutter-app-development">Flutter App</router-link></li>
@@ -400,7 +400,7 @@
           <div class="col-md-3 text-center text-md-end">
             <ul class="social footer">
                 <li v-for="social of socialLinks" :key="social.id">
-                  <a href="/" v-html="social.icon"> </a>
+                  <a :href="social.link" v-html="social.icon" target="_blank"> </a>
                 </li>
               </ul>
           </div>
@@ -422,25 +422,25 @@ export default {
           id: 1,
           title: "Facebook",
           icon: '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"> <title>facebook</title> <path d="M17.9,8.4h-3.7V5.9c0-0.9,0.6-1.1,1-1.1h2.6v-4h-3.6c-4,0-4.9,3-4.9,4.9v2.7H7.1v4.1h2.3v11.6h4.8V12.5h3.3L17.9,8.4 L17.9,8.4z"/> </svg>',
-          link: "link",
+          link: "https://www.facebook.com/luvimac",
         },
         {
           id: 2,
           title: "Twitter",
           icon: '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"> <title>twitter</title> <path d="M24.4,5.1c-0.9,0.4-1.8,0.6-2.8,0.8c1-0.6,1.8-1.6,2.1-2.7c-0.9,0.6-2,1-3.1,1.2c-0.9-0.9-2.1-1.5-3.5-1.5 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1c-4-0.2-7.6-2.1-10-5.1C1.8,4.4,1.6,5.2,1.6,6.1c0,1.7,0.9,3.2,2.2,4 c-0.8,0-1.5-0.2-2.2-0.6v0.1c0,2.4,1.7,4.3,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,1.9,2.4,3.3,4.5,3.4 C6.1,19.2,4,20,1.8,20c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.7,2.2,7.4,2.2c8.9,0,13.8-7.4,13.8-13.8c0-0.2,0-0.4,0-0.6 C22.9,6.9,23.6,6,24.4,5.1L24.4,5.1z"/> </svg>',
-          link: "link",
+          link: "https://twitter.com/luvimacs",
         },
         {
           id: 3,
           title: "Instagram",
           icon: '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"> <g> <path d="M12.5,6C9,6,6.1,8.9,6.1,12.4s2.9,6.4,6.4,6.4s6.4-2.9,6.4-6.4S16,6,12.5,6L12.5,6z M12.5,16.3c-2.2,0-3.9-1.8-3.9-3.9 s1.8-3.9,3.9-3.9s3.9,1.8,3.9,3.9S14.7,16.3,12.5,16.3z M17.7,0.2H7.3c-3.9,0-7.1,3.2-7.1,7.1v10.4c0,3.9,3.2,7.1,7.1,7.1h10.4 c3.9,0,7.1-3.2,7.1-7.1V7.2C24.8,3.3,21.6,0.2,17.7,0.2L17.7,0.2z M22.3,17.6c0,2.5-2.1,4.6-4.6,4.6H7.3c-2.5,0-4.6-2.1-4.6-4.6 V7.2c0-2.5,2.1-4.6,4.6-4.6h10.4c2.5,0,4.6,2.1,4.6,4.6L22.3,17.6L22.3,17.6z M18.9,4.2c-0.9,0-1.6,0.7-1.6,1.7 c0,0.9,0.7,1.7,1.7,1.7c0.9,0,1.7-0.7,1.7-1.7S19.9,4.2,18.9,4.2z"/> </g> </svg>',
-          link: "link",
+          link: "https://www.instagram.com/luvimac/",
         },
         {
           id: 4,
           title: "Linkdin",
           icon: '<svg version="1.1" id="Bold" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"> <g> <path d="M24.6,24.6L24.6,24.6L24.6,24.6l0-8.8c0-4.3-0.9-7.7-6-7.7c-2.4,0-4.1,1.3-4.7,2.6h-0.1V8.5H9v16.1h5v-8 c0-2.1,0.4-4.1,3-4.1c2.6,0,2.6,2.4,2.6,4.3v7.8L24.6,24.6z"/> <path d="M0.8,8.5h5v16.1h-5L0.8,8.5z"/> <path d="M3.3,0.4c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9s2.9-1.3,2.9-2.9C6.2,1.7,4.9,0.4,3.3,0.4z"/> </g> </svg>',
-          link: "link",
+          link: "https://www.linkedin.com/company/luvimac",
         }
       ],
     };

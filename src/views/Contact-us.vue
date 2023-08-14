@@ -1,40 +1,25 @@
 <template>
     <div class="inner">
     <Pagetitle/>
-      <section class="section contact-us pt-100 pb-100">
+    
+      <section class="section contact-us pt-100 pb-50">
         <div class="container">
           <div class="contact-box-wrap">
             <div class="row no-gutters flex-md-row-reverse">
-              <!-- <div class="col-md-4">
-                <div class="left-wrap">
-                  <div class="sub-title">
-                    <h3>Contact Us</h3>
-                  </div>
-                  <ul class="contact-info">
-                    <li class="d-flex">
-                      <div class="icon-wrap">
-                      </div>
-                      <span>71 Pilgrim Avenue Chevy Chase md 20815</span>
-                    </li>
-                    <li class="d-flex">
-                      <div class="icon-wrap">
-                      </div>
-                      <span>71 Pilgrim Avenue Chevy Chase md 20815</span>
-                    </li>
-                    <li class="d-flex">
-                      <div class="icon-wrap">
-                      </div>
-                      <span>71 Pilgrim Avenue Chevy Chase md 20815</span>
-                    </li>
-                    <li class="d-flex">
-                      <div class="icon-wrap">
-                      </div>
-                      <span>71 Pilgrim Avenue Chevy Chase md 20815</span>
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
-              <div class="col-md-12 right-wrap">
+              <div class="contact-details">
+                
+                <h1 class="text-shadow"><strong>Get in touch today</strong></h1>
+                <p>Do you want to work with one of our developers or simply be accompanied?</p>
+                <p class="contect-us-details">
+                  <i class="icofont-email"></i> 
+                  <a href="mailto:hello@luvimac.com"> <p class="m-0">hello@luvimac.com</p></a>
+                </p>
+                <p class="contect-us-details">
+                  <i class="icofont-google-map"></i>
+                  NH64, GJ IN
+                </p>
+              </div>
+              <!-- <div class="col-md-12 right-wrap">
                 <div class="sub-title">
                   <h3>Send Messege</h3>
                 </div>
@@ -43,26 +28,26 @@
                     <div class="col-md-6">
                       <div class="input-group">
                         <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="First Name">
+                        <input type="text" class="form-control" placeholder="First Name" disabled>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="input-group">
                         <label>Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last Name">
+                        <input type="text" class="form-control" placeholder="Last Name" disabled>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="input-group">
                         <label>Phone</label>
-                        <input type="text" class="form-control" placeholder="phone">
+                        <input type="text" class="form-control" placeholder="phone" disabled>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="input-group">
                         <label>Budget</label>
-                        <select class="form-control">
-                          <option>Option</option>
+                        <select class="form-control" disabled>
+                          <option>Select</option>
                           <option>Option</option>
                           <option>Option</option>
                           <option>Option</option>
@@ -73,19 +58,24 @@
                     <div class="col-md-12">
                       <div class="input-group">
                         <label>Messege</label>
-                        <textarea class="form-control" placeholder="messege" rows="3"></textarea>
+                        <textarea class="form-control" placeholder="messege" rows="3" disabled></textarea>
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <button type="submit" class="btn cta-black">Send</button>
+                      <button type="submit" class="btn cta-black" disabled>Send</button>
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
+      <!-- Calendly inline widget begin -->
+      <div class="book-meeting text-center">
+        <h2 class="text-shadow"><strong>Book Meeting</strong></h2>
+      </div>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/luvimac/30min" style="min-width:320px;height:700px;"></div>
     </div>
 </template>
 
@@ -122,7 +112,23 @@ export default {
 
 
 <style lang="scss" scoped>
-  
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  .contect-us-details {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    i {
+      font-size: 30px;
+      margin-right: 5px;
+    }
+    a {
+      color: #000;
+    }
+  }
+}
   .contact-us{
     .sub-title{
       padding-bottom: 15px;
@@ -150,13 +156,17 @@ export default {
         display: block;
       }
     }
+    
     .contact-box-wrap{
       max-width: 1000px;
       width: 100%;
-      margin:0 auto;
-      box-shadow:2px 8px 9px rgba(0, 0, 0, 0.15%);
-      border-radius:4px;
+      margin: 0 auto;
+      box-shadow: 1px 1px 17px #e1e1e1, -1px -1px 17px #e1e1e1;
+      border-radius: 15px;
       padding: 50px;
     }
   }
+  .text-shadow {
+      text-shadow: 1px 1px 2px;
+    }
 </style>

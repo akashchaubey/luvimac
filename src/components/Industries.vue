@@ -4,7 +4,7 @@
                 <div class="sec-title text-center">
                     <h2 data-aos="fade-up" data-aos-delay="50">Industries</h2>
                 </div>
-                <div class="industries align-items-center d-flex mt-md-5">
+                <div class="industries mt-md-5">
                     <div class="industries_name mr-md-5">
                         <div class="industries_title" @click="showIndustries('e_commerce')" :class="{active : type == 'e_commerce'}">E-commerce</div>
                         <div class="industries_title" @click="showIndustries('food_drink')" :class="{active : type == 'food_drink'}">Food & Drink</div>
@@ -12,7 +12,7 @@
                         <div class="industries_title" @click="showIndustries('health_fitness')" :class="{active : type == 'health_fitness'}">Sports & Fitness</div>
                         <div class="industries_title" @click="showIndustries('travel_tourism')" :class="{active : type == 'travel_tourism'}">Travel & Tourism</div>
                     </div>
-                    <div class="industries_img d-none d-md-block">
+                    <div class="industries_img">
                         <div class="image_slide" v-for="d in data" :key="d.id" :class="d.className">
                             <div class="img-1">
                                 <img v-if="type == d.type" :src="d.img1" :alt="d.type" data-aos="fade-right" data-aos-delay="50">
@@ -80,21 +80,34 @@ export default {
 </script>
 <style lang="scss">
 .industries {
-    height: 80vh;
+    // height: 80vh;
     .industries_name {
         // width: 310px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         .industries_title {
             font-size: 2.1vw;
             line-height: 2.5vw;
             font-weight: 800;
             cursor: pointer;
-            margin: 0px 0 15px;
+            // margin: 0px 0 15px;
             white-space: nowrap;
             color: var(--font-stl-one);
+            border: 1px solid;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            &.active {
+                background-color: var(--font-stl-one);
+                color: var(--strok-text);
+            }
         }
     }
     .industries_img {
-        width: calc(100% - 280px);
+        width: 90%;
+        margin: 2% auto;;
         // position: relative;
         .image_slide {
             position: relative;
@@ -143,12 +156,12 @@ export default {
 }
 @media screen and (max-width:767px) {
     .industries {
-        height: auto;
-        display: flex;
+        // height: auto;
+        // display: flex;
         .industries_name {
             .industries_title {
-                font-size: 7.2vw;
-                line-height: 7.2vw;
+                font-size: 15px;
+                line-height: 20px;
             }
         }
     }

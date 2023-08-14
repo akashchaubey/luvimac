@@ -3,7 +3,8 @@
     "default": "luvimac-8110e",
     "staging": "luvimac-8110e",
     "stagint": "luvimac-5bdf7",
-    "stage": "luvi-stage"
+    "stage": "luvi-stage",
+    "y": "luvimac-8110e"
   },
   "targets": {},
   "etags": {}

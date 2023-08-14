@@ -4,7 +4,7 @@
 			<div class="row align-items-start justify-content-between">
         <div class="col-lg-6 order-lg-2 align-self-center">
           <div class="thatswhy-content pr-5">
-            <h2 data-aos="fade-up" data-aos-duration="1000">{{thatWhy.title}} </h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000" v-html="thatWhy.title"> </h2>
             <div class="sub-text" data-aos="fade-up" data-aos-duration="1000" v-html="thatWhy.description"></div>
           </div>		 
         </div>

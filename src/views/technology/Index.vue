@@ -118,12 +118,14 @@
                 </div>
                 <div class="mobiles-animation">
                   <img data-aos="fade-right" data-aos-delay="500" src="/img/technology/mobile/mobile-app-bg.png" :alt=metadata.image2_alt_name>
-                  <figure class="mobile-img two">
+                  <div class="mobile-tech-img">
+                    <figure class="mobile-img one" >
+                      <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/mobile-app-2.png" :alt=metadata.image4_alt_name>
+                    </figure>
+                    <figure class="mobile-img two">
                       <img data-aos="fade-down" data-aos-delay="750" src="/img/technology/mobile/mobile-app-1.png" :alt=metadata.image3_alt_name>
                     </figure>
-                      <figure class="mobile-img one" >
-                        <img data-aos="fade-up" data-aos-delay="1250" src="/img/technology/mobile/mobile-app-2.png" :alt=metadata.image4_alt_name>
-                      </figure>
+                  </div>
                 </div>
               </div>
             </div>
@@ -286,25 +288,33 @@ export default {
     img {
       width: 100%;
     }
-    figure.mobile-img {
+    .mobile-tech-img {
+        display: flex;
         position: absolute;
-        &.one {
-            left: 33%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          img {
-           width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+          figure.mobile-img {
+              position: absolute;
+              &.one {
+                left: 33%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                img {
+                width: 100%;
+                }
+              }
+              &.two {
+                width: 50%;
+                left: 73%;
+                top: 52%;
+                transform: translate(-50%, -50%);
+                img {
+                width: 100%;
+                }
+              }        
           }
-        }
-        &.two {
-          width: 50%;
-          left: 73%;
-          top: 52%;
-          transform: translate(-50%, -50%);
-          img {
-           width: 100%;
-          }
-        }        
     }
   }
 }
@@ -359,7 +369,18 @@ export default {
           }
         }
       }
+      .mobiles-animation {
+      .mobile-tech-img {
+        figure.mobile-img {
+              &.one {
+                left: 35%;
+                width: 55%;
+              }
+      }
     }
+  }
+    }
+    
     .web-development {
       .technology-tools {
         .technology-item {

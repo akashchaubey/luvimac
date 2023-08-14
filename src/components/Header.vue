@@ -12,18 +12,28 @@
 				</div>
 				<div class="head-right d-flex flex-wrap align-items-center">
 					<ul class="social">
-						<li>
-							<a href="#">
+						<!-- <li>
+							<a href="https://www.behance.net/luvimac" target="_blank">
 								<img svg-inline src="../../public/img/social/be.svg" alt="Behance">
 							</a>
-						</li>
+						</li> -->
 						<li>
-							<a href="#">
+							<a href="https://twitter.com/luvimacs" target="_blank">
 								<img svg-inline src="../../public/img/social/tw.svg" alt="Twitter">
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="https://www.linkedin.com/company/luvimac" target="_blank">
+								<img svg-inline src="../../public/img/social/in.svg" alt="Linkedin">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/luvimac/" target="_blank">
+								<img svg-inline src="../../public/img/social/ins.svg" alt="Instagram">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/luvimac" target="_blank">
 								<img svg-inline src="../../public/img/social/fb.svg" alt="Facebook">
 							</a>
 						</li>
@@ -57,7 +67,7 @@
 								<router-link to="/technology">Technology</router-link>
 							</li>
 							<li>
-								<router-link to=""><span @click="toggleMenu()">Services</span></router-link>
+								<router-link to=""><span @click="showMenu('services')">Services</span></router-link>
 								<div class="menu-arrow" @click="showMenu('services')"
 									:class="{ open: activeTab === 'services' }">
 									<Icon name="down-arrow-icon" :width="16" :height="16" />
@@ -67,7 +77,7 @@
 										<router-link to="/web-development">Web Development</router-link>
 									</li>
 									<li>
-										<router-link to="">App Development</router-link>
+										<router-link to=""><span @click="showSubMenu('app')">App Development</span></router-link>
 										<div class="menu-arrow" @click="showSubMenu('app')" :class="{ open: activeSubTab === 'app' }">
 											<Icon name="down-arrow-icon" :width="16" :height="16" />
 										</div>
@@ -81,13 +91,13 @@
 										<router-link to="/digital-marketing">Digital Marketing</router-link>
 									</li>
 									<li>
-										<router-link to="">E commerce</router-link>
+										<router-link to=""><span @click="showSubMenu('commerce')">E-commerce</span></router-link>
 										<div class="menu-arrow" @click="showSubMenu('commerce')" :class="{ open: activeSubTab === 'commerce' }">
 											<Icon name="down-arrow-icon" :width="16" :height="16" />
 										</div>
 										<ul class="sub-menu" :class="{ showMega: activeSubTab === 'commerce' }">
-											<li @click="toggleMenu()"><router-link to="/magento">Magento</router-link></li>
-											<li @click="toggleMenu()"><router-link to="/wordpress">Wordpress</router-link></li>
+											<li @click="toggleMenu()"><router-link to="/magento-ecommerce-development">Magento</router-link></li>
+											<li @click="toggleMenu()"><router-link to="/wordpress-website-development">Wordpress</router-link></li>
 										</ul>
 									</li>
 								</ul>
@@ -338,11 +348,14 @@ ul.menu {
 			top: 100%;
 			padding: 10px 0px;
 			min-width: 180px;
-			background: rgba(19, 20, 22, 0.9);
-			box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35);
+			background: #ffffff;
+			box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35), 0 -0px 5px 0 rgba(0, 0, 0, 0.35);
 			transition: all 0.3s;
 			opacity: 0;
 			visibility: hidden;
+			border-radius: 3px;
+			
+			
 
 			li {
 				padding: 0px 25px;
@@ -364,7 +377,7 @@ ul.menu {
 						transition: all 0.3s;
 					}
 					&:hover {
-						color: #fff;
+						color: #000000;
 
 						&:after {
 							width: calc(100% + 1px);
@@ -373,7 +386,7 @@ ul.menu {
 				}
 				&:hover {
 					&>a {
-						color: #fff;
+						color: #000000;
 						&:after {
 							width: calc(100% + 1px);
 						}
@@ -385,11 +398,30 @@ ul.menu {
 		&>li {
 			&>.sub-menu {
 				transform: translateY(0px);
+				&:after {
+					content: "";
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-bottom: 10px solid #ffffff;
+					position: absolute;
+					top: -9px;
+					left: 30px;
+				}
+				
 				li {
 					.sub-menu {
-						right: -100%;
+						right: -105%;
 						top: 50%;
 						transform: translate(20px, -50%);
+						&:after {
+							content: "";
+							border-top: 10px solid transparent;
+							border-bottom: 10px solid transparent;
+							border-right: 10px solid #ffffff;
+							position: absolute;
+							top: calc(50% - 10px);
+							left: -9px;
+						}
 					}
 				}
 			}
@@ -400,6 +432,7 @@ ul.menu {
 				transform: translateY(0px);
 				opacity: 1;
 				visibility: visible;
+				
 			}
 		}
 
@@ -418,7 +451,7 @@ ul.menu {
 		.sub-menu {
 			li {
 				a {
-					color: rgba(240, 240, 240, 0.7);
+					color: #000000;
 				}
 			}
 		}

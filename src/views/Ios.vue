@@ -32,7 +32,7 @@ export default {
         return{
           metadata:appData,
           texttitleContent:{
-              title:"Everything about iOS Development",
+              title:'Everything about <span class="text-lowercase">i</span>OS Development',
               description:'<p>We employ strategists and skilled iOS Apple developers for apps development projects who fully master Swift and Objective-C. We design the user interface, set up a technology stack, develop a back end and front end.</p> <p>We make custom apps for each of our customers. We value professionalism and want to develop the best apps that meet every customer need. Are you looking for a successful iOS solution? Then hire an experienced company to develop your apps.</p><p>By providing product prototyping we intricate details of the project and the user flow. Based on this, we develop graphic designs.</p>',
               img:'../../img/app-development/everything-about-ios-development.png',
               alt:appData.image2_alt_name,
@@ -55,7 +55,7 @@ export default {
               
               sectionTitle:"Fulltime & Part time App Developer",
               sectionDescription:'We are tech versed in mobile apps development worldwide. Whether you’re a Startup or an Enterprise, Luvimac’s driven, smart and experienced team is ready to collaborate with you  to build a leading-edge mobile app solution for your next app project that will set you apart.',
-              subTitle:'iOS App Innovation',
+              subTitle:'<span class="text-lowercase">i</span>OS App Innovation',
               subDescription:'<p>Most innovative businesses trust us to build their apps. We work collaboratively with you to develop a tailored application that meets your unique needs and requirements. We develop all our apps utilizing Swift, objective C with latest architecture and design practices. We ensure flawless execution to satisfy your needs. Our technical experts work with you to gather all requirements and define the scope of the mobile apps development project.</p>',
               img:'../../img/app-development/ios-app-innovation.png',
               alt:appData.image1_alt_name

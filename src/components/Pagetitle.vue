@@ -70,7 +70,7 @@ export default {
 
         }
         else if(this.$route.path == '/e-commerce'){
-            this.mainTtitle = 'E Commerce';
+            this.mainTtitle = 'E-Commerce';
             this.subTitle = 'We’re a creative agency located in Brooklyn, New York.';
             this.bgImg = "../../img/page-bg/services-bg.jpg" 
 
@@ -93,13 +93,13 @@ export default {
             this.bgImg = "../../img/page-bg/digital-bg.jpg" 
 
         } 
-        else if(this.$route.path == '/magento'){
-            this.mainTtitle = 'Magento';
+        else if(this.$route.path == '/magento-ecommerce-development'){
+            this.mainTtitle = 'Magento Development';
             this.subTitle = 'Magento eCommerce development company';
             this.bgImg = "../../img/page-bg/magento-bg.jpg" 
 
         }
-        else if(this.$route.path == '/wordpress'){
+        else if(this.$route.path == '/wordpress-website-development'){
             this.mainTtitle = 'WordPress Development';
             this.subTitle = 'Web design & development, strong in customization, proven concepts that meet your needs.';
             this.bgImg = "../../img/page-bg/wordpress-bg.jpg" 
@@ -131,7 +131,7 @@ export default {
             this.bgImg = "../../img/page-bg/contact-bg.jpg"
         }
         else if(this.$route.path == '/ios-app-development'){
-            this.mainTtitle = '<span>iOS</span> App Development';
+            this.mainTtitle = '<span class="text-lowercase">i</span>OS App Development';
             this.subTitle = 'Mobile app development for startups & business';
             this.bgImg = "../../img/page-bg/ios-bg.jpg"
         }
