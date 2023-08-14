@@ -65,7 +65,7 @@
     <section class="lm-hm-talk">
       <div class="container text-center">
         <!-- <router-link to="/contact-us">Let’s Talk About Your Project</router-link> -->
-        <h3 class="h2 pt-3 text-start">Hire {{ typedText }}</h3>
+        <h3 class="h2 pt-3">Hire {{ typedText }}</h3>
       </div>
     </section>
     <Industries />

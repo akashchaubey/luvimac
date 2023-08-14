@@ -1,5 +1,5 @@
 <template>
-	<header class="header" :class="{fixed: scrollPosition > 100}">
+	<header class="header" :class="{fixed: scrollPosition > 5}">
 		<div class="side-menu-overlay" @click="toggleMenu()" :class="{sideOverlay:show}"></div>
 		<div class="container wd-container">
 			<div class="header-wrap d-flex flex-wrap align-items-center">
